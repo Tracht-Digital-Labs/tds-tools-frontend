@@ -5,13 +5,13 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Etikettenbogen sind billig, das Beschriften ist es nicht. Wer einmal versucht hat, dreißig Adressen in einer Textverarbeitung so auf ein Raster zu bringen, dass sie nach dem Druck auch auf den Aufklebern landen, kennt das Ergebnis: zwei verschwendete Bogen und eine Tabelle, die beim nächsten Mal niemand mehr wiederfindet.",
-      "Dieses Werkzeug erzeugt den Bogen als fertiges PDF. Raster wählen, Adressen einfügen — eine je Absatz —, und heraus kommt eine Datei, die ohne weitere Einstellung auf den Etikettenbogen passt. Die gängigen Formate von 24 bis 40 Etiketten je A4-Seite sind hinterlegt, samt der Ränder und Abstände, die das jeweilige Raster braucht.",
+      "Dieses Werkzeug erzeugt den Bogen als fertiges PDF. Raster wählen, Adressen einfügen, eine je Absatz —, und heraus kommt eine Datei, die ohne weitere Einstellung auf den Etikettenbogen passt. Die gängigen Formate von 24 bis 40 Etiketten je A4-Seite sind hinterlegt, samt der Ränder und Abstände, die das jeweilige Raster braucht.",
       "Zwei Kleinigkeiten machen den Unterschied im Alltag. „Erstes benutztes Feld“ nimmt einen angebrochenen Bogen auf, sodass die ersten, schon abgezogenen Felder freibleiben. Und die Schnittlinien lassen sich zum Prüfen einblenden: einmal auf normalem Papier drucken, gegen den Etikettenbogen halten, und die Passgenauigkeit ist geklärt, bevor der teure Bogen durch den Drucker läuft.",
     ],
     useCases: [
       {
         title: "Serienbrief ohne Serienbrief",
-        text: "Für eine Aussendung an dreißig Kunden braucht es keine Datenbankanbindung — die Adressen aus der Mail liegen ohnehin schon als Text vor.",
+        text: "Für eine Aussendung an dreißig Kunden braucht es keine Datenbankanbindung, die Adressen aus der Mail liegen ohnehin schon als Text vor.",
       },
       {
         title: "Absenderaufkleber auf Vorrat",
@@ -33,11 +33,11 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Bogen auswählen",
-        description: "Das Raster suchen, das zum Etikettenbogen passt. Entscheidend sind die Maße und die Anzahl je Seite, nicht die Marke — ein Bogen eines anderen Herstellers mit demselben Raster passt genauso.",
+        description: "Das Raster suchen, das zum Etikettenbogen passt. Entscheidend sind die Maße und die Anzahl je Seite, nicht die Marke, ein Bogen eines anderen Herstellers mit demselben Raster passt genauso.",
       },
       {
         title: "Adressen einfügen",
-        description: "Eine Adresse je Absatz: Die Zeilen innerhalb eines Absatzes werden zu den Zeilen auf dem Etikett, eine Leerzeile beendet das Etikett. Unter dem Feld steht laufend mit, wie viele Etiketten erkannt wurden — das ist die schnellste Kontrolle.",
+        description: "Eine Adresse je Absatz: Die Zeilen innerhalb eines Absatzes werden zu den Zeilen auf dem Etikett, eine Leerzeile beendet das Etikett. Unter dem Feld steht laufend mit, wie viele Etiketten erkannt wurden, das ist die schnellste Kontrolle.",
       },
       {
         title: "Angebrochenen Bogen berücksichtigen",
@@ -45,14 +45,14 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Probedruck und Druck",
-        description: "Für den ersten Versuch die Schnittlinien einschalten und auf normales Papier drucken. Wichtig ist dabei, dass der Drucker das PDF in Originalgröße ausgibt und nicht „an Seite anpassen“ — sonst verschiebt sich das ganze Raster um wenige Millimeter.",
+        description: "Für den ersten Versuch die Schnittlinien einschalten und auf normales Papier drucken. Wichtig ist dabei, dass der Drucker das PDF in Originalgröße ausgibt und nicht „an Seite anpassen“, sonst verschiebt sich das ganze Raster um wenige Millimeter.",
       },
     ],
     privacy:
       "Der Bogen entsteht vollständig im Browser; die eingefügten Adressen werden weder übertragen noch gespeichert. Bei einer Empfängerliste ist das keine Formalie, sondern der Unterschied zwischen einer internen Arbeitsdatei und einer Kundenliste, die auf einem fremden Server gelandet ist.",
     faq: [
       {
-        q: "Mein Etikettenbogen steht nicht in der Liste — was nun?",
+        q: "Mein Etikettenbogen steht nicht in der Liste, was nun?",
         a: "Die Maße auf der Verpackung mit den angebotenen Rastern vergleichen; viele Hersteller verwenden identische Geometrien unter eigenen Nummern. Passt keines exakt, ist das nächstkleinere Raster meist noch brauchbar, weil der Text mittig auf dem Feld sitzt.",
       },
       {
@@ -61,7 +61,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Kann ich eine lange Adresse unterbringen?",
-        a: "Der Text wird innerhalb des Etiketts umgebrochen, damit er nicht in das Nachbarfeld läuft. Bei sehr langen Zeilen hilft eine kleinere Schriftgröße — der Regler geht bis auf 6 pt herunter.",
+        a: "Der Text wird innerhalb des Etiketts umgebrochen, damit er nicht in das Nachbarfeld läuft. Bei sehr langen Zeilen hilft eine kleinere Schriftgröße, der Regler geht bis auf 6 pt herunter.",
       },
       {
         q: "Lassen sich Barcodes oder Logos aufbringen?",
@@ -73,13 +73,13 @@ const guide: ToolGuideSet = {
   en: {
     intro: [
       "Label sheets are cheap; labelling them is not. Anyone who has tried to line up thirty addresses in a word processor so that they actually land on the stickers after printing knows the outcome: two wasted sheets and a table nobody can find again next time.",
-      "This tool produces the sheet as a finished PDF. You choose the grid, paste the addresses — one per paragraph — and get a file you print onto the label sheet with no further settings. The common formats from 24 to 40 labels per A4 page are built in, along with the margins and gaps each grid needs.",
+      "This tool produces the sheet as a finished PDF. You choose the grid, paste the addresses (one per paragraph) and get a file you print onto the label sheet with no further settings. The common formats from 24 to 40 labels per A4 page are built in, along with the margins and gaps each grid needs.",
       "Two small things make the difference in daily use. “First slot to use” takes account of a partly used sheet, leaving the already-peeled slots empty. And the cutting guides can be shown for checking: print once on plain paper, hold it against the label sheet, and the alignment is settled before the expensive sheet goes through the printer.",
     ],
     useCases: [
       {
         title: "A mail merge without the mail merge",
-        text: "A mailing to thirty customers needs no database connection — the addresses from the email are already sitting there as text.",
+        text: "A mailing to thirty customers needs no database connection, the addresses from the email are already sitting there as text.",
       },
       {
         title: "Return address labels in stock",
@@ -101,11 +101,11 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Choose the sheet",
-        description: "Find the grid that matches your label sheet. What counts is the measurements and the count per page, not the brand — a sheet from another manufacturer with the same grid fits just as well.",
+        description: "Find the grid that matches your label sheet. What counts is the measurements and the count per page, not the brand, a sheet from another manufacturer with the same grid fits just as well.",
       },
       {
         title: "Paste the addresses",
-        description: "One address per paragraph: the lines inside a paragraph become the lines on the label, and a blank line ends it. The number of labels detected is shown under the field as you type — the quickest check there is.",
+        description: "One address per paragraph: the lines inside a paragraph become the lines on the label, and a blank line ends it. The number of labels detected is shown under the field as you type, the quickest check there is.",
       },
       {
         title: "Account for a partly used sheet",
@@ -113,14 +113,14 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Test print, then print",
-        description: "For the first attempt switch the cutting guides on and print onto plain paper. What matters is that the printer outputs the PDF at original size and not “fit to page” — otherwise the whole grid shifts by a few millimetres.",
+        description: "For the first attempt switch the cutting guides on and print onto plain paper. What matters is that the printer outputs the PDF at original size and not “fit to page”, otherwise the whole grid shifts by a few millimetres.",
       },
     ],
     privacy:
       "The sheet is produced entirely in your browser; the pasted addresses are neither transmitted nor stored. With a recipient list that is not a formality but the difference between an internal working file and a customer list that has ended up on somebody else's server.",
     faq: [
       {
-        q: "My label sheet is not in the list — what now?",
+        q: "My label sheet is not in the list, what now?",
         a: "Compare the measurements on the packaging with the grids offered; many manufacturers use identical geometries under their own numbers. If none fits exactly, the next smaller grid is usually still usable, because the text sits centred on the slot.",
       },
       {
@@ -129,7 +129,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Can I fit a long address?",
-        a: "The text is wrapped inside the label so that it does not run into the neighbouring slot. For very long lines a smaller font size helps — the slider goes down to 6 pt.",
+        a: "The text is wrapped inside the label so that it does not run into the neighbouring slot. For very long lines a smaller font size helps, the slider goes down to 6 pt.",
       },
       {
         q: "Can I add barcodes or logos?",

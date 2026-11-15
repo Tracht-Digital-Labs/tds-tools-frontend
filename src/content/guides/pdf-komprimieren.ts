@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Ein PDF wird fast nie vom Text groß, sondern von den Bildern darin. Ein eingescannter Vertrag, ein Angebot mit Produktfotos, ein bebildertes Protokoll — der Text darin wiegt ein paar Kilobyte, die Fotos einige Megabyte. Genau dort setzt dieses Werkzeug an: Es sucht die eingebetteten Bilder, rechnet sie in der gewählten Qualität neu und schreibt sie an dieselbe Stelle zurück.",
+      "Ein PDF wird fast nie vom Text groß, sondern von den Bildern darin. Ein eingescannter Vertrag, ein Angebot mit Produktfotos, ein bebildertes Protokoll, der Text darin wiegt ein paar Kilobyte, die Fotos einige Megabyte. Genau dort setzt dieses Werkzeug an: Es sucht die eingebetteten Bilder, rechnet sie in der gewählten Qualität neu und schreibt sie an dieselbe Stelle zurück.",
       "Der Rest des Dokuments bleibt dabei unangetastet. Text bleibt Text und damit durchsuchbar und markierbar, Vektorgrafiken bleiben scharf, Verlinkungen und die Seitenreihenfolge bleiben, wie sie waren. Das ist der Unterschied zu Werkzeugen, die jede Seite in ein Bild verwandeln: Die Datei wird zwar auch kleiner, aber aus einem Dokument wird ein Stapel Fotos, in dem sich nichts mehr suchen lässt.",
-      "Wie viel dabei herauskommt, hängt am Ausgangsmaterial. Ein Scan mit 300 dpi lässt sich meist auf ein Viertel eindampfen, ohne dass es am Bildschirm auffällt. Ein reines Textdokument dagegen enthält nichts, was sich neu rechnen ließe — dann sagt das Werkzeug genau das, statt eine Verbesserung zu behaupten, die es nicht gibt.",
+      "Wie viel dabei herauskommt, hängt am Ausgangsmaterial. Ein Scan mit 300 dpi lässt sich meist auf ein Viertel eindampfen, ohne dass es am Bildschirm auffällt. Ein reines Textdokument dagegen enthält nichts, was sich neu rechnen ließe, dann sagt das Werkzeug genau das, statt eine Verbesserung zu behaupten, die es nicht gibt.",
     ],
     useCases: [
       {
@@ -19,7 +19,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Unterlagen für ein Portal hochladen",
-        text: "Förderportale, Ausschreibungsplattformen und Versicherungen setzen oft harte Obergrenzen je Datei — und melden die Überschreitung erst nach dem Ausfüllen des ganzen Formulars.",
+        text: "Förderportale, Ausschreibungsplattformen und Versicherungen setzen oft harte Obergrenzen je Datei, und melden die Überschreitung erst nach dem Ausfüllen des ganzen Formulars.",
       },
       {
         title: "Archiv aufräumen",
@@ -27,7 +27,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Dokumentation auf die Website stellen",
-        text: "Ein Datenblatt, das der Besucher erst nach zehn Sekunden Ladezeit sieht, wird meist gar nicht erst geöffnet — besonders auf dem Mobilfunknetz einer Baustelle.",
+        text: "Ein Datenblatt, das der Besucher erst nach zehn Sekunden Ladezeit sieht, wird meist gar nicht erst geöffnet, besonders auf dem Mobilfunknetz einer Baustelle.",
       },
     ],
     steps: [
@@ -41,7 +41,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Bildbreite begrenzen",
-        description: "Ein Foto mit 4000 Pixeln Breite bringt in einem A4-Dokument nichts, das nie größer als 2000 Pixel gedruckt wird. Die Begrenzung ist deshalb oft der größere Hebel als die Qualität — erst 1600 Pixel ausprobieren, dann die Qualität weiter senken.",
+        description: "Ein Foto mit 4000 Pixeln Breite bringt in einem A4-Dokument nichts, das nie größer als 2000 Pixel gedruckt wird. Die Begrenzung ist deshalb oft der größere Hebel als die Qualität, erst 1600 Pixel ausprobieren, dann die Qualität weiter senken.",
       },
       {
         title: "Ergebnis prüfen",
@@ -49,7 +49,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Die Datei wird vollständig im Browser geöffnet, verarbeitet und wieder gespeichert. Nichts davon wird auf einen Server übertragen, und es entsteht auch keine Kopie im Netz — das ist bei Verträgen, Personalunterlagen und Angeboten der eigentliche Punkt, denn ein Dokument, das man zum Verkleinern hochlädt, hat man aus der Hand gegeben.",
+      "Die Datei wird vollständig im Browser geöffnet, verarbeitet und wieder gespeichert. Nichts davon wird auf einen Server übertragen, und es entsteht auch keine Kopie im Netz, das ist bei Verträgen, Personalunterlagen und Angeboten der eigentliche Punkt, denn ein Dokument, das man zum Verkleinern hochlädt, hat man aus der Hand gegeben.",
     faq: [
       {
         q: "Leidet die Qualität des Textes?",
@@ -57,7 +57,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Warum wird meine Datei nicht kleiner?",
-        a: "Dann enthält sie nichts, was sich neu rechnen ließe — entweder gar keine Bilder, oder nur solche in einem Format, das hier bewusst unangetastet bleibt, weil eine falsche Annahme über Farbraum oder Bittiefe die Seite still zerstören würde.",
+        a: "Dann enthält sie nichts, was sich neu rechnen ließe, entweder gar keine Bilder, oder nur solche in einem Format, das hier bewusst unangetastet bleibt, weil eine falsche Annahme über Farbraum oder Bittiefe die Seite still zerstören würde.",
       },
       {
         q: "Kann ich mehrere Dateien auf einmal verkleinern?",
@@ -72,9 +72,9 @@ const guide: ToolGuideSet = {
   },
   en: {
     intro: [
-      "A PDF is almost never made large by its text, but by the images inside it. A scanned contract, a quotation with product photos, an illustrated report — the words weigh a few kilobytes, the pictures several megabytes. That is exactly where this tool works: it finds the embedded images, recomputes them at the quality you choose, and writes them back into the same place.",
+      "A PDF is almost never made large by its text, but by the images inside it. A scanned contract, a quotation with product photos, an illustrated report, the words weigh a few kilobytes, the pictures several megabytes. That is exactly where this tool works: it finds the embedded images, recomputes them at the quality you choose, and writes them back into the same place.",
       "The rest of the document is left alone. Text stays text and therefore stays searchable and selectable, vector graphics stay sharp, links and page order stay as they were. That is the difference from tools that turn every page into a picture: the file does get smaller, but a document becomes a stack of photos in which nothing can be found again.",
-      "How much comes out of it depends on the material. A 300 dpi scan can usually be cut to a quarter without anything showing on screen. A pure text document, on the other hand, holds nothing that could be recomputed — and then the tool says so, rather than claiming an improvement that is not there.",
+      "How much comes out of it depends on the material. A 300 dpi scan can usually be cut to a quarter without anything showing on screen. A pure text document, on the other hand, holds nothing that could be recomputed, and then the tool says so, rather than claiming an improvement that is not there.",
     ],
     useCases: [
       {
@@ -87,7 +87,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Uploading papers to a portal",
-        text: "Funding portals, tender platforms and insurers often set a hard per-file limit — and report the breach only after the whole form has been filled in.",
+        text: "Funding portals, tender platforms and insurers often set a hard per-file limit, and report the breach only after the whole form has been filled in.",
       },
       {
         title: "Tidying up an archive",
@@ -95,7 +95,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Putting documentation on a website",
-        text: "A data sheet a visitor only sees after ten seconds of loading is usually not opened at all — especially on the mobile signal of a building site.",
+        text: "A data sheet a visitor only sees after ten seconds of loading is usually not opened at all, especially on the mobile signal of a building site.",
       },
     ],
     steps: [
@@ -109,7 +109,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Limit the image width",
-        description: "A photo 4000 pixels wide gains nothing in an A4 document that is never printed larger than 2000 pixels. The width limit is therefore often the bigger lever than the quality — try 1600 pixels before lowering the quality further.",
+        description: "A photo 4000 pixels wide gains nothing in an A4 document that is never printed larger than 2000 pixels. The width limit is therefore often the bigger lever than the quality, try 1600 pixels before lowering the quality further.",
       },
       {
         title: "Check the result",
@@ -117,7 +117,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "The file is opened, processed and saved again entirely inside your browser. None of it is transferred to a server and no copy comes into existence anywhere online — with contracts, personnel files and quotations that is the actual point, because a document you upload in order to shrink it is a document you have handed over.",
+      "The file is opened, processed and saved again entirely inside your browser. None of it is transferred to a server and no copy comes into existence anywhere online, with contracts, personnel files and quotations that is the actual point, because a document you upload in order to shrink it is a document you have handed over.",
     faq: [
       {
         q: "Does the text lose quality?",
@@ -125,7 +125,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Why does my file not get smaller?",
-        a: "Then it holds nothing that could be recomputed — either no images at all, or only images in a format deliberately left alone here, because a wrong assumption about colour space or bit depth would corrupt the page silently.",
+        a: "Then it holds nothing that could be recomputed, either no images at all, or only images in a format deliberately left alone here, because a wrong assumption about colour space or bit depth would corrupt the page silently.",
       },
       {
         q: "Can I compress several files at once?",

@@ -10,7 +10,7 @@ export const GET: APIRoute = () =>
       buildManifest({
         name: "Online-Tools von Tracht Digital Solutions",
         shortName: "Online-Tools",
-        description: "Kostenlose Werkzeuge, die direkt im Browser laufen — auch offline.",
+        description: "Kostenlose Werkzeuge, die direkt im Browser laufen, auch offline.",
         lang: "de",
         themeColor: "#fafaf7",
         backgroundColor: "#fafaf7",

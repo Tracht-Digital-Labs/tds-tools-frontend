@@ -86,7 +86,7 @@ const jsonLd = asGraph(
   /* The catalogue as a page (2026-10-19). */
   { ...webPageNode({
       url: `${site.origin}${base}/`,
-      name: `${site.name} — ${s.tagline}`,
+      name: `${site.name}: ${s.tagline}`,
       description: s.description,
       lang,
     }), "@type": "CollectionPage" },
@@ -108,7 +108,7 @@ const jsonLd = asGraph(
 ---
 
 <Layout
-  title={`${site.name} — ${s.tagline}`}
+  title={`${site.name} | ${s.tagline}`}
   description={s.description}
   lang={lang}
   ogImage={lang === "de" ? "/og/default.png" : "/og/en/default.png"}

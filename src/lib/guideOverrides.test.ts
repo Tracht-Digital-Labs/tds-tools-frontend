@@ -92,14 +92,14 @@ describe("mergeCopy", () => {
     // value in the MANIFEST, not the one that reaches the page; a browser puts
     // the URL in the tab when the title is empty, so the page still looks
     // right; and the only visible trace is a search result nobody is watching.
-    const withSeo = { ...tool, seoTitle: "Aus dem Manifest — kurz", seoDescription: "Auch daher." };
-    expect(mergeCopy(withSeo, undefined).seoTitle).toBe("Aus dem Manifest — kurz");
-    expect(mergeCopy(withSeo, {}).seoTitle).toBe("Aus dem Manifest — kurz");
+    const withSeo = { ...tool, seoTitle: "Aus dem Manifest | kurz", seoDescription: "Auch daher." };
+    expect(mergeCopy(withSeo, undefined).seoTitle).toBe("Aus dem Manifest | kurz");
+    expect(mergeCopy(withSeo, {}).seoTitle).toBe("Aus dem Manifest | kurz");
     expect(mergeCopy(withSeo, {}).seoDescription).toBe("Auch daher.");
   });
 
   it("lets an editor replace the SEO title without losing the description", () => {
-    const withSeo = { ...tool, seoTitle: "Aus dem Manifest — kurz", seoDescription: "Auch daher." };
+    const withSeo = { ...tool, seoTitle: "Aus dem Manifest | kurz", seoDescription: "Auch daher." };
     const merged = mergeCopy(withSeo, { seo_title: "Im Panel getextet" });
     expect(merged.seoTitle).toBe("Im Panel getextet");
     expect(merged.seoDescription).toBe("Auch daher.");
@@ -108,7 +108,7 @@ describe("mergeCopy", () => {
   it("treats an emptied panel field as a withdrawal, not as a blank title", () => {
     // Leeren heisst im Panel: die committete Fassung wieder benutzen. Ein
     // leeres Feld darf deshalb nicht als Uebersteuerung durchgehen.
-    const withSeo = { ...tool, seoTitle: "Aus dem Manifest — kurz" };
-    expect(mergeCopy(withSeo, { seo_title: "   " }).seoTitle).toBe("Aus dem Manifest — kurz");
+    const withSeo = { ...tool, seoTitle: "Aus dem Manifest | kurz" };
+    expect(mergeCopy(withSeo, { seo_title: "   " }).seoTitle).toBe("Aus dem Manifest | kurz");
   });
 });

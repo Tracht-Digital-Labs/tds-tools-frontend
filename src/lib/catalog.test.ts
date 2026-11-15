@@ -187,7 +187,7 @@ describe("ads are off unless explicitly configured", () => {
     expect(await adsConfig()).toEqual(ADS_OFF);
   });
 
-  it("requires a real boolean — the string \"true\" does not enable ads", async () => {
+  it("requires a real boolean, the string \"true\" does not enable ads", async () => {
     fetchMock.mockResolvedValue(
       apiResponse({ tools: [], ads: { enabled: "true", publisherId: "ca-pub-123" } }),
     );

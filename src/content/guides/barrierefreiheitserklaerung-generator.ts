@@ -4,8 +4,8 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Es verpflichtet Unternehmen, die bestimmte Dienstleistungen an Verbraucher erbringen — Onlineshops, Buchungs- und Terminsysteme, Bankdienste, Personenbeförderung —, ihre digitalen Angebote barrierefrei zu gestalten und darüber öffentlich Auskunft zu geben. Öffentliche Stellen trifft dieselbe Auskunftspflicht schon länger, allerdings über einen anderen Weg: § 12b des Behindertengleichstellungsgesetzes und die Barrierefreie-Informationstechnik-Verordnung.",
-      "Das sind zwei verschiedene Erklärungen, und sie sehen einander zum Verwechseln ähnlich. Der Unterschied steht am Ende: Eine öffentliche Stelle verweist auf die Schlichtungsstelle nach § 16 BGG, ein Unternehmen auf die Marktüberwachungsstelle der Länder. Vertauscht sind beide Texte falsch — und zwar an einer Stelle, die niemand liest, solange sich niemand beschwert. Dieser Generator fragt deshalb als Erstes, wer die Erklärung abgibt, und richtet den ganzen Text danach aus.",
+      "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Es verpflichtet Unternehmen, die bestimmte Dienstleistungen an Verbraucher erbringen: Onlineshops, Buchungs- und Terminsysteme, Bankdienste, Personenbeförderung —, ihre digitalen Angebote barrierefrei zu gestalten und darüber öffentlich Auskunft zu geben. Öffentliche Stellen trifft dieselbe Auskunftspflicht schon länger, allerdings über einen anderen Weg: § 12b des Behindertengleichstellungsgesetzes und die Barrierefreie-Informationstechnik-Verordnung.",
+      "Das sind zwei verschiedene Erklärungen, und sie sehen einander zum Verwechseln ähnlich. Der Unterschied steht am Ende: Eine öffentliche Stelle verweist auf die Schlichtungsstelle nach § 16 BGG, ein Unternehmen auf die Marktüberwachungsstelle der Länder. Vertauscht sind beide Texte falsch, und zwar an einer Stelle, die niemand liest, solange sich niemand beschwert. Dieser Generator fragt deshalb als Erstes, wer die Erklärung abgibt, und richtet den ganzen Text danach aus.",
       "Alles Weitere ist die ehrliche Bestandsaufnahme: Ist das Angebot vollständig, teilweise oder nicht mit dem angewandten Standard vereinbar? Welche Inhalte sind es nicht, und warum? Wie erreicht man den Betreiber, wenn jemand an eine Hürde stößt, und wie schnell kommt eine Antwort? Eine Erklärung, die überall „vollständig vereinbar“ behauptet, ist selten glaubwürdig und im Zweifel eine falsche Angabe.",
     ],
     useCases: [
@@ -39,12 +39,12 @@ const guide: ToolGuideSet = {
       {
         title: "Angebot und Anbieter benennen",
         description:
-          "Wer gibt die Erklärung ab, und wofür gilt sie? Das Angebot wird so benannt, wie es die Nutzer kennen — „der Onlineshop shop.beispiel.de“ ist eine bessere Angabe als „unsere digitalen Angebote“.",
+          "Wer gibt die Erklärung ab, und wofür gilt sie? Das Angebot wird so benannt, wie es die Nutzer kennen, „der Onlineshop shop.beispiel.de“ ist eine bessere Angabe als „unsere digitalen Angebote“.",
       },
       {
         title: "Stand der Vereinbarkeit festhalten",
         description:
-          "Vollständig, teilweise oder nicht vereinbar, dazu der angewandte Standard. Unterhalb der vollständigen Vereinbarkeit verlangt der Generator eine Liste der nicht barrierefreien Inhalte — pauschale Sätze helfen niemandem, der auf eine Hürde gestoßen ist.",
+          "Vollständig, teilweise oder nicht vereinbar, dazu der angewandte Standard. Unterhalb der vollständigen Vereinbarkeit verlangt der Generator eine Liste der nicht barrierefreien Inhalte, pauschale Sätze helfen niemandem, der auf eine Hürde gestoßen ist.",
       },
       {
         title: "Begründung und Prüfverfahren angeben",
@@ -70,7 +70,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Was schreibe ich in die Liste der nicht barrierefreien Inhalte?",
-        a: "Konkret das, was bekannt ist: ein nicht getaggtes PDF, ein Video ohne Untertitel, ein Formular ohne verbundene Beschriftungen, eine Karte ohne Textalternative. Je genauer die Angabe, desto eher findet jemand den Weg zu der Fassung, die er nutzen kann — und desto glaubwürdiger ist die Erklärung insgesamt.",
+        a: "Konkret das, was bekannt ist: ein nicht getaggtes PDF, ein Video ohne Untertitel, ein Formular ohne verbundene Beschriftungen, eine Karte ohne Textalternative. Je genauer die Angabe, desto eher findet jemand den Weg zu der Fassung, die er nutzen kann, und desto glaubwürdiger ist die Erklärung insgesamt.",
       },
       {
         q: "Wie oft muss ich die Erklärung überprüfen?",
@@ -85,8 +85,8 @@ const guide: ToolGuideSet = {
   },
   en: {
     intro: [
-      "The German Accessibility Strengthening Act has applied since 28 June 2025. It obliges businesses providing certain services to consumers — online shops, booking and appointment systems, banking services, passenger transport — to make their digital offerings accessible and to say publicly where they stand. Public bodies have had the same duty for longer, but by a different route: section 12b of the Disability Equality Act and the Barrier-Free Information Technology Ordinance.",
-      "Those are two different statements, and they look confusingly alike. The difference is at the end: a public body points to the conciliation body under section 16 BGG, a business points to the market surveillance authority of the federal states. Swap them and both texts are wrong — in a place nobody reads until somebody complains. This generator therefore asks first who is issuing the statement, and shapes the whole text around that answer.",
+      "The German Accessibility Strengthening Act has applied since 28 June 2025. It obliges businesses providing certain services to consumers, online shops, booking and appointment systems, banking services, passenger transport, to make their digital offerings accessible and to say publicly where they stand. Public bodies have had the same duty for longer, but by a different route: section 12b of the Disability Equality Act and the Barrier-Free Information Technology Ordinance.",
+      "Those are two different statements, and they look confusingly alike. The difference is at the end: a public body points to the conciliation body under section 16 BGG, a business points to the market surveillance authority of the federal states. Swap them and both texts are wrong, in a place nobody reads until somebody complains. This generator therefore asks first who is issuing the statement, and shapes the whole text around that answer.",
       "Everything after that is an honest inventory: is the service fully, partially or not compliant with the standard applied? Which content is not, and why? How can people reach you when they hit a barrier, and how quickly do you answer? A statement claiming full compliance everywhere is rarely credible and, in case of doubt, an incorrect statement.",
     ],
     useCases: [
@@ -120,12 +120,12 @@ const guide: ToolGuideSet = {
       {
         title: "Name the service and the provider",
         description:
-          "Who is issuing the statement, and what does it cover? Name the service the way its users know it — “the online shop shop.example.com” is a better statement than “our digital offerings”.",
+          "Who is issuing the statement, and what does it cover? Name the service the way its users know it: “the online shop shop.example.com” is a better statement than “our digital offerings”.",
       },
       {
         title: "Record the compliance status",
         description:
-          "Fully, partially or not compliant, together with the standard applied. Below full compliance the generator asks for a list of the non-accessible content — blanket sentences help nobody who has just hit a barrier.",
+          "Fully, partially or not compliant, together with the standard applied. Below full compliance the generator asks for a list of the non-accessible content, blanket sentences help nobody who has just hit a barrier.",
       },
       {
         title: "State the reasoning and the assessment",
@@ -151,7 +151,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "What do I write into the list of non-accessible content?",
-        a: "Specifically what you know: an untagged PDF, a video without subtitles, a form without associated labels, a map without a text alternative. The more precise the entry, the more likely someone finds their way to a version they can use — and the more credible the statement is as a whole.",
+        a: "Specifically what you know: an untagged PDF, a video without subtitles, a form without associated labels, a map without a text alternative. The more precise the entry, the more likely someone finds their way to a version they can use, and the more credible the statement is as a whole.",
       },
       {
         q: "How often do I have to review the statement?",

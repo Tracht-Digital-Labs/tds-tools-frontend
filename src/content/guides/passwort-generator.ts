@@ -5,8 +5,8 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Die meisten Passwörter in kleinen Betrieben sind gewachsen, nicht gewählt: der Firmenname mit einer Jahreszahl, der Ort mit einem Ausrufezeichen, ein Muster, das sich auf der Tastatur gut anfühlt. Angriffe raten heute aber nicht Zeichen für Zeichen, sondern probieren Listen aus geleakten Passwörtern und ihre naheliegenden Abwandlungen durch. Gegen diese Listen hilft nur eines: ein Passwort, das niemand gewählt hat, sondern der Zufall.",
-      "Dieser Generator erzeugt genau solche Passwörter. Länge und Zeichenauswahl — Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen — sind frei einstellbar, und eine Anzeige schätzt die Stärke des Ergebnisses ein. Auf Wunsch bleiben leicht verwechselbare Zeichen wie große i, kleine L, Null und großes O außen vor: sinnvoll überall dort, wo ein Passwort auch einmal vorgelesen oder abgeschrieben werden muss.",
-      "Zur Einordnung: Länge wirkt stärker als Sonderzeichen. Ein zwanzig Zeichen langes Passwort aus Buchstaben und Ziffern ist erheblich schwerer zu brechen als ein achtstelliges mit drei Sonderzeichen — und mit einem Passwortmanager muss ohnehin niemand eines von beiden auswendig kennen.",
+      "Dieser Generator erzeugt genau solche Passwörter. Länge und Zeichenauswahl (Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen) sind frei einstellbar, und eine Anzeige schätzt die Stärke des Ergebnisses ein. Auf Wunsch bleiben leicht verwechselbare Zeichen wie große i, kleine L, Null und großes O außen vor: sinnvoll überall dort, wo ein Passwort auch einmal vorgelesen oder abgeschrieben werden muss.",
+      "Zur Einordnung: Länge wirkt stärker als Sonderzeichen. Ein zwanzig Zeichen langes Passwort aus Buchstaben und Ziffern ist erheblich schwerer zu brechen als ein achtstelliges mit drei Sonderzeichen, und mit einem Passwortmanager muss ohnehin niemand eines von beiden auswendig kennen.",
     ],
     useCases: [
       {
@@ -15,7 +15,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Router, Kasse, Netzwerkdrucker",
-        text: "Geräte, deren Werkspasswort im Handbuch steht und im Internet auffindbar ist. Hier ohne verwechselbare Zeichen erzeugen — es wird abgetippt.",
+        text: "Geräte, deren Werkspasswort im Handbuch steht und im Internet auffindbar ist. Hier ohne verwechselbare Zeichen erzeugen, es wird abgetippt.",
       },
       {
         title: "Gäste-WLAN mit eigenem Passwort",
@@ -23,7 +23,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Datenbank- und Dienstzugänge",
-        text: "Zugangsdaten, die nur Software benutzt, sollten maximal lang und zufällig sein — sie werden ohnehin nie von Hand eingegeben.",
+        text: "Zugangsdaten, die nur Software benutzt, sollten maximal lang und zufällig sein, sie werden ohnehin nie von Hand eingegeben.",
       },
       {
         title: "Verschlüsselte Archive und Sicherungen",
@@ -39,7 +39,7 @@ const guide: ToolGuideSet = {
       {
         title: "Zeichenarten auswählen",
         description:
-          "Großbuchstaben, Kleinbuchstaben, Ziffern und Sonderzeichen nach Bedarf aktivieren. Manche Systeme verbieten bestimmte Sonderzeichen — die werden dann hier abgeschaltet, statt das Ergebnis hinterher von Hand zu verändern.",
+          "Großbuchstaben, Kleinbuchstaben, Ziffern und Sonderzeichen nach Bedarf aktivieren. Manche Systeme verbieten bestimmte Sonderzeichen, die werden dann hier abgeschaltet, statt das Ergebnis hinterher von Hand zu verändern.",
       },
       {
         title: "Verwechselbare Zeichen ausschließen",
@@ -49,11 +49,11 @@ const guide: ToolGuideSet = {
       {
         title: "Erzeugen, prüfen, übernehmen",
         description:
-          "Ein neues Passwort erzeugen, auf die Stärkeanzeige achten und es direkt in den Passwortmanager kopieren. Dort gehört es abgelegt, bevor die Seite zugeht — das Werkzeug speichert nichts.",
+          "Ein neues Passwort erzeugen, auf die Stärkeanzeige achten und es direkt in den Passwortmanager kopieren. Dort gehört es abgelegt, bevor die Seite zugeht, das Werkzeug speichert nichts.",
       },
     ],
     privacy:
-      "Das Passwort entsteht im Browser über den kryptografischen Zufallsgenerator des Systems und verlässt das Gerät nicht. Es wird nicht übertragen, nicht protokolliert und nirgends zwischengespeichert; nach dem Schließen der Seite ist es weg. Bei einem Passwortgenerator ist das der entscheidende Punkt — ein Dienst, der das Passwort auf seinem Server erzeugt, kennt es, und niemand kann überprüfen, was er damit tut.",
+      "Das Passwort entsteht im Browser über den kryptografischen Zufallsgenerator des Systems und verlässt das Gerät nicht. Es wird nicht übertragen, nicht protokolliert und nirgends zwischengespeichert; nach dem Schließen der Seite ist es weg. Bei einem Passwortgenerator ist das der entscheidende Punkt, ein Dienst, der das Passwort auf seinem Server erzeugt, kennt es, und niemand kann überprüfen, was er damit tut.",
     faq: [
       {
         q: "Wie lang sollte ein Passwort sein?",
@@ -61,11 +61,11 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Ist der Zufall hier wirklich zufällig?",
-        a: "Das Werkzeug nutzt die Schnittstelle crypto.getRandomValues des Browsers, also den kryptografisch sicheren Zufallsgenerator des Betriebssystems. Das ist derselbe Mechanismus, auf dem auch die Verschlüsselung jeder sicheren Verbindung aufbaut — kein simpler Zufall wie bei Math.random.",
+        a: "Das Werkzeug nutzt die Schnittstelle crypto.getRandomValues des Browsers, also den kryptografisch sicheren Zufallsgenerator des Betriebssystems. Das ist derselbe Mechanismus, auf dem auch die Verschlüsselung jeder sicheren Verbindung aufbaut, kein simpler Zufall wie bei Math.random.",
       },
       {
         q: "Muss ich Passwörter regelmäßig wechseln?",
-        a: "Nach heutiger Empfehlung des BSI nicht mehr routinemäßig. Ein starkes, einzigartiges Passwort bleibt so lange gültig, bis es Anlass zur Sorge gibt — etwa nach einem bekannt gewordenen Datenleck. Erzwungene Wechsel führen erfahrungsgemäß zu schwächeren Passwörtern mit hochgezählter Endziffer.",
+        a: "Nach heutiger Empfehlung des BSI nicht mehr routinemäßig. Ein starkes, einzigartiges Passwort bleibt so lange gültig, bis es Anlass zur Sorge gibt, etwa nach einem bekannt gewordenen Datenleck. Erzwungene Wechsel führen erfahrungsgemäß zu schwächeren Passwörtern mit hochgezählter Endziffer.",
       },
       {
         q: "Wie merke ich mir solche Passwörter?",
@@ -73,16 +73,16 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Kann ich das Werkzeug im Betrieb einsetzen?",
-        a: "Ja, es ist kostenlos, ohne Anmeldung nutzbar und läuft lokal — es gibt keine Übertragung, die eine betriebliche Richtlinie verletzen könnte. Sollen Zugänge für mehrere Personen strukturiert verwaltet werden, ist ein Passwortmanager der nächste Schritt.",
+        a: "Ja, es ist kostenlos, ohne Anmeldung nutzbar und läuft lokal, es gibt keine Übertragung, die eine betriebliche Richtlinie verletzen könnte. Sollen Zugänge für mehrere Personen strukturiert verwaltet werden, ist ein Passwortmanager der nächste Schritt.",
       },
     ],
     related: ["qr-code-generator", "json-formatter"],
   },
   en: {
     intro: [
-      "Most passwords in a small business have grown rather than been chosen: the company name with a year, the town with an exclamation mark, a pattern that feels good on the keyboard. Attacks today do not guess character by character, though — they work through lists of leaked passwords and their obvious variations. There is only one defence against those lists: a password nobody chose, but chance produced.",
-      "This generator produces exactly that kind of password. You set the length and the character sets — upper case, lower case, digits, symbols — and a meter estimates the strength of the result. Optionally, easily confused characters such as capital i, lower-case L, zero and capital O are left out: worth doing wherever a password will be read aloud or copied by hand.",
-      "For perspective: length does more than symbols do. A twenty-character password of letters and digits is considerably harder to break than an eight-character one with three symbols — and you need to memorise neither of them if you use a password manager.",
+      "Most passwords in a small business have grown rather than been chosen: the company name with a year, the town with an exclamation mark, a pattern that feels good on the keyboard. Attacks today do not guess character by character, though, they work through lists of leaked passwords and their obvious variations. There is only one defence against those lists: a password nobody chose, but chance produced.",
+      "This generator produces exactly that kind of password. You set the length and the character sets (upper case, lower case, digits, symbols) and a meter estimates the strength of the result. Optionally, easily confused characters such as capital i, lower-case L, zero and capital O are left out: worth doing wherever a password will be read aloud or copied by hand.",
+      "For perspective: length does more than symbols do. A twenty-character password of letters and digits is considerably harder to break than an eight-character one with three symbols, and you need to memorise neither of them if you use a password manager.",
     ],
     useCases: [
       {
@@ -91,7 +91,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Router, till, network printer",
-        text: "Devices whose factory password is printed in the manual and findable online. Generate these without ambiguous characters — they get typed by hand.",
+        text: "Devices whose factory password is printed in the manual and findable online. Generate these without ambiguous characters, they get typed by hand.",
       },
       {
         title: "Guest Wi-Fi with its own password",
@@ -99,7 +99,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Database and service accounts",
-        text: "Credentials only software ever uses should be as long and as random as possible — they are never typed by a person anyway.",
+        text: "Credentials only software ever uses should be as long and as random as possible, they are never typed by a person anyway.",
       },
       {
         title: "Encrypted archives and backups",
@@ -115,7 +115,7 @@ const guide: ToolGuideSet = {
       {
         title: "Pick the character sets",
         description:
-          "Enable upper case, lower case, digits and symbols as needed. Some systems forbid particular symbols — switch them off here rather than editing the result by hand afterwards.",
+          "Enable upper case, lower case, digits and symbols as needed. Some systems forbid particular symbols, switch them off here rather than editing the result by hand afterwards.",
       },
       {
         title: "Exclude ambiguous characters",
@@ -125,11 +125,11 @@ const guide: ToolGuideSet = {
       {
         title: "Generate, check, store",
         description:
-          "Generate a password, watch the strength meter, and copy it straight into your password manager. Store it there before you close the page — the tool keeps nothing.",
+          "Generate a password, watch the strength meter, and copy it straight into your password manager. Store it there before you close the page, the tool keeps nothing.",
       },
     ],
     privacy:
-      "The password is created in your browser using the operating system's cryptographic random generator, and it does not leave your device. It is not transmitted, not logged and not cached anywhere; once you close the page it is gone. With a password generator that is the decisive point — a service that generates the password on its server knows it, and you have no way to check what it does with it.",
+      "The password is created in your browser using the operating system's cryptographic random generator, and it does not leave your device. It is not transmitted, not logged and not cached anywhere; once you close the page it is gone. With a password generator that is the decisive point, a service that generates the password on its server knows it, and you have no way to check what it does with it.",
     faq: [
       {
         q: "How long should a password be?",
@@ -137,11 +137,11 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Is the randomness here genuinely random?",
-        a: "The tool uses the browser's crypto.getRandomValues interface, which is the operating system's cryptographically secure random generator. That is the same mechanism your encrypted connections are built on — not the simple randomness of Math.random.",
+        a: "The tool uses the browser's crypto.getRandomValues interface, which is the operating system's cryptographically secure random generator. That is the same mechanism your encrypted connections are built on, not the simple randomness of Math.random.",
       },
       {
         q: "Should I change passwords regularly?",
-        a: "By current guidance, not as a routine. A strong, unique password stays valid until there is a reason for concern — after a known breach, for instance. Forced rotation reliably produces weaker passwords with an incremented digit on the end.",
+        a: "By current guidance, not as a routine. A strong, unique password stays valid until there is a reason for concern, after a known breach, for instance. Forced rotation reliably produces weaker passwords with an incremented digit on the end.",
       },
       {
         q: "How am I supposed to remember these?",

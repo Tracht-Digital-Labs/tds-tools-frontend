@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Ein Bild, das eine Maschine erzeugt hat, sieht man ihm immer seltener an. Genau deshalb verlangt die KI-Verordnung der Europäischen Union eine Kennzeichnung — und sie verlangt sie zweimal: Wer ein System betreibt, das synthetische Inhalte erzeugt, muss die Ausgabe maschinenlesbar als künstlich erzeugt markieren; wer ein solches Bild veröffentlicht, muss das für die Betrachter offenlegen. Die Transparenzpflichten des Art. 50 greifen ab dem 2. August 2026.",
-      "Dieses Werkzeug bedient beide Hälften. Es brennt eine Plakette mit einem Hinweis wie „KI-generiert“ in das Bild — Ecke, Größe, Deckkraft und Stil sind frei wählbar — und es schreibt zusätzlich einen maschinenlesbaren Vermerk in die Datei: als Textabschnitt in ein PNG, als Kommentarsegment in ein JPEG. Beides passiert im Browser, ohne Upload und ohne Anmeldung.",
-      "Zwei Dinge sagt das Werkzeug offen, statt sie zu verschweigen. WebP kann den maschinenlesbaren Vermerk nicht tragen; in diesem Format gibt es nur die sichtbare Kennzeichnung, und die Insel weist darauf hin. Und das Bild wird beim Erzeugen neu gezeichnet, wodurch vorhandene Aufnahmedaten des Originals verloren gehen — bei einem Werkzeug, das Metadaten hinzufügt, ist das eine Nebenwirkung, die man kennen sollte.",
+      "Ein Bild, das eine Maschine erzeugt hat, sieht man ihm immer seltener an. Genau deshalb verlangt die KI-Verordnung der Europäischen Union eine Kennzeichnung, und sie verlangt sie zweimal: Wer ein System betreibt, das synthetische Inhalte erzeugt, muss die Ausgabe maschinenlesbar als künstlich erzeugt markieren; wer ein solches Bild veröffentlicht, muss das für die Betrachter offenlegen. Die Transparenzpflichten des Art. 50 greifen ab dem 2. August 2026.",
+      "Dieses Werkzeug bedient beide Hälften. Es brennt eine Plakette mit einem Hinweis wie „KI-generiert“ in das Bild (Ecke, Größe, Deckkraft und Stil sind frei wählbar) und es schreibt zusätzlich einen maschinenlesbaren Vermerk in die Datei: als Textabschnitt in ein PNG, als Kommentarsegment in ein JPEG. Beides passiert im Browser, ohne Upload und ohne Anmeldung.",
+      "Zwei Dinge sagt das Werkzeug offen, statt sie zu verschweigen. WebP kann den maschinenlesbaren Vermerk nicht tragen; in diesem Format gibt es nur die sichtbare Kennzeichnung, und die Insel weist darauf hin. Und das Bild wird beim Erzeugen neu gezeichnet, wodurch vorhandene Aufnahmedaten des Originals verloren gehen, bei einem Werkzeug, das Metadaten hinzufügt, ist das eine Nebenwirkung, die man kennen sollte.",
     ],
     useCases: [
       {
@@ -39,7 +39,7 @@ const guide: ToolGuideSet = {
       {
         title: "Text und Ecke festlegen",
         description:
-          "Einen der Vorschläge nehmen oder einen eigenen Hinweis schreiben. Die Ecke sollte dorthin zeigen, wo im Bild wenig passiert — eine Plakette über einem Gesicht liest sich schlecht und wird beim Zuschneiden zuerst geopfert.",
+          "Einen der Vorschläge nehmen oder einen eigenen Hinweis schreiben. Die Ecke sollte dorthin zeigen, wo im Bild wenig passiert, eine Plakette über einem Gesicht liest sich schlecht und wird beim Zuschneiden zuerst geopfert.",
       },
       {
         title: "Größe, Deckkraft und Stil einstellen",
@@ -49,7 +49,7 @@ const guide: ToolGuideSet = {
       {
         title: "Format wählen und Hinweis einbetten",
         description:
-          "PNG bewahrt die Bildqualität und trägt den maschinenlesbaren Vermerk, JPEG ebenfalls und ist kleiner. WebP ist am kleinsten, kann den Vermerk aber nicht aufnehmen — das Ankreuzfeld bleibt dann wirkungslos, und der Hinweis darunter sagt es.",
+          "PNG bewahrt die Bildqualität und trägt den maschinenlesbaren Vermerk, JPEG ebenfalls und ist kleiner. WebP ist am kleinsten, kann den Vermerk aber nicht aufnehmen, das Ankreuzfeld bleibt dann wirkungslos, und der Hinweis darunter sagt es.",
       },
       {
         title: "Erzeugen und herunterladen",
@@ -58,11 +58,11 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Das Bild verlässt das Gerät nicht. Es wird über eine Zeichenfläche im Browser gelesen, mit der Plakette versehen und dort auch wieder als Datei zusammengesetzt; einen Server, an den es gehen könnte, gibt es in diesem Werkzeug nicht. Das ist bei Bildern eine andere Größenordnung als bei einem Textschnipsel: Ein Foto trägt oft mehr Nebeninformation, als der Absender vermutet — Aufnahmeort, Gerät, Zeitpunkt. Und genau diese Aufnahmedaten verwirft der Zeichenvorgang, worauf das Werkzeug auch hinweist.",
+      "Das Bild verlässt das Gerät nicht. Es wird über eine Zeichenfläche im Browser gelesen, mit der Plakette versehen und dort auch wieder als Datei zusammengesetzt; einen Server, an den es gehen könnte, gibt es in diesem Werkzeug nicht. Das ist bei Bildern eine andere Größenordnung als bei einem Textschnipsel: Ein Foto trägt oft mehr Nebeninformation, als der Absender vermutet: Aufnahmeort, Gerät, Zeitpunkt. Und genau diese Aufnahmedaten verwirft der Zeichenvorgang, worauf das Werkzeug auch hinweist.",
     faq: [
       {
         q: "Ab wann muss ich KI-Bilder kennzeichnen?",
-        a: "Die Transparenzpflichten des Art. 50 der KI-Verordnung gelten ab dem 2. August 2026. Unabhängig davon können sich Kennzeichnungspflichten schon heute aus dem Wettbewerbsrecht oder aus den Regeln einzelner Plattformen ergeben — eine Kennzeichnung vorher ist also kein vergebener Aufwand.",
+        a: "Die Transparenzpflichten des Art. 50 der KI-Verordnung gelten ab dem 2. August 2026. Unabhängig davon können sich Kennzeichnungspflichten schon heute aus dem Wettbewerbsrecht oder aus den Regeln einzelner Plattformen ergeben, eine Kennzeichnung vorher ist also kein vergebener Aufwand.",
       },
       {
         q: "Reicht die sichtbare Plakette allein?",
@@ -74,7 +74,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Bleiben die EXIF-Daten des Originals erhalten?",
-        a: "Nein. Das Bild wird auf eine Zeichenfläche neu gezeichnet, und dabei gehen Aufnahmedaten wie Kamera, Zeitpunkt und Aufnahmeort verloren. Wer diese Angaben braucht, bewahrt das Original auf. Für ein rein synthetisches Bild ist der Verlust ohne Bedeutung — es hatte nie welche.",
+        a: "Nein. Das Bild wird auf eine Zeichenfläche neu gezeichnet, und dabei gehen Aufnahmedaten wie Kamera, Zeitpunkt und Aufnahmeort verloren. Wer diese Angaben braucht, bewahrt das Original auf. Für ein rein synthetisches Bild ist der Verlust ohne Bedeutung, es hatte nie welche.",
       },
       {
         q: "Kann jemand die Kennzeichnung wieder entfernen?",
@@ -85,9 +85,9 @@ const guide: ToolGuideSet = {
   },
   en: {
     intro: [
-      "It gets harder every year to see that a picture was made by a machine. That is exactly why the European Union's AI Act requires labelling — and it requires it twice over: whoever runs a system that produces synthetic content must mark the output as artificially generated in a machine-readable form, and whoever publishes such a picture must disclose that to the people looking at it. The transparency duties in Article 50 apply from 2 August 2026.",
-      "This tool covers both halves. It burns a badge carrying a note such as “AI-generated” into the picture — you choose the corner, the size, the opacity and the style — and it additionally writes a machine-readable note into the file: a text chunk in a PNG, a comment segment in a JPEG. Both happen in the browser, with no upload and no sign-up.",
-      "Two things the tool states openly rather than glossing over. WebP cannot carry the machine-readable note; choose that format and you get the visible label only, and the island says so. And producing the image redraws it, which discards any capture data the original held — for a tool that adds metadata, that is a side effect worth knowing about.",
+      "It gets harder every year to see that a picture was made by a machine. That is exactly why the European Union's AI Act requires labelling, and it requires it twice over: whoever runs a system that produces synthetic content must mark the output as artificially generated in a machine-readable form, and whoever publishes such a picture must disclose that to the people looking at it. The transparency duties in Article 50 apply from 2 August 2026.",
+      "This tool covers both halves. It burns a badge carrying a note such as “AI-generated” into the picture (you choose the corner, the size, the opacity and the style) and it additionally writes a machine-readable note into the file: a text chunk in a PNG, a comment segment in a JPEG. Both happen in the browser, with no upload and no sign-up.",
+      "Two things the tool states openly rather than glossing over. WebP cannot carry the machine-readable note; choose that format and you get the visible label only, and the island says so. And producing the image redraws it, which discards any capture data the original held, for a tool that adds metadata, that is a side effect worth knowing about.",
     ],
     useCases: [
       {
@@ -120,7 +120,7 @@ const guide: ToolGuideSet = {
       {
         title: "Set the text and the corner",
         description:
-          "Pick one of the suggestions or write a note of your own. The corner should sit where little is happening in the picture — a badge across a face reads badly and is the first thing sacrificed when the image is cropped.",
+          "Pick one of the suggestions or write a note of your own. The corner should sit where little is happening in the picture, a badge across a face reads badly and is the first thing sacrificed when the image is cropped.",
       },
       {
         title: "Adjust size, opacity and style",
@@ -130,7 +130,7 @@ const guide: ToolGuideSet = {
       {
         title: "Choose a format and embed the note",
         description:
-          "PNG keeps the image quality and carries the machine-readable note, JPEG does too and is smaller. WebP is the smallest but cannot take the note — the tick box then has no effect, and the line underneath says so.",
+          "PNG keeps the image quality and carries the machine-readable note, JPEG does too and is smaller. WebP is the smallest but cannot take the note, the tick box then has no effect, and the line underneath says so.",
       },
       {
         title: "Produce it and download",
@@ -139,11 +139,11 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Your image never leaves the device. It is read onto a canvas in the browser, given the badge, and reassembled into a file right there; this tool has no server it could send anything to. With pictures that is a different order of magnitude from a snippet of text: a photograph often carries more incidental information than the sender assumes — where it was taken, on what, and when. And it is precisely that capture data the redraw discards, which the tool also points out.",
+      "Your image never leaves the device. It is read onto a canvas in the browser, given the badge, and reassembled into a file right there; this tool has no server it could send anything to. With pictures that is a different order of magnitude from a snippet of text: a photograph often carries more incidental information than the sender assumes, where it was taken, on what, and when. And it is precisely that capture data the redraw discards, which the tool also points out.",
     faq: [
       {
         q: "From when do I have to label AI images?",
-        a: "The transparency duties in Article 50 of the AI Act apply from 2 August 2026. Independently of that, labelling obligations can already follow today from competition law or from the rules of individual platforms — so labelling earlier is not wasted effort.",
+        a: "The transparency duties in Article 50 of the AI Act apply from 2 August 2026. Independently of that, labelling obligations can already follow today from competition law or from the rules of individual platforms, so labelling earlier is not wasted effort.",
       },
       {
         q: "Is the visible badge on its own enough?",
@@ -155,7 +155,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Is the original EXIF data kept?",
-        a: "No. The image is redrawn onto a canvas, and capture data such as the camera, the time and the location is lost in the process. If you need those details, keep the original. For a purely synthetic picture the loss means nothing — it never had any.",
+        a: "No. The image is redrawn onto a canvas, and capture data such as the camera, the time and the location is lost in the process. If you need those details, keep the original. For a purely synthetic picture the loss means nothing, it never had any.",
       },
       {
         q: "Can somebody remove the label again?",

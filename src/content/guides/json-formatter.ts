@@ -4,8 +4,8 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "JSON ist das Format, in dem sich Programme heute Daten schicken: Schnittstellen antworten damit, Konfigurationsdateien sind darin geschrieben, Exporte aus Warenwirtschaft, Shop oder Buchhaltung liegen oft in dieser Form vor. Solange alles funktioniert, sieht man es nie. Man sieht es genau dann, wenn etwas klemmt — und dann meist als eine einzige, endlos lange Zeile ohne Umbrüche.",
-      "Dieses Werkzeug macht daraus lesbaren Text: Es rückt die Struktur ein, prüft sie auf Gültigkeit und nennt bei einem Fehler die Stelle mit Zeile und Spalte, statt nur zu behaupten, irgendwo stimme etwas nicht. Umgekehrt minimiert es auch — entfernt also alle überflüssigen Leerzeichen, wenn die Daten wieder kompakt weitergegeben werden sollen.",
+      "JSON ist das Format, in dem sich Programme heute Daten schicken: Schnittstellen antworten damit, Konfigurationsdateien sind darin geschrieben, Exporte aus Warenwirtschaft, Shop oder Buchhaltung liegen oft in dieser Form vor. Solange alles funktioniert, sieht man es nie. Man sieht es genau dann, wenn etwas klemmt, und dann meist als eine einzige, endlos lange Zeile ohne Umbrüche.",
+      "Dieses Werkzeug macht daraus lesbaren Text: Es rückt die Struktur ein, prüft sie auf Gültigkeit und nennt bei einem Fehler die Stelle mit Zeile und Spalte, statt nur zu behaupten, irgendwo stimme etwas nicht. Umgekehrt minimiert es auch, entfernt also alle überflüssigen Leerzeichen, wenn die Daten wieder kompakt weitergegeben werden sollen.",
       "Für den Alltag heißt das: Eine Schnittstellenantwort lässt sich selbst ansehen, bevor sie weitergeht, und eine abgelehnte Konfigurationsdatei prüfen, ohne zu raten. Häufigste Ursachen sind ein Komma hinter dem letzten Eintrag, einfache statt doppelte Anführungszeichen und eine Klammer, die nicht geschlossen wurde.",
     ],
     useCases: [
@@ -23,7 +23,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Daten kompakt weitergeben",
-        text: "Minimiertes JSON spart Platz und Übertragungszeit — sinnvoll überall dort, wo die Datei nicht von Menschen gelesen wird.",
+        text: "Minimiertes JSON spart Platz und Übertragungszeit, sinnvoll überall dort, wo die Datei nicht von Menschen gelesen wird.",
       },
       {
         title: "Fehler nachvollziehbar melden",
@@ -34,7 +34,7 @@ const guide: ToolGuideSet = {
       {
         title: "JSON einfügen",
         description:
-          "Den Inhalt in das Eingabefeld einfügen — eine ganze Datei, eine Schnittstellenantwort oder auch nur den Ausschnitt, um den es geht.",
+          "Den Inhalt in das Eingabefeld einfügen, eine ganze Datei, eine Schnittstellenantwort oder auch nur den Ausschnitt, um den es geht.",
       },
       {
         title: "Formatieren oder prüfen",
@@ -49,15 +49,15 @@ const guide: ToolGuideSet = {
       {
         title: "Ergebnis übernehmen",
         description:
-          "Das eingerückte Ergebnis zur Weiterverwendung kopieren — oder vorher minimieren, wenn es maschinell weiterverarbeitet wird.",
+          "Das eingerückte Ergebnis zur Weiterverwendung kopieren, oder vorher minimieren, wenn es maschinell weiterverarbeitet wird.",
       },
     ],
     privacy:
-      "Die Verarbeitung findet vollständig im Browser statt; der eingefügte Inhalt wird nicht übertragen, nicht gespeichert und nicht protokolliert. Das ist bei diesem Werkzeug mehr als eine Formalie: In JSON-Daten stehen regelmäßig Kundendaten, Bestellungen, Zugangsschlüssel oder Preise. Wer solche Inhalte in ein beliebiges Online-Formular einfügt, gibt sie aus der Hand — hier verlassen sie das Gerät nicht.",
+      "Die Verarbeitung findet vollständig im Browser statt; der eingefügte Inhalt wird nicht übertragen, nicht gespeichert und nicht protokolliert. Das ist bei diesem Werkzeug mehr als eine Formalie: In JSON-Daten stehen regelmäßig Kundendaten, Bestellungen, Zugangsschlüssel oder Preise. Wer solche Inhalte in ein beliebiges Online-Formular einfügt, gibt sie aus der Hand, hier verlassen sie das Gerät nicht.",
     faq: [
       {
         q: "Werden meine Daten hochgeladen?",
-        a: "Nein. Das Formatieren und Prüfen läuft als JavaScript im Browser. Es gibt keinen Server, der den Inhalt entgegennimmt — nach dem Laden funktioniert die Seite auch ohne Netz weiter.",
+        a: "Nein. Das Formatieren und Prüfen läuft als JavaScript im Browser. Es gibt keinen Server, der den Inhalt entgegennimmt, nach dem Laden funktioniert die Seite auch ohne Netz weiter.",
       },
       {
         q: "Was bedeutet die Fehlermeldung mit Position?",
@@ -69,7 +69,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Kann ich sehr große Dateien verarbeiten?",
-        a: "Bis in den Bereich einiger Megabyte arbeitet das Werkzeug problemlos. Weil alles im Browser läuft, ist die Grenze der Arbeitsspeicher des Geräts — bei sehr großen Exporten wird die Seite langsam, statt eine Fehlermeldung zu zeigen.",
+        a: "Bis in den Bereich einiger Megabyte arbeitet das Werkzeug problemlos. Weil alles im Browser läuft, ist die Grenze der Arbeitsspeicher des Geräts, bei sehr großen Exporten wird die Seite langsam, statt eine Fehlermeldung zu zeigen.",
       },
       {
         q: "Verändert das Formatieren meine Daten?",
@@ -80,8 +80,8 @@ const guide: ToolGuideSet = {
   },
   en: {
     intro: [
-      "JSON is the format programs use to send each other data today: interfaces answer in it, configuration files are written in it, and exports from inventory, shop or accounting systems often arrive in this shape. As long as everything works, you never see it. You see it precisely when something jams — and then usually as one endless line with no breaks in it.",
-      "This tool turns that into readable text: it indents the structure, checks that it is valid, and on an error names the spot with a line and a column instead of merely claiming something is wrong somewhere. It also does the reverse — stripping every unnecessary space when the data needs to go back out compactly.",
+      "JSON is the format programs use to send each other data today: interfaces answer in it, configuration files are written in it, and exports from inventory, shop or accounting systems often arrive in this shape. As long as everything works, you never see it. You see it precisely when something jams, and then usually as one endless line with no breaks in it.",
+      "This tool turns that into readable text: it indents the structure, checks that it is valid, and on an error names the spot with a line and a column instead of merely claiming something is wrong somewhere. It also does the reverse, stripping every unnecessary space when the data needs to go back out compactly.",
       "In practice that means you can inspect an interface response yourself before passing it on, and check a rejected configuration file without guessing. The most common causes are a comma after the last entry, single instead of double quotes, and a bracket that was never closed.",
     ],
     useCases: [
@@ -99,7 +99,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Passing data on compactly",
-        text: "Minified JSON saves space and transfer time — worth doing wherever the file is not read by people.",
+        text: "Minified JSON saves space and transfer time, worth doing wherever the file is not read by people.",
       },
       {
         title: "Reporting an error usefully",
@@ -110,7 +110,7 @@ const guide: ToolGuideSet = {
       {
         title: "Paste the JSON",
         description:
-          "Drop the content into the input field — a whole file, an interface response, or just the excerpt you are asking about.",
+          "Drop the content into the input field, a whole file, an interface response, or just the excerpt you are asking about.",
       },
       {
         title: "Format or validate",
@@ -125,15 +125,15 @@ const guide: ToolGuideSet = {
       {
         title: "Take the result",
         description:
-          "Copy the indented output for onward use — or minify it first if it is going to be processed by a machine.",
+          "Copy the indented output for onward use, or minify it first if it is going to be processed by a machine.",
       },
     ],
     privacy:
-      "Processing happens entirely in your browser; the content you paste is not transmitted, not stored and not logged. With this tool that is more than a formality: JSON data regularly contains customer records, orders, access keys or prices. Pasting that into an arbitrary online form gives it away — here it never leaves your device.",
+      "Processing happens entirely in your browser; the content you paste is not transmitted, not stored and not logged. With this tool that is more than a formality: JSON data regularly contains customer records, orders, access keys or prices. Pasting that into an arbitrary online form gives it away, here it never leaves your device.",
     faq: [
       {
         q: "Is my data uploaded?",
-        a: "No. Formatting and validation run as JavaScript in your browser. There is no server that receives the content — you can disconnect from the network after the page loads and keep working.",
+        a: "No. Formatting and validation run as JavaScript in your browser. There is no server that receives the content, you can disconnect from the network after the page loads and keep working.",
       },
       {
         q: "What does the error position mean?",
@@ -145,7 +145,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Can I process very large files?",
-        a: "Up to the low megabytes the tool handles it comfortably. Because everything runs in the browser, the limit is your device's memory — with very large exports the page slows down rather than showing an error.",
+        a: "Up to the low megabytes the tool handles it comfortably. Because everything runs in the browser, the limit is your device's memory, with very large exports the page slows down rather than showing an error.",
       },
       {
         q: "Does formatting change my data?",

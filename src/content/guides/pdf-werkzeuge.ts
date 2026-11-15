@@ -5,8 +5,8 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "PDF ist das Format, in dem Angebote, Rechnungen, Lieferscheine und Nachweise durch den Betrieb wandern. Genau deshalb fallen ständig kleine Handgriffe an: drei Scans zu einem Dokument zusammenfassen, aus einem zwanzigseitigen Vertrag die zwei relevanten Seiten herauslösen, eine quer eingezogene Seite geraderücken.",
-      "Diese Werkzeuge erledigen genau das — zusammenführen, aufteilen und drehen. Beim Zusammenführen ist die Reihenfolge frei wählbar, beim Aufteilen genügt ein Seitenbereich wie 1-3,5, und das Drehen wirkt auf die gewählten Seiten. Das Ergebnis steht unmittelbar als neue Datei zum Herunterladen bereit.",
-      "Der übliche Weg für diese Aufgaben führt über einen der großen Online-Dienste — und damit über einen Upload. Bei einem Angebot mit Preisen, einer Rechnung mit Bankverbindung oder einer Personalakte ist das der Punkt, an dem es aufhört, eine reine Bequemlichkeitsfrage zu sein. Hier bleibt die Datei auf dem eigenen Gerät.",
+      "Diese Werkzeuge erledigen genau das, zusammenführen, aufteilen und drehen. Beim Zusammenführen ist die Reihenfolge frei wählbar, beim Aufteilen genügt ein Seitenbereich wie 1-3,5, und das Drehen wirkt auf die gewählten Seiten. Das Ergebnis steht unmittelbar als neue Datei zum Herunterladen bereit.",
+      "Der übliche Weg für diese Aufgaben führt über einen der großen Online-Dienste, und damit über einen Upload. Bei einem Angebot mit Preisen, einer Rechnung mit Bankverbindung oder einer Personalakte ist das der Punkt, an dem es aufhört, eine reine Bequemlichkeitsfrage zu sein. Hier bleibt die Datei auf dem eigenen Gerät.",
     ],
     useCases: [
       {
@@ -53,7 +53,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Die PDFs werden nicht hochgeladen. Der Browser liest sie und schreibt sie dort neu; keine Seite und keine Datei verlässt das Gerät. Bei Dokumenten aus dem Geschäftsbetrieb ist das der eigentliche Grund, dieses Werkzeug einem der großen Online-Dienste vorzuziehen: Wer ein Angebot, eine Rechnung oder eine Personalakte auf einen fremden Server lädt, verarbeitet damit personenbezogene oder vertrauliche Daten außerhalb des eigenen Hauses — mit allem, was daran hängt.",
+      "Die PDFs werden nicht hochgeladen. Der Browser liest sie und schreibt sie dort neu; keine Seite und keine Datei verlässt das Gerät. Bei Dokumenten aus dem Geschäftsbetrieb ist das der eigentliche Grund, dieses Werkzeug einem der großen Online-Dienste vorzuziehen: Wer ein Angebot, eine Rechnung oder eine Personalakte auf einen fremden Server lädt, verarbeitet damit personenbezogene oder vertrauliche Daten außerhalb des eigenen Hauses, mit allem, was daran hängt.",
     faq: [
       {
         q: "Werden meine Dokumente hochgeladen?",
@@ -65,7 +65,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Bleibt die Qualität erhalten?",
-        a: "Ja. Die Seiten werden übernommen, nicht neu gerendert — Text bleibt Text, eingebettete Schriften und Auflösung bleiben unverändert. Es findet keine Kompression statt.",
+        a: "Ja. Die Seiten werden übernommen, nicht neu gerendert: Text bleibt Text, eingebettete Schriften und Auflösung bleiben unverändert. Es findet keine Kompression statt.",
       },
       {
         q: "Funktionieren passwortgeschützte PDFs?",
@@ -73,7 +73,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Warum ist dieses Werkzeug kostenpflichtig?",
-        a: "Die frei zugänglichen Werkzeuge auf dieser Seite finanzieren sich über Werbung. Die PDF-Werkzeuge kommen ohne Werbung aus und sind stattdessen einmalig freizuschalten — bei Dokumenten aus dem Geschäftsbetrieb ist eine werbefreie, rein lokale Verarbeitung der ehrlichere Handel.",
+        a: "Die frei zugänglichen Werkzeuge auf dieser Seite finanzieren sich über Werbung. Die PDF-Werkzeuge kommen ohne Werbung aus und sind stattdessen einmalig freizuschalten, bei Dokumenten aus dem Geschäftsbetrieb ist eine werbefreie, rein lokale Verarbeitung der ehrlichere Handel.",
       },
     ],
     related: ["pdf-wasserzeichen", "bild-komprimieren"],
@@ -81,7 +81,7 @@ const guide: ToolGuideSet = {
   en: {
     intro: [
       "PDF is the format in which quotes, invoices, delivery notes and certificates travel through a business. That is exactly why small jobs come up constantly: combining three scans into one document, pulling the two relevant pages out of a twenty-page contract, straightening a page that went through the feeder sideways.",
-      "These tools do precisely that — merge, split and rotate. Merging lets you set the order, splitting takes a page range such as 1-3,5, and rotating applies to the pages you choose. You download the result immediately as a new file.",
+      "These tools do precisely that, merge, split and rotate. Merging lets you set the order, splitting takes a page range such as 1-3,5, and rotating applies to the pages you choose. You download the result immediately as a new file.",
       "The usual route for these jobs runs through one of the large online services, and therefore through an upload. With a quote carrying prices, an invoice carrying bank details or a personnel file, that is the point where it stops being a question of convenience. Here the file stays on your device.",
     ],
     useCases: [
@@ -141,7 +141,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Is quality preserved?",
-        a: "Yes. Pages are carried over rather than re-rendered — text stays text, embedded fonts and resolution are unchanged. No compression takes place.",
+        a: "Yes. Pages are carried over rather than re-rendered, text stays text, embedded fonts and resolution are unchanged. No compression takes place.",
       },
       {
         q: "Do password-protected PDFs work?",
@@ -149,7 +149,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Why does this tool cost money?",
-        a: "The freely available tools on this site are funded by advertising. The PDF tools carry no advertising and are unlocked once instead — with documents from a business, ad-free and purely local processing is the more honest trade.",
+        a: "The freely available tools on this site are funded by advertising. The PDF tools carry no advertising and are unlocked once instead, with documents from a business, ad-free and purely local processing is the more honest trade.",
       },
     ],
     related: ["pdf-wasserzeichen", "bild-komprimieren"],

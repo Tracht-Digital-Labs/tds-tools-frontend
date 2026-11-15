@@ -5,7 +5,7 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Ein Designsystem ist die Sammlung von Regeln, nach denen eine Website aussieht: welche Farben, welche Schriften, welche Abstände, wie ein Button aussieht und wie er reagiert, wenn man mit der Maus darüberfährt. Wer diese Regeln einmal festlegt, statt jede Seite einzeln zu gestalten, bekommt einen einheitlichen Auftritt und spart bei jeder Erweiterung Zeit.",
-      "Das Designsystem-Studio beginnt bei einer einzigen Komponente, zum Beispiel einem Button — Farbe, Ecken, Schrift, Schatten, Hover- und Fokuszustand — und das Studio leitet daraus nach festen Regeln alles Weitere ab: Farbrollen für Text, Flächen und Rahmen, eine Schriftgrößen-Skala, Abstände, Karten, Formularfelder, Navigation und Footer, jeweils mit hellem und dunklem Farbschema. Es gibt dabei keinen Zufall und keine künstliche Intelligenz: Dieselben Eingaben ergeben immer dasselbe Ergebnis.",
+      "Das Designsystem-Studio beginnt bei einer einzigen Komponente, zum Beispiel einem Button (Farbe, Ecken, Schrift, Schatten, Hover- und Fokuszustand) und das Studio leitet daraus nach festen Regeln alles Weitere ab: Farbrollen für Text, Flächen und Rahmen, eine Schriftgrößen-Skala, Abstände, Karten, Formularfelder, Navigation und Footer, jeweils mit hellem und dunklem Farbschema. Es gibt dabei keinen Zufall und keine künstliche Intelligenz: Dieselben Eingaben ergeben immer dasselbe Ergebnis.",
       "Danach lässt sich global oder pro Komponente anpassen, Kontrast und Fokuszustand werden nach WCAG geprüft, und das Ergebnis geht als reines CSS, als CSS-Variablen, SCSS, JSON-Design-Tokens, für Tailwind CSS oder Bootstrap hinaus. Alternativ beginnt die Arbeit mit vorhandenem CSS, einer eigenen HTML-Komponente oder dem Stil einer öffentlichen Website.",
     ],
     useCases: [
@@ -44,7 +44,7 @@ const guide: ToolGuideSet = {
       {
         title: "Designsystem erzeugen und anpassen",
         description:
-          "Ein Klick leitet das ganze System ab. Danach folgen Stilrichtung, globale Werte, einzelne Komponenten und eigene Themes — eigene Anpassungen bleiben dabei erhalten.",
+          "Ein Klick leitet das ganze System ab. Danach folgen Stilrichtung, globale Werte, einzelne Komponenten und eigene Themes, eigene Anpassungen bleiben dabei erhalten.",
       },
       {
         title: "Vorschau und Barrierefreiheit prüfen",
@@ -58,7 +58,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Gestaltung, Vorschau, Import und Barrierefreiheits-Prüfung laufen im Browser; ohne Premium wird nichts gespeichert, auch nicht im Browser-Speicher. Für eine Website-Analyse lädt unser Server genau die angegebene Seite und ihre Stylesheets, entfernt Skripte und gibt nur das an den Browser weiter — Texte, Bilder und Logos der Seite werden nicht übernommen. Beim Export erzeugt der Server die Datei aus dem aktuellen Entwurf und speichert ihn nicht.",
+      "Gestaltung, Vorschau, Import und Barrierefreiheits-Prüfung laufen im Browser; ohne Premium wird nichts gespeichert, auch nicht im Browser-Speicher. Für eine Website-Analyse lädt unser Server genau die angegebene Seite und ihre Stylesheets, entfernt Skripte und gibt nur das an den Browser weiter: Texte, Bilder und Logos der Seite werden nicht übernommen. Beim Export erzeugt der Server die Datei aus dem aktuellen Entwurf und speichert ihn nicht.",
     faq: [
       {
         q: "Brauche ich CSS-Kenntnisse?",
@@ -86,7 +86,7 @@ const guide: ToolGuideSet = {
   en: {
     intro: [
       "A design system is the set of rules a website looks by: which colours, which typefaces, which spacing, what a button looks like and how it reacts when the pointer moves over it. Setting those rules once instead of styling every page by hand gives a consistent appearance and saves time with every extension.",
-      "The Design System Studio starts with a single component. You design a button, for example — colour, corners, type, shadow, hover and focus state — and the studio derives everything else from it by fixed rules: colour roles for text, surfaces and borders, a type scale, spacing, cards, form fields, navigation and footer, each with a light and a dark colour scheme. There is no randomness and no artificial intelligence: the same input always gives the same result.",
+      "The Design System Studio starts with a single component. You design a button, for example (colour, corners, type, shadow, hover and focus state) and the studio derives everything else from it by fixed rules: colour roles for text, surfaces and borders, a type scale, spacing, cards, form fields, navigation and footer, each with a light and a dark colour scheme. There is no randomness and no artificial intelligence: the same input always gives the same result.",
       "Afterwards you adjust globally or per component, check contrast and focus states against WCAG and export the result as plain CSS, CSS variables, SCSS, JSON design tokens, for Tailwind CSS or Bootstrap. Alternatively, start from existing CSS, your own HTML component or the style of a public website.",
     ],
     useCases: [
@@ -125,7 +125,7 @@ const guide: ToolGuideSet = {
       {
         title: "Generate and adjust the design system",
         description:
-          "One click derives the whole system. Then choose a style direction, change global values or single components and add your own themes — your adjustments are kept.",
+          "One click derives the whole system. Then choose a style direction, change global values or single components and add your own themes, your adjustments are kept.",
       },
       {
         title: "Check the preview and accessibility",
@@ -139,7 +139,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Designing, previewing, importing and the accessibility check run in your browser; without Premium nothing is stored, not even in browser storage. For a website analysis our server loads exactly the given page and its stylesheets, removes scripts and passes only that to your browser — the page's text, images and logos are not adopted. For an export the server builds the file from your current draft and does not keep it.",
+      "Designing, previewing, importing and the accessibility check run in your browser; without Premium nothing is stored, not even in browser storage. For a website analysis our server loads exactly the given page and its stylesheets, removes scripts and passes only that to your browser, the page's text, images and logos are not adopted. For an export the server builds the file from your current draft and does not keep it.",
     faq: [
       {
         q: "Do I need to know CSS?",

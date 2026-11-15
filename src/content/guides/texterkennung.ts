@@ -4,14 +4,14 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Ein abfotografierter Beleg ist für einen Computer ein Bild und sonst nichts. Der Betrag darauf ist nicht suchbar, die Adresse nicht kopierbar, die Rechnungsnummer nicht in ein Formular zu übernehmen — obwohl alles davon gut lesbar vor einem liegt. Texterkennung schließt diese Lücke: Das Verfahren liest die Buchstaben aus dem Bild heraus und gibt sie als Text zurück.",
-      "Die Texterkennung (OCR) auf dieser Seite liest Text aus Bildern, Fotos und Scans, erkennt deutsche und englische Sprache und arbeitet dabei vollständig auf dem eigenen Gerät. Auch die Spracherkennungsdaten kommen von dieser Website und nicht von einem fremden Anbieter — beim Öffnen des Werkzeugs entsteht also keine Verbindung nach außen, und das Bild selbst wird ohnehin nicht übertragen.",
+      "Ein abfotografierter Beleg ist für einen Computer ein Bild und sonst nichts. Der Betrag darauf ist nicht suchbar, die Adresse nicht kopierbar, die Rechnungsnummer nicht in ein Formular zu übernehmen, obwohl alles davon gut lesbar vor einem liegt. Texterkennung schließt diese Lücke: Das Verfahren liest die Buchstaben aus dem Bild heraus und gibt sie als Text zurück.",
+      "Die Texterkennung (OCR) auf dieser Seite liest Text aus Bildern, Fotos und Scans, erkennt deutsche und englische Sprache und arbeitet dabei vollständig auf dem eigenen Gerät. Auch die Spracherkennungsdaten kommen von dieser Website und nicht von einem fremden Anbieter, beim Öffnen des Werkzeugs entsteht also keine Verbindung nach außen, und das Bild selbst wird ohnehin nicht übertragen.",
       "Wie gut das Ergebnis wird, entscheidet fast ausschließlich die Vorlage. Ein gerade aufgenommener, scharfer Ausschnitt mit gutem Kontrast liefert Text, den man nur noch überfliegen muss. Ein schräges Foto bei Kunstlicht liefert Bruchstücke. Es lohnt sich deshalb mehr, die Aufnahme zu wiederholen, als am Ergebnis herumzubessern.",
     ],
     useCases: [
       {
         title: "Rechnungsangaben übernehmen",
-        text: "Rechnungsnummer, Betrag und Steuersatz aus einem Beleg herauslesen, statt sie abzutippen — mit dem üblichen Zahlendreher, den niemand bemerkt.",
+        text: "Rechnungsnummer, Betrag und Steuersatz aus einem Beleg herauslesen, statt sie abzutippen, mit dem üblichen Zahlendreher, den niemand bemerkt.",
       },
       {
         title: "Visitenkarten erfassen",
@@ -19,7 +19,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Alte Unterlagen durchsuchbar machen",
-        text: "Ein Aktenordner ist erst dann wirklich digitalisiert, wenn sich der Inhalt suchen lässt — nicht schon dann, wenn ein Bild davon existiert.",
+        text: "Ein Aktenordner ist erst dann wirklich digitalisiert, wenn sich der Inhalt suchen lässt, nicht schon dann, wenn ein Bild davon existiert.",
       },
       {
         title: "Zitate aus gedruckten Vorlagen",
@@ -33,11 +33,11 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Bild auswählen",
-        description: "Ein Foto, einen Screenshot oder einen Bildscan auswählen. Direkt aus einem PDF wird hier nicht gelesen — in dem Fall wird die betreffende Seite zuerst zu einem Bild, am besten mit 300 dpi.",
+        description: "Ein Foto, einen Screenshot oder einen Bildscan auswählen. Direkt aus einem PDF wird hier nicht gelesen, in dem Fall wird die betreffende Seite zuerst zu einem Bild, am besten mit 300 dpi.",
       },
       {
         title: "Sprache festlegen",
-        description: "Die Sprache wählen, in der der Text verfasst ist. Beide gleichzeitig ist möglich und sinnvoll bei gemischten Vorlagen, kostet aber etwas Genauigkeit und Zeit — bei rein deutschem Text ist Deutsch allein die bessere Wahl.",
+        description: "Die Sprache wählen, in der der Text verfasst ist. Beide gleichzeitig ist möglich und sinnvoll bei gemischten Vorlagen, kostet aber etwas Genauigkeit und Zeit, bei rein deutschem Text ist Deutsch allein die bessere Wahl.",
       },
       {
         title: "Erkennung starten",
@@ -45,11 +45,11 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Ergebnis nachsehen und übernehmen",
-        description: "Der erkannte Text erscheint in einem bearbeitbaren Feld — Zahlen und Eigennamen lohnen ein kurzes Gegenlesen, denn dort sind Verwechslungen am wahrscheinlichsten. Danach lässt er sich kopieren oder als Textdatei speichern.",
+        description: "Der erkannte Text erscheint in einem bearbeitbaren Feld: Zahlen und Eigennamen lohnen ein kurzes Gegenlesen, denn dort sind Verwechslungen am wahrscheinlichsten. Danach lässt er sich kopieren oder als Textdatei speichern.",
       },
     ],
     privacy:
-      "Die Erkennung läuft vollständig auf dem eigenen Gerät: Das Bild wird nicht hochgeladen, und die dafür nötige Software samt Sprachdaten wird von dieser Website ausgeliefert statt von einem fremden Anbieter. Beim Öffnen des Werkzeugs wird also keine dritte Seite aufgerufen — was gerade dann zählt, wenn auf der Vorlage Kundendaten oder Beträge stehen.",
+      "Die Erkennung läuft vollständig auf dem eigenen Gerät: Das Bild wird nicht hochgeladen, und die dafür nötige Software samt Sprachdaten wird von dieser Website ausgeliefert statt von einem fremden Anbieter. Beim Öffnen des Werkzeugs wird also keine dritte Seite aufgerufen, was gerade dann zählt, wenn auf der Vorlage Kundendaten oder Beträge stehen.",
     faq: [
       {
         q: "Warum ist die Erkennung stellenweise falsch?",
@@ -61,7 +61,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Warum dauert der erste Start länger?",
-        a: "Beim ersten Durchgang lädt der Browser die Erkennungssoftware und die Sprachdaten. Das sind einige Megabyte, die danach im Zwischenspeicher liegen — der zweite Lauf beginnt sofort.",
+        a: "Beim ersten Durchgang lädt der Browser die Erkennungssoftware und die Sprachdaten. Das sind einige Megabyte, die danach im Zwischenspeicher liegen, der zweite Lauf beginnt sofort.",
       },
       {
         q: "Bleibt das Layout der Vorlage erhalten?",
@@ -72,14 +72,14 @@ const guide: ToolGuideSet = {
   },
   en: {
     intro: [
-      "A photographed receipt is an image to a computer and nothing else. The amount on it cannot be searched, the address cannot be copied, the invoice number cannot be carried into a form — even though all of it is sitting there perfectly legible. Text recognition closes that gap: it reads the letters out of the picture and hands them back as text.",
-      "The text recognition (OCR) on this page reads text out of images, photos and scans, recognises German and English and does the whole job on your device. Even the recognition data is served by this website rather than by a third party — so opening the tool opens no outbound connection, and the picture itself is not transmitted in any case.",
+      "A photographed receipt is an image to a computer and nothing else. The amount on it cannot be searched, the address cannot be copied, the invoice number cannot be carried into a form, even though all of it is sitting there perfectly legible. Text recognition closes that gap: it reads the letters out of the picture and hands them back as text.",
+      "The text recognition (OCR) on this page reads text out of images, photos and scans, recognises German and English and does the whole job on your device. Even the recognition data is served by this website rather than by a third party, so opening the tool opens no outbound connection, and the picture itself is not transmitted in any case.",
       "How good the result is depends almost entirely on the input. A straight, sharp, well-contrasted shot yields text you only have to skim. A tilted photo under artificial light yields fragments. It is therefore worth more to retake the picture than to patch up the output.",
     ],
     useCases: [
       {
         title: "Carrying over invoice details",
-        text: "Read the invoice number, the amount and the tax rate out of a receipt instead of retyping them — with the usual transposed digits nobody notices.",
+        text: "Read the invoice number, the amount and the tax rate out of a receipt instead of retyping them, with the usual transposed digits nobody notices.",
       },
       {
         title: "Capturing business cards",
@@ -87,7 +87,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Making old papers searchable",
-        text: "A file of documents is only really digitised once its contents can be searched — not merely once a picture of it exists.",
+        text: "A file of documents is only really digitised once its contents can be searched, not merely once a picture of it exists.",
       },
       {
         title: "Quoting from printed sources",
@@ -101,11 +101,11 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Choose the image",
-        description: "Pick a photo, a screenshot or a scanned image. PDFs are not read here — in that case convert the page in question to an image first, ideally at 300 dpi.",
+        description: "Pick a photo, a screenshot or a scanned image. PDFs are not read here, in that case convert the page in question to an image first, ideally at 300 dpi.",
       },
       {
         title: "Set the language",
-        description: "Choose the language the text is written in. Both at once is possible and sensible for mixed material, but costs a little accuracy and time — for purely German text, stay with German.",
+        description: "Choose the language the text is written in. Both at once is possible and sensible for mixed material, but costs a little accuracy and time, for purely German text, stay with German.",
       },
       {
         title: "Start the recognition",
@@ -113,11 +113,11 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Review and take the result",
-        description: "The recognised text appears in an editable field — numbers and proper names are worth a quick read, because that is where confusions are likeliest. Then copy it or save it as a text file.",
+        description: "The recognised text appears in an editable field, numbers and proper names are worth a quick read, because that is where confusions are likeliest. Then copy it or save it as a text file.",
       },
     ],
     privacy:
-      "Recognition runs entirely on your device: the image is not uploaded, and the software and language data needed for it are served by this website rather than by a third party. Opening the tool therefore contacts no other site — which counts most when the material shows customer details or amounts.",
+      "Recognition runs entirely on your device: the image is not uploaded, and the software and language data needed for it are served by this website rather than by a third party. Opening the tool therefore contacts no other site, which counts most when the material shows customer details or amounts.",
     faq: [
       {
         q: "Why is the recognition wrong in places?",
@@ -129,7 +129,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Why does the first start take longer?",
-        a: "On the first run the browser loads the recognition software and the language data. That is a few megabytes, cached afterwards — the second run begins immediately.",
+        a: "On the first run the browser loads the recognition software and the language data. That is a few megabytes, cached afterwards, the second run begins immediately.",
       },
       {
         q: "Is the layout of the original kept?",

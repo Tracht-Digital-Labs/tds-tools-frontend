@@ -48,21 +48,21 @@ describe("page titles", () => {
     "%s has a title inside what a SERP renders",
     (_slug, tool) => {
       // Exactly what `/tools/[slug].astro` puts in <title>.
-      const title = tool.seo?.title ?? `${tool.name} — ${site.name}`;
+      const title = tool.seo?.title ?? `${tool.name}: ${site.name}`;
       expect(title.length, `${tool.slug}: "${title}" is ${title.length} chars`)
         .toBeLessThanOrEqual(TITLE_RENDERED);
     },
   );
 
   it("keeps the catalog title inside the same bound", () => {
-    const title = `${site.name} — ${site.tagline}`;
+    const title = `${site.name}: ${site.tagline}`;
     expect(title.length, `"${title}" is ${title.length} chars`).toBeLessThanOrEqual(
       TITLE_RENDERED,
     );
   });
 
   it("gives every tool a DISTINCT title", () => {
-    const titles = tools.map((t) => t.seo?.title ?? `${t.name} — ${site.name}`);
+    const titles = tools.map((t) => t.seo?.title ?? `${t.name}: ${site.name}`);
     expect(new Set(titles).size).toBe(titles.length);
   });
 
@@ -71,7 +71,7 @@ describe("page titles", () => {
     // that opens with "TD Tools — …" spends the rendered budget on a brand
     // nobody searched for.
     for (const tool of tools) {
-      const title = tool.seo?.title ?? `${tool.name} — ${site.name}`;
+      const title = tool.seo?.title ?? `${tool.name}: ${site.name}`;
       expect(title.startsWith(site.name), `${tool.slug} leads with the brand`).toBe(
         false,
       );
@@ -153,7 +153,7 @@ describe("hreflang paths", () => {
     expect(neutralPath("/en")).toBe("/");
   });
 
-  it("is idempotent — a localized path localizes to itself", () => {
+  it("is idempotent, a localized path localizes to itself", () => {
     // The alternates are computed from whatever path the page happens to be
     // on, so the EN page must produce the same pair as the DE page. If this
     // drifted, the two sides would name different URLs and the set would be

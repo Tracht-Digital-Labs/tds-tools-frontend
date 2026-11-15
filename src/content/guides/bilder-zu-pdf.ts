@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Der Scanner steht im Büro, die Belege liegen im Fahrzeug — und abfotografiert ist ein Lieferschein in drei Sekunden. Was danach fehlt, ist die Form: Zwölf einzelne Handybilder sind kein Dokument, sie sind zwölf Anhänge in unklarer Reihenfolge, mit denen in der Buchhaltung niemand etwas anfangen kann.",
+      "Der Scanner steht im Büro, die Belege liegen im Fahrzeug, und abfotografiert ist ein Lieferschein in drei Sekunden. Was danach fehlt, ist die Form: Zwölf einzelne Handybilder sind kein Dokument, sie sind zwölf Anhänge in unklarer Reihenfolge, mit denen in der Buchhaltung niemand etwas anfangen kann.",
       "Dieses Werkzeug macht daraus ein PDF. Die Bilder werden ausgewählt, in die richtige Reihenfolge gebracht, und dann steht fest, wie die Seiten aussehen sollen: A4, A5 oder Letter, hoch oder quer, mit Rand oder randlos. Jedes Bild wird eine Seite, und heraus kommt eine Datei, die sich verschicken, ablegen und ausdrucken lässt wie jedes andere Dokument.",
-      "Für die Ausrichtung gibt es bewusst eine Automatik: Ein querformatiges Foto bekommt eine querformatige Seite, ein hochkant aufgenommenes eine hochkante. Damit passt der Stapel auch dann, wenn er gemischt ist — was er bei zwischendurch abfotografierten Belegen praktisch immer ist.",
+      "Für die Ausrichtung gibt es bewusst eine Automatik: Ein querformatiges Foto bekommt eine querformatige Seite, ein hochkant aufgenommenes eine hochkante. Damit passt der Stapel auch dann, wenn er gemischt ist, was er bei zwischendurch abfotografierten Belegen praktisch immer ist.",
     ],
     useCases: [
       {
@@ -19,7 +19,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Unterschriebene Seiten zurückschicken",
-        text: "Ein abfotografierter, unterschriebener Vertrag geht als PDF zurück — so, wie er losgeschickt wurde, und nicht als Foto im Anhang.",
+        text: "Ein abfotografierter, unterschriebener Vertrag geht als PDF zurück, so, wie er losgeschickt wurde, und nicht als Foto im Anhang.",
       },
       {
         title: "Schadensmeldung bei der Versicherung",
@@ -27,7 +27,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Ersatz für den Scanner unterwegs",
-        text: "Wer keinen Scanner zur Hand hat, kommt mit Handykamera und diesem Schritt zu einem brauchbaren Ergebnis — ohne eine App zu installieren, die Bilder in eine fremde Cloud lädt.",
+        text: "Wer keinen Scanner zur Hand hat, kommt mit Handykamera und diesem Schritt zu einem brauchbaren Ergebnis, ohne eine App zu installieren, die Bilder in eine fremde Cloud lädt.",
       },
     ],
     steps: [
@@ -37,7 +37,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Reihenfolge sortieren",
-        description: "Ab zwei Bildern erscheint eine Liste mit Pfeilen zum Verschieben und einem Kreuz zum Entfernen. Die Reihenfolge in dieser Liste ist die Seitenreihenfolge im PDF — das ist meist der Schritt, der über brauchbar oder nicht entscheidet.",
+        description: "Ab zwei Bildern erscheint eine Liste mit Pfeilen zum Verschieben und einem Kreuz zum Entfernen. Die Reihenfolge in dieser Liste ist die Seitenreihenfolge im PDF, das ist meist der Schritt, der über brauchbar oder nicht entscheidet.",
       },
       {
         title: "Seitenformat und Rand wählen",
@@ -45,15 +45,15 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Qualität abwägen und erzeugen",
-        description: "Mit 80 Prozent bleibt ein abfotografierter Beleg gut lesbar und die Datei handlich. Erst wenn Kleingedrucktes wirklich entziffert werden muss, lohnt ein höherer Wert — der Zuwachs an Dateigröße ist erheblich.",
+        description: "Mit 80 Prozent bleibt ein abfotografierter Beleg gut lesbar und die Datei handlich. Erst wenn Kleingedrucktes wirklich entziffert werden muss, lohnt ein höherer Wert, der Zuwachs an Dateigröße ist erheblich.",
       },
     ],
     privacy:
-      "Die Bilder werden im Browser gelesen, aufbereitet und zu einem PDF zusammengesetzt; keine Aufnahme wird übertragen oder gespeichert. Das ist bei genau diesem Werkzeug relevant, denn die typischen Vorlagen sind Belege, Verträge und Schadensfotos — also Unterlagen, die Adressen, Beträge und manchmal Unterschriften zeigen.",
+      "Die Bilder werden im Browser gelesen, aufbereitet und zu einem PDF zusammengesetzt; keine Aufnahme wird übertragen oder gespeichert. Das ist bei genau diesem Werkzeug relevant, denn die typischen Vorlagen sind Belege, Verträge und Schadensfotos, also Unterlagen, die Adressen, Beträge und manchmal Unterschriften zeigen.",
     faq: [
       {
         q: "Werden die Bilder in der Auswahlreihenfolge eingefügt?",
-        a: "Zunächst ja, und viele Dateisysteme sortieren dabei alphabetisch statt nach Aufnahmezeit. Deshalb gibt es die Liste zum Umsortieren — ein kurzer Blick darauf lohnt sich, bevor das PDF entsteht.",
+        a: "Zunächst ja, und viele Dateisysteme sortieren dabei alphabetisch statt nach Aufnahmezeit. Deshalb gibt es die Liste zum Umsortieren, ein kurzer Blick darauf lohnt sich, bevor das PDF entsteht.",
       },
       {
         q: "Kann ich mehrere Bilder auf eine Seite legen?",
@@ -61,20 +61,20 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Was bedeutet „Seite füllen“ genau?",
-        a: "Das Bild wird so vergrößert, dass es die ganze Seite bedeckt; was über den Rand hinausragt, fällt weg — gleichmäßig an beiden Seiten. Für Belege ist „Ganz sichtbar“ die sichere Wahl, weil dort nichts abgeschnitten werden darf.",
+        a: "Das Bild wird so vergrößert, dass es die ganze Seite bedeckt; was über den Rand hinausragt, fällt weg, gleichmäßig an beiden Seiten. Für Belege ist „Ganz sichtbar“ die sichere Wahl, weil dort nichts abgeschnitten werden darf.",
       },
       {
         q: "Lässt sich das entstandene PDF durchsuchen?",
-        a: "Nein. Es enthält Bilder, keinen Text — das ist bei jedem aus Fotos erzeugten PDF so. Wird der Inhalt als Text gebraucht, ist die Texterkennung der passende Schritt davor.",
+        a: "Nein. Es enthält Bilder, keinen Text, das ist bei jedem aus Fotos erzeugten PDF so. Wird der Inhalt als Text gebraucht, ist die Texterkennung der passende Schritt davor.",
       },
     ],
     related: ["pdf-zu-bildern", "bild-komprimieren"],
   },
   en: {
     intro: [
-      "The scanner is in the office, the receipts are in the van — and a delivery note is photographed in three seconds. What is missing afterwards is the form: twelve separate phone pictures are not a document, they are twelve attachments in unclear order that nobody in bookkeeping can work with.",
+      "The scanner is in the office, the receipts are in the van, and a delivery note is photographed in three seconds. What is missing afterwards is the form: twelve separate phone pictures are not a document, they are twelve attachments in unclear order that nobody in bookkeeping can work with.",
       "This tool turns them into a PDF. You choose the images, put them in the right order, and decide how the pages should look: A4, A5 or Letter, portrait or landscape, with a margin or without. Each image becomes a page, and out comes a file that can be sent, filed and printed like any other document.",
-      "Orientation is handled automatically on purpose: a landscape photo gets a landscape page, an upright one gets an upright page. That way a mixed stack still fits — and with receipts photographed as you go, a stack is mixed practically every time.",
+      "Orientation is handled automatically on purpose: a landscape photo gets a landscape page, an upright one gets an upright page. That way a mixed stack still fits, and with receipts photographed as you go, a stack is mixed practically every time.",
     ],
     useCases: [
       {
@@ -87,7 +87,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Returning signed pages",
-        text: "A photographed, signed contract goes back as a PDF — the way it was sent out, not as a picture attached to an email.",
+        text: "A photographed, signed contract goes back as a PDF, the way it was sent out, not as a picture attached to an email.",
       },
       {
         title: "Reporting a claim to an insurer",
@@ -95,7 +95,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Standing in for a scanner on the road",
-        text: "With no scanner at hand, a phone camera plus this step gives a usable result — without installing an app that uploads the pictures to somebody's cloud.",
+        text: "With no scanner at hand, a phone camera plus this step gives a usable result, without installing an app that uploads the pictures to somebody's cloud.",
       },
     ],
     steps: [
@@ -105,7 +105,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Sort the order",
-        description: "From two images on, a list appears with arrows to move an entry and a cross to remove it. The order in that list is the page order in the PDF — usually the step that decides between usable and not.",
+        description: "From two images on, a list appears with arrows to move an entry and a cross to remove it. The order in that list is the page order in the PDF, usually the step that decides between usable and not.",
       },
       {
         title: "Choose the page size and margin",
@@ -113,15 +113,15 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Weigh the quality and create",
-        description: "At 80 per cent a photographed receipt stays clearly legible and the file stays manageable. Only when small print really has to be deciphered is a higher value worth it — the growth in file size is considerable.",
+        description: "At 80 per cent a photographed receipt stays clearly legible and the file stays manageable. Only when small print really has to be deciphered is a higher value worth it, the growth in file size is considerable.",
       },
     ],
     privacy:
-      "The images are read, prepared and assembled into a PDF inside the browser; no shot is transmitted or stored. That matters especially for this tool, because the typical inputs are receipts, contracts and damage photos — papers showing addresses, amounts and sometimes signatures.",
+      "The images are read, prepared and assembled into a PDF inside the browser; no shot is transmitted or stored. That matters especially for this tool, because the typical inputs are receipts, contracts and damage photos, papers showing addresses, amounts and sometimes signatures.",
     faq: [
       {
         q: "Are the images added in the order I selected them?",
-        a: "Initially yes, and many file pickers sort alphabetically rather than by capture time. That is what the reordering list is for — check it once before creating the PDF.",
+        a: "Initially yes, and many file pickers sort alphabetically rather than by capture time. That is what the reordering list is for, check it once before creating the PDF.",
       },
       {
         q: "Can I put several images on one page?",
@@ -133,7 +133,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Can the resulting PDF be searched?",
-        a: "No. It contains images, not text — which is true of every PDF made from photos. If you need the content as text, text recognition is the right step beforehand.",
+        a: "No. It contains images, not text, which is true of every PDF made from photos. If you need the content as text, text recognition is the right step beforehand.",
       },
     ],
     related: ["pdf-zu-bildern", "bild-komprimieren"],

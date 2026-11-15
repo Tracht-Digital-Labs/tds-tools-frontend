@@ -51,7 +51,7 @@ describe("the visitor is not addressed directly", () => {
     for (const file of copyFiles()) {
       for (const line of withoutComments(read(file)).split("\n")) {
         const hit = line.match(FORMAL);
-        if (hit) offenders.push(`${file}: "${hit[0]}" — ${line.trim().slice(0, 120)}`);
+        if (hit) offenders.push(`${file}: "${hit[0]}": ${line.trim().slice(0, 120)}`);
       }
     }
     expect(offenders).toEqual([]);
@@ -63,7 +63,7 @@ describe("the visitor is not addressed directly", () => {
       for (const literal of withoutComments(read(file)).match(LITERAL) ?? []) {
         // `${dir * …}` inside a template literal is code, not copy.
         const hit = literal.replace(/\$\{[^}]*\}/g, "").match(INFORMAL);
-        if (hit) offenders.push(`${file}: "${hit[0]}" — ${literal.slice(0, 120)}`);
+        if (hit) offenders.push(`${file}: "${hit[0]}": ${literal.slice(0, 120)}`);
       }
     }
     expect(offenders).toEqual([]);

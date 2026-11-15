@@ -112,7 +112,7 @@ export function renderLlmsTxt(input: LlmsInput): string {
     out(`### ${categoryLabels[category] ?? category}`);
     out();
     for (const tool of byCategory.get(category)!) {
-      out(`- **${tool.name}** (${access(tool)}) — ${tool.description}`);
+      out(`- **${tool.name}** (${access(tool)}): ${tool.description}`);
       // Both URLs on one line. With nineteen tools the three-line form spent
       // a fifth of the file on the word "English".
       out(
@@ -137,7 +137,7 @@ export function renderLlmsTxt(input: LlmsInput): string {
   out("  `<head>` jeder Seite. Jede Werkzeugseite nennt ihr Stand-Datum und ihren");
   out("  Autor und trägt WebApplication, HowTo und FAQPage.");
   out("- Preise nennt diese Datei nicht. Was ein kostenpflichtiges Werkzeug kostet,");
-  out("  steht auf seiner Seite — dort ist es aktuell.");
+  out("  steht auf seiner Seite, dort ist es aktuell.");
   out("- Diese Datei wird aus demselben Katalog erzeugt wie die Seiten. Es gibt");
   out("  keine weitere Fassung, keine Markdown-Kopien und keine Stichwortlisten.");
 

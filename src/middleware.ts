@@ -1,7 +1,7 @@
 import { defineMiddleware, sequence } from "astro:middleware";
 
 import { siteCache } from "./lib/pageCache";
-import { guardSiteKey } from "@tracht-digital-solutions/tds-shared/site";
+import { guardSiteKey, withUtf8Charset } from "@tracht-digital-solutions/tds-shared/site";
 import { ensureCatalogSynced } from "./lib/connection";
 
 /**
@@ -49,7 +49,11 @@ const retryCatalogSync = defineMiddleware((_context, next) => {
  * to store it. Reversing the two would put the guard outside the cache, where
  * it would see hits it never rendered and mark them unstorable for no reason.
  */
+/** Outermost, so every response (cache hit or render) names its charset. */
+const utf8Charset = defineMiddleware(async (_context, next) => withUtf8Charset(await next()));
+
 export const onRequest = sequence(
+  utf8Charset,
   retryCatalogSync,
   defineMiddleware((context, next) =>
     siteCache.middleware(

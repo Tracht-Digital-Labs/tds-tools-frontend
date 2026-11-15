@@ -60,7 +60,7 @@ describe("site copy", () => {
 
   it("keeps the catalog title inside the title budget in both languages", () => {
     for (const lang of ["de", "en"] as const) {
-      const title = `${site.name} — ${copy[lang].tagline}`;
+      const title = `${site.name}: ${copy[lang].tagline}`;
       expect(title.length, `${lang}: ${title}`).toBeLessThanOrEqual(TITLE_RENDERED);
     }
   });

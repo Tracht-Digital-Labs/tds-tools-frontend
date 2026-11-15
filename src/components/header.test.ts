@@ -41,7 +41,7 @@ describe("the wordmark", () => {
     // The mark is `aria-hidden`, so without this the home link announces as
     // the bare word "Tools" — the one place where replacing text with a
     // graphic actually costs something.
-    expect(source).toContain("aria-label={`${site.fullName} — ${s.navAllTools}`}");
+    expect(source).toContain("aria-label={`${site.fullName}: ${s.navAllTools}`}");
     expect(site).toContain('name: "Online-Tools"');
   });
 });
@@ -49,7 +49,7 @@ describe("mobile navigation", () => {
   const chrome = readFileSync(join(SRC, "components", "AppChrome.astro"), "utf8");
   const layout = readFileSync(join(SRC, "layouts", "Layout.astro"), "utf8");
 
-  it("exists at all — as the app tab bar", () => {
+  it("exists at all, as the app tab bar", () => {
     // The regression this guards is the site's own history: a public,
     // indexable property shipped for months with no mobile navigation. It is
     // the bottom tab bar now (AppChrome), mounted on every page.

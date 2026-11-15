@@ -12,6 +12,6 @@ export { readContentJson } from "./siteKey";
 /** Remembers successes only — see `memoisedOr` in tds-shared/site. */
 export function memoisedOr<T>(key: string, load: () => Promise<T>, fallback: () => T, label: string): Promise<T> {
   return sharedMemoisedOr(contentCache, key, load, fallback, (_message, err) =>
-    console.warn(`[tds-tools] ${label} unavailable — using the fallback:`, err),
+    console.warn(`[tds-tools] ${label} unavailable, using the fallback:`, err),
   );
 }

@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Ein QR-Code ist nichts weiter als eine Adresse in Bildform. Wer ihn mit der Handykamera erfasst, landet direkt auf einer Website, im WLAN eines Betriebs oder mit dessen Kontaktdaten im Adressbuch — ohne dass jemand etwas abtippen muss. Genau da liegt der praktische Nutzen: Jede Ziffer, die ein Kunde selbst eingeben soll, ist eine Gelegenheit, sich zu vertippen und aufzugeben.",
+      "Ein QR-Code ist nichts weiter als eine Adresse in Bildform. Wer ihn mit der Handykamera erfasst, landet direkt auf einer Website, im WLAN eines Betriebs oder mit dessen Kontaktdaten im Adressbuch, ohne dass jemand etwas abtippen muss. Genau da liegt der praktische Nutzen: Jede Ziffer, die ein Kunde selbst eingeben soll, ist eine Gelegenheit, sich zu vertippen und aufzugeben.",
       "Dieser Generator erstellt QR-Codes kostenlos und ohne Anmeldung, ohne Konto und ohne Ablaufdatum. Er erzeugt vier Arten von Codes: freie URLs und Texte, WLAN-Zugänge und Kontaktdaten als vCard. Vorder- und Hintergrundfarbe lassen sich ans eigene Erscheinungsbild anpassen, und das Ergebnis gibt es als PNG für den Druck oder als SVG für die skalierbare Weiterverarbeitung.",
-      "Wichtig zu wissen: Der Code enthält das Ziel unmittelbar — er ist keine Weiterleitung über einen fremden Dienst. Das bedeutet, dass er dauerhaft funktioniert, aber auch, dass sich das Ziel nachträglich nicht ändern lässt. Kann sich die Adresse später ändern, zeigt der Code besser auf eine eigene Seite, deren Inhalt sich jederzeit anpassen lässt.",
+      "Wichtig zu wissen: Der Code enthält das Ziel unmittelbar, er ist keine Weiterleitung über einen fremden Dienst. Das bedeutet, dass er dauerhaft funktioniert, aber auch, dass sich das Ziel nachträglich nicht ändern lässt. Kann sich die Adresse später ändern, zeigt der Code besser auf eine eigene Seite, deren Inhalt sich jederzeit anpassen lässt.",
     ],
     useCases: [
       {
@@ -15,7 +15,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Speisekarte, Preisliste, Anleitung",
-        text: "Ein Code am Tisch, am Regal oder auf der Maschine führt zur aktuellen Fassung — und künftig wird die Seite ausgetauscht statt des Aufstellers.",
+        text: "Ein Code am Tisch, am Regal oder auf der Maschine führt zur aktuellen Fassung, und künftig wird die Seite ausgetauscht statt des Aufstellers.",
       },
       {
         title: "Visitenkarte, die im Adressbuch landet",
@@ -39,7 +39,7 @@ const guide: ToolGuideSet = {
       {
         title: "Inhalt eintragen",
         description:
-          "Die Zieladresse eintragen — bei einer Website vollständig mit https://. Beim WLAN kommen Netzname und Passwort dazu, bei der vCard Name, Firma, Telefon und E-Mail.",
+          "Die Zieladresse eintragen, bei einer Website vollständig mit https://. Beim WLAN kommen Netzname und Passwort dazu, bei der vCard Name, Firma, Telefon und E-Mail.",
       },
       {
         title: "Farben anpassen",
@@ -53,36 +53,36 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Der Code entsteht vollständig im Browser. Weder die Zieladresse noch WLAN-Passwort oder Kontaktdaten werden an einen Server übertragen oder gespeichert — das Werkzeug hat gar keine Gegenstelle, an die es etwas senden könnte. Nach dem Laden funktioniert die Seite auch ohne Netz weiter. Bei einem WLAN-Passwort ist das kein akademischer Unterschied: Viele Online-Generatoren senden genau diese Eingabe zur Erzeugung an ihren Server.",
+      "Der Code entsteht vollständig im Browser. Weder die Zieladresse noch WLAN-Passwort oder Kontaktdaten werden an einen Server übertragen oder gespeichert, das Werkzeug hat gar keine Gegenstelle, an die es etwas senden könnte. Nach dem Laden funktioniert die Seite auch ohne Netz weiter. Bei einem WLAN-Passwort ist das kein akademischer Unterschied: Viele Online-Generatoren senden genau diese Eingabe zur Erzeugung an ihren Server.",
     faq: [
       {
         q: "Läuft der QR-Code irgendwann ab?",
         a: "Nein. Der Code enthält das Ziel direkt und ist nicht an einen Dienst gebunden, der ihn auflösen müsste. Er funktioniert, solange die Zieladresse erreichbar ist. Genau deshalb lässt sich das Ziel aber auch nicht nachträglich ändern.",
       },
       {
-        q: "PNG oder SVG — was soll ich nehmen?",
+        q: "PNG oder SVG, was soll ich nehmen?",
         a: "PNG für alles, was in fester Größe gedruckt oder eingefügt wird. SVG, wenn der Code noch vergrößert wird, etwa für ein Plakat oder eine Fahrzeugbeschriftung: Ein SVG bleibt in jeder Größe scharf, ein PNG wird beim Hochskalieren unsauber.",
       },
       {
         q: "Wie groß muss ein gedruckter QR-Code sein?",
-        a: "Als Faustregel gilt ein Zehntel des Leseabstands: Wer aus einem Meter Entfernung scannt, braucht etwa zehn Zentimeter Kantenlänge. Dazu gehört ein weißer Rand von der Breite mehrerer Module — ohne diese Ruhezone finden viele Kameras den Code nicht.",
+        a: "Als Faustregel gilt ein Zehntel des Leseabstands: Wer aus einem Meter Entfernung scannt, braucht etwa zehn Zentimeter Kantenlänge. Dazu gehört ein weißer Rand von der Breite mehrerer Module, ohne diese Ruhezone finden viele Kameras den Code nicht.",
       },
       {
         q: "Warum wird mein Code nicht erkannt?",
-        a: "Meist liegt es am Kontrast oder am fehlenden Rand. Der Vordergrund muss deutlich dunkler sein als der Hintergrund, invertierte Codes lesen viele Kameras nicht. Auch sehr lange Inhalte machen das Muster feiner und damit schwerer erkennbar — eine kürzere Adresse hilft, wo es geht.",
+        a: "Meist liegt es am Kontrast oder am fehlenden Rand. Der Vordergrund muss deutlich dunkler sein als der Hintergrund, invertierte Codes lesen viele Kameras nicht. Auch sehr lange Inhalte machen das Muster feiner und damit schwerer erkennbar, eine kürzere Adresse hilft, wo es geht.",
       },
       {
         q: "Kann ich damit Codes für Kunden erstellen?",
-        a: "Ja, das Werkzeug ist kostenlos und ohne Anmeldung nutzbar, auch geschäftlich. Wer regelmäßig viele Codes braucht oder sie aus eigenen Daten erzeugen will, kann das automatisieren lassen — das gehört zu den Leistungen von Tracht Digital Solutions.",
+        a: "Ja, das Werkzeug ist kostenlos und ohne Anmeldung nutzbar, auch geschäftlich. Wer regelmäßig viele Codes braucht oder sie aus eigenen Daten erzeugen will, kann das automatisieren lassen, das gehört zu den Leistungen von Tracht Digital Solutions.",
       },
     ],
     related: ["utm-link-generator", "visitenkarten-designer", "bild-komprimieren"],
   },
   en: {
     intro: [
-      "A QR code is nothing more than an address in the shape of a picture. Point a phone camera at it and the person lands directly on your website, on your business Wi-Fi, or with your contact details in their address book — without anyone having to type. That is where the practical value sits: every character a customer is asked to enter themselves is an opportunity to mistype it and give up.",
-      "With this generator you create QR codes for free and without signing up — no account, no expiry date. It produces four kinds of code: plain URLs and text, Wi-Fi credentials, and contact details as a vCard. You can match the foreground and background colours to your own look, and download the result as a PNG for print or an SVG for scalable use.",
-      "One thing worth knowing: the code contains its destination directly — it is not a redirect through someone else's service. That means it keeps working indefinitely, but it also means the destination cannot be changed afterwards. If you expect the address to move, point the code at a page of your own whose content you can edit instead.",
+      "A QR code is nothing more than an address in the shape of a picture. Point a phone camera at it and the person lands directly on your website, on your business Wi-Fi, or with your contact details in their address book, without anyone having to type. That is where the practical value sits: every character a customer is asked to enter themselves is an opportunity to mistype it and give up.",
+      "With this generator you create QR codes for free and without signing up, no account, no expiry date. It produces four kinds of code: plain URLs and text, Wi-Fi credentials, and contact details as a vCard. You can match the foreground and background colours to your own look, and download the result as a PNG for print or an SVG for scalable use.",
+      "One thing worth knowing: the code contains its destination directly, it is not a redirect through someone else's service. That means it keeps working indefinitely, but it also means the destination cannot be changed afterwards. If you expect the address to move, point the code at a page of your own whose content you can edit instead.",
     ],
     useCases: [
       {
@@ -91,7 +91,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Menu, price list, instructions",
-        text: "A code on the table, the shelf or the machine leads to the current version — and from then on you replace the page, not the stand.",
+        text: "A code on the table, the shelf or the machine leads to the current version, and from then on you replace the page, not the stand.",
       },
       {
         title: "A business card that lands in the address book",
@@ -115,7 +115,7 @@ const guide: ToolGuideSet = {
       {
         title: "Enter the content",
         description:
-          "Fill in the destination — for a website, complete with https://. Wi-Fi adds the network name and password; a vCard adds name, company, phone and email.",
+          "Fill in the destination, for a website, complete with https://. Wi-Fi adds the network name and password; a vCard adds name, company, phone and email.",
       },
       {
         title: "Adjust the colours",
@@ -129,27 +129,27 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "The code is created entirely in your browser. Neither the destination address nor your Wi-Fi password or contact details are sent to a server or stored anywhere — the tool has no counterpart to send anything to. You can disconnect from the network after the page has loaded and carry on working. With a Wi-Fi password that is not an academic distinction: many online generators send exactly that input to their server to produce the image.",
+      "The code is created entirely in your browser. Neither the destination address nor your Wi-Fi password or contact details are sent to a server or stored anywhere, the tool has no counterpart to send anything to. You can disconnect from the network after the page has loaded and carry on working. With a Wi-Fi password that is not an academic distinction: many online generators send exactly that input to their server to produce the image.",
     faq: [
       {
         q: "Does the QR code expire?",
         a: "No. The code contains its destination directly and is not tied to a service that has to resolve it. It works for as long as the destination is reachable. That is also precisely why the destination cannot be changed afterwards.",
       },
       {
-        q: "PNG or SVG — which should I use?",
+        q: "PNG or SVG, which should I use?",
         a: "PNG for anything printed or placed at a fixed size. SVG when the code will be enlarged, for a poster or vehicle lettering: an SVG stays sharp at any size, while a PNG becomes ragged when scaled up.",
       },
       {
         q: "How big does a printed QR code need to be?",
-        a: "A rule of thumb is one tenth of the reading distance: scanning from one metre away needs roughly ten centimetres of edge length. Also leave a white margin several modules wide — without that quiet zone many cameras will not find the code at all.",
+        a: "A rule of thumb is one tenth of the reading distance: scanning from one metre away needs roughly ten centimetres of edge length. Also leave a white margin several modules wide, without that quiet zone many cameras will not find the code at all.",
       },
       {
         q: "Why is my code not being recognised?",
-        a: "Usually it is the contrast or the missing margin. The foreground has to be clearly darker than the background; many cameras will not read an inverted code. Very long content also makes the pattern finer and harder to read — shorten the address where you can.",
+        a: "Usually it is the contrast or the missing margin. The foreground has to be clearly darker than the background; many cameras will not read an inverted code. Very long content also makes the pattern finer and harder to read, shorten the address where you can.",
       },
       {
         q: "Can I create codes for clients with this?",
-        a: "Yes, the tool is free and needs no sign-up, commercial use included. If you regularly need many codes, or want to generate them from your own data, that can be automated — get in touch.",
+        a: "Yes, the tool is free and needs no sign-up, commercial use included. If you regularly need many codes, or want to generate them from your own data, that can be automated, get in touch.",
       },
     ],
     related: ["utm-link-generator", "visitenkarten-designer", "bild-komprimieren"],

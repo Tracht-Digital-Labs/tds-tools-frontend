@@ -5,8 +5,8 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Ein Wasserzeichen sagt einem Dokument an, was es ist. „Entwurf“ quer über der Seite verhindert, dass eine Zwischenfassung als endgültige Rechnung durchgeht; „Kopie“ trennt das Zweitexemplar vom Original; ein Firmenname über einem Angebot macht sichtbar, von wem es stammt, auch wenn nur eine einzelne Seite ausgedruckt weitergereicht wird.",
-      "Dieses Werkzeug setzt einen solchen Schriftzug in ein vorhandenes PDF — mit frei wählbarer Größe, Farbe, Deckkraft und Neigung, auf allen Seiten oder nur auf ausgewählten. Die vier Anordnungen decken die üblichen Fälle ab: diagonal über die Seite, waagerecht in der Mitte, dezent als Fußzeile oder gekachelt über die gesamte Fläche.",
-      "Wichtig ist die Erwartung: Ein Wasserzeichen ist eine Kennzeichnung, kein Kopierschutz. Es macht den Status eines Dokuments auf einen Blick erkennbar und erschwert die unbemerkte Weiterverwendung einzelner Seiten. Wer es technisch entfernen will, kann das mit genügend Aufwand — dagegen hilft kein Werkzeug dieser Art, und Anbieter, die etwas anderes versprechen, überversprechen.",
+      "Dieses Werkzeug setzt einen solchen Schriftzug in ein vorhandenes PDF, mit frei wählbarer Größe, Farbe, Deckkraft und Neigung, auf allen Seiten oder nur auf ausgewählten. Die vier Anordnungen decken die üblichen Fälle ab: diagonal über die Seite, waagerecht in der Mitte, dezent als Fußzeile oder gekachelt über die gesamte Fläche.",
+      "Wichtig ist die Erwartung: Ein Wasserzeichen ist eine Kennzeichnung, kein Kopierschutz. Es macht den Status eines Dokuments auf einen Blick erkennbar und erschwert die unbemerkte Weiterverwendung einzelner Seiten. Wer es technisch entfernen will, kann das mit genügend Aufwand, dagegen hilft kein Werkzeug dieser Art, und Anbieter, die etwas anderes versprechen, überversprechen.",
     ],
     useCases: [
       {
@@ -49,11 +49,11 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Das Dokument wird ausschließlich im Browser geöffnet und dort mit dem Aufdruck versehen; weder die Datei noch der Text des Wasserzeichens verlässt das Gerät. Gerade bei als vertraulich gekennzeichneten Unterlagen wäre alles andere widersinnig — ein Dokument zum Anbringen des Vermerks „Vertraulich“ auf einen fremden Server zu laden, hebt genau die Vertraulichkeit auf, um die es geht.",
+      "Das Dokument wird ausschließlich im Browser geöffnet und dort mit dem Aufdruck versehen; weder die Datei noch der Text des Wasserzeichens verlässt das Gerät. Gerade bei als vertraulich gekennzeichneten Unterlagen wäre alles andere widersinnig, ein Dokument zum Anbringen des Vermerks „Vertraulich“ auf einen fremden Server zu laden, hebt genau die Vertraulichkeit auf, um die es geht.",
     faq: [
       {
         q: "Lässt sich das Wasserzeichen wieder entfernen?",
-        a: "Mit entsprechendem Aufwand ja — es ist eine Kennzeichnung und kein Kopierschutz. Für den Zweck, den Status eines Dokuments erkennbar zu machen, reicht das vollkommen; für echten Schutz bräuchte es Verschlüsselung und Rechteverwaltung.",
+        a: "Mit entsprechendem Aufwand ja, es ist eine Kennzeichnung und kein Kopierschutz. Für den Zweck, den Status eines Dokuments erkennbar zu machen, reicht das vollkommen; für echten Schutz bräuchte es Verschlüsselung und Rechteverwaltung.",
       },
       {
         q: "Kann ich ein Logo statt eines Textes einsetzen?",
@@ -61,7 +61,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Warum fehlen einzelne Sonderzeichen im Aufdruck?",
-        a: "Die eingebaute Schrift deckt den westeuropäischen Zeichenvorrat ab. Typografische Anführungszeichen und Gedankenstriche werden automatisch ersetzt, alles darüber hinaus — etwa ein Emoji — wird weggelassen, statt den Export scheitern zu lassen.",
+        a: "Die eingebaute Schrift deckt den westeuropäischen Zeichenvorrat ab. Typografische Anführungszeichen und Gedankenstriche werden automatisch ersetzt, alles darüber hinaus (etwa ein Emoji) wird weggelassen, statt den Export scheitern zu lassen.",
       },
       {
         q: "Bleibt der Text unter dem Wasserzeichen auswählbar?",
@@ -73,8 +73,8 @@ const guide: ToolGuideSet = {
   en: {
     intro: [
       "A watermark tells a document what it is. “Draft” across the page stops an interim version from passing as a final invoice; “Copy” separates the duplicate from the original; a company name over a quotation shows where it came from, even when a single page is printed and passed on.",
-      "This tool puts such a wording into an existing PDF — with a size, colour, opacity and tilt of your choosing, on every page or only on the ones you name. The four placements cover the usual cases: diagonally across the page, horizontally in the centre, discreetly as a footer, or tiled over the whole surface.",
-      "The expectation matters: a watermark is a marking, not a copy protection. It makes the status of a document visible at a glance and makes it harder to reuse single pages unnoticed. Anyone determined to strip it can, with enough effort — no tool of this kind changes that, and vendors who promise otherwise are overpromising.",
+      "This tool puts such a wording into an existing PDF, with a size, colour, opacity and tilt of your choosing, on every page or only on the ones you name. The four placements cover the usual cases: diagonally across the page, horizontally in the centre, discreetly as a footer, or tiled over the whole surface.",
+      "The expectation matters: a watermark is a marking, not a copy protection. It makes the status of a document visible at a glance and makes it harder to reuse single pages unnoticed. Anyone determined to strip it can, with enough effort, no tool of this kind changes that, and vendors who promise otherwise are overpromising.",
     ],
     useCases: [
       {
@@ -117,11 +117,11 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "The document is opened and marked entirely inside your browser; neither the file nor the watermark wording leaves your device. With papers being marked confidential, anything else would be self-defeating — uploading a document to a stranger's server in order to stamp it “Confidential” removes exactly the confidentiality at stake.",
+      "The document is opened and marked entirely inside your browser; neither the file nor the watermark wording leaves your device. With papers being marked confidential, anything else would be self-defeating, uploading a document to a stranger's server in order to stamp it “Confidential” removes exactly the confidentiality at stake.",
     faq: [
       {
         q: "Can the watermark be removed again?",
-        a: "With enough effort, yes — it is a marking and not a copy protection. For the purpose of making a document's status recognisable that is entirely sufficient; real protection would need encryption and rights management.",
+        a: "With enough effort, yes, it is a marking and not a copy protection. For the purpose of making a document's status recognisable that is entirely sufficient; real protection would need encryption and rights management.",
       },
       {
         q: "Can I use a logo instead of text?",
@@ -129,7 +129,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Why are some special characters missing?",
-        a: "The built-in font covers the Western European character set. Typographic quotes and dashes are substituted automatically, and anything beyond that — an emoji, say — is dropped rather than being allowed to fail the export.",
+        a: "The built-in font covers the Western European character set. Typographic quotes and dashes are substituted automatically, and anything beyond that (an emoji, say) is dropped rather than being allowed to fail the export.",
       },
       {
         q: "Is the text under the watermark still selectable?",

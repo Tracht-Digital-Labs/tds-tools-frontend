@@ -32,6 +32,7 @@ npm run audit:geo -- <url>
 - OCR assets are served from this site; never let tesseract.js call a CDN.
 - `TDS_SITE_KEY` comes from `process.env`; it must also be set in the host's Node app environment.
 - Deploys only via the manual `release.yml`; there is no `dev.yml`.
+- Follows the TDS quality standard (`../tds-ops/standards/quality.md`): no AI slop, clean code.
 
 ## Topic files
 

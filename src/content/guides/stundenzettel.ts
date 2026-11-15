@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Arbeitszeiten müssen aufgezeichnet werden, und in vielen kleinen Betrieben passiert das bis heute auf einem Zettel im Fahrzeug oder in einer Tabelle, die jeden Monat neu zusammenkopiert wird. Beides funktioniert, solange niemand nachfragt — und beides ist mühsam in genau dem Moment, in dem jemand nachfragt.",
-      "Dieses Werkzeug erzeugt einen Arbeitszeitnachweis für einen ganzen Monat als PDF. Beginn, Ende und Pause eintragen, Tagesstunden und Monatssumme werden gerechnet, und heraus kommt ein Blatt zum Ausdrucken und Unterschreiben — mit Namen, Betrieb, Monat und je einem Feld für beide Unterschriften.",
-      "Damit das Ausfüllen nicht dreißigmal dasselbe ist, gibt es eine Vorbelegung: Die üblichen Zeiten einmal angeben, für alle Werktage übernehmen und danach nur noch die Ausnahmen ändern. Wochenenden bleiben leer, sind aber vorhanden — ein Samstagseinsatz muss schließlich irgendwo hin.",
+      "Arbeitszeiten müssen aufgezeichnet werden, und in vielen kleinen Betrieben passiert das bis heute auf einem Zettel im Fahrzeug oder in einer Tabelle, die jeden Monat neu zusammenkopiert wird. Beides funktioniert, solange niemand nachfragt, und beides ist mühsam in genau dem Moment, in dem jemand nachfragt.",
+      "Dieses Werkzeug erzeugt einen Arbeitszeitnachweis für einen ganzen Monat als PDF. Beginn, Ende und Pause eintragen, Tagesstunden und Monatssumme werden gerechnet, und heraus kommt ein Blatt zum Ausdrucken und Unterschreiben, mit Namen, Betrieb, Monat und je einem Feld für beide Unterschriften.",
+      "Damit das Ausfüllen nicht dreißigmal dasselbe ist, gibt es eine Vorbelegung: Die üblichen Zeiten einmal angeben, für alle Werktage übernehmen und danach nur noch die Ausnahmen ändern. Wochenenden bleiben leer, sind aber vorhanden, ein Samstagseinsatz muss schließlich irgendwo hin.",
     ],
     useCases: [
       {
@@ -33,7 +33,7 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Kopf ausfüllen",
-        description: "Name, Betrieb und Monat stehen später oben auf dem Blatt. Der Monat bestimmt zugleich, wie viele Zeilen die Tabelle bekommt und welcher Wochentag auf welches Datum fällt — auch im Schaltjahr.",
+        description: "Name, Betrieb und Monat stehen später oben auf dem Blatt. Der Monat bestimmt zugleich, wie viele Zeilen die Tabelle bekommt und welcher Wochentag auf welches Datum fällt, auch im Schaltjahr.",
       },
       {
         title: "Werktage vorbelegen",
@@ -57,7 +57,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Wie werden Pausen behandelt?",
-        a: "Die Pause wird in Minuten eingetragen und von der Spanne zwischen Beginn und Ende abgezogen. Die gesetzlichen Mindestpausen prüft das Werkzeug nicht — die Verantwortung dafür bleibt beim Betrieb.",
+        a: "Die Pause wird in Minuten eingetragen und von der Spanne zwischen Beginn und Ende abgezogen. Die gesetzlichen Mindestpausen prüft das Werkzeug nicht, die Verantwortung dafür bleibt beim Betrieb.",
       },
       {
         q: "Was passiert bei einer Schicht über Mitternacht?",
@@ -65,16 +65,16 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Bleiben meine Eingaben erhalten, wenn ich die Seite neu lade?",
-        a: "Nein, die Angaben stehen nur im geöffneten Tab. Das PDF also erzeugen, bevor die Seite zugeht — die fertige Datei ist die Fassung, die bleibt.",
+        a: "Nein, die Angaben stehen nur im geöffneten Tab. Das PDF also erzeugen, bevor die Seite zugeht, die fertige Datei ist die Fassung, die bleibt.",
       },
     ],
     related: ["etiketten-drucken", "anfahrtskosten-rechner"],
   },
   en: {
     intro: [
-      "Working time has to be recorded, and in plenty of small businesses that still happens on a note in the van or in a spreadsheet copied together afresh each month. Both work as long as nobody asks — and both are painful at exactly the moment somebody does.",
-      "This tool produces a record of working time for a whole month as a PDF. You enter the start, the end and the break, the daily hours and the monthly total are worked out, and out comes a sheet to print and sign — with the name, the employer, the month and a field for each of the two signatures.",
-      "So that filling it in is not the same thing thirty times over, there is a prefill: you state the usual times once, apply them to every weekday, and then change only the exceptions. Weekends stay empty but are present — a Saturday call-out has to go somewhere after all.",
+      "Working time has to be recorded, and in plenty of small businesses that still happens on a note in the van or in a spreadsheet copied together afresh each month. Both work as long as nobody asks, and both are painful at exactly the moment somebody does.",
+      "This tool produces a record of working time for a whole month as a PDF. You enter the start, the end and the break, the daily hours and the monthly total are worked out, and out comes a sheet to print and sign, with the name, the employer, the month and a field for each of the two signatures.",
+      "So that filling it in is not the same thing thirty times over, there is a prefill: you state the usual times once, apply them to every weekday, and then change only the exceptions. Weekends stay empty but are present, a Saturday call-out has to go somewhere after all.",
     ],
     useCases: [
       {
@@ -101,7 +101,7 @@ const guide: ToolGuideSet = {
     steps: [
       {
         title: "Fill in the header",
-        description: "The name, the employer and the month appear at the top of the sheet later on. The month also decides how many rows the table gets and which weekday falls on which date — in a leap year too.",
+        description: "The name, the employer and the month appear at the top of the sheet later on. The month also decides how many rows the table gets and which weekday falls on which date, in a leap year too.",
       },
       {
         title: "Prefill the weekdays",
@@ -125,7 +125,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "How are breaks handled?",
-        a: "The break is entered in minutes and deducted from the span between start and end. The tool does not check statutory minimum breaks — that responsibility stays with the employer.",
+        a: "The break is entered in minutes and deducted from the span between start and end. The tool does not check statutory minimum breaks, that responsibility stays with the employer.",
       },
       {
         q: "What happens with a shift over midnight?",
@@ -133,7 +133,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Are my entries kept if I reload the page?",
-        a: "No, they live only in the open tab. Create the PDF before leaving the page — the finished file is the version that lasts.",
+        a: "No, they live only in the open tab. Create the PDF before leaving the page, the finished file is the version that lasts.",
       },
     ],
     related: ["etiketten-drucken", "anfahrtskosten-rechner"],

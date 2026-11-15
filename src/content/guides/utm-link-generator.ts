@@ -4,14 +4,14 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Wer Werbung schaltet, einen Newsletter verschickt oder einen Flyer verteilt, sieht in der Website-Statistik hinterher meist nur eines: Es kamen Besucher. Woher genau, bleibt offen — und damit auch die Frage, welche Maßnahme sich gelohnt hat. UTM-Parameter lösen das, indem sie die Herkunft an den Link selbst hängen. Die Statistik liest sie aus und ordnet den Besuch der richtigen Quelle zu.",
+      "Wer Werbung schaltet, einen Newsletter verschickt oder einen Flyer verteilt, sieht in der Website-Statistik hinterher meist nur eines: Es kamen Besucher. Woher genau, bleibt offen, und damit auch die Frage, welche Maßnahme sich gelohnt hat. UTM-Parameter lösen das, indem sie die Herkunft an den Link selbst hängen. Die Statistik liest sie aus und ordnet den Besuch der richtigen Quelle zu.",
       "Ein solcher Link sieht aus wie die normale Adresse, ergänzt um Angaben wie utm_source, utm_medium und utm_campaign. Dieser UTM-Generator baut ihn kostenlos und korrekt zusammen: Es kodiert Sonderzeichen, wandelt die Eingaben in saubere Kleinschreibung ohne Leerzeichen um und zeigt den fertigen Link zum Kopieren an.",
       "Der Nutzen steht und fällt mit der Einheitlichkeit. Newsletter, newsletter und Newsletter-Mai sind für die Auswertung drei verschiedene Quellen, und niemand merkt es, bis der Bericht in fünf Zeilen zerfällt, die alle dasselbe meinen. Einmal eine Schreibweise festlegen und dabei bleiben.",
     ],
     useCases: [
       {
         title: "Newsletter auswerten",
-        text: "Ein eigener Link je Aussendung zeigt, welches Thema tatsächlich Klicks gebracht hat — und nicht nur, wer die Mail geöffnet hat.",
+        text: "Ein eigener Link je Aussendung zeigt, welches Thema tatsächlich Klicks gebracht hat, und nicht nur, wer die Mail geöffnet hat.",
       },
       {
         title: "Bezahlte Anzeigen trennen",
@@ -23,7 +23,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Einträge in Verzeichnissen",
-        text: "Branchenbücher, Kleinanzeigen und Kartendienste bekommen jeweils eigene Links — so zeigt sich, welcher Eintrag seinen Preis wert ist.",
+        text: "Branchenbücher, Kleinanzeigen und Kartendienste bekommen jeweils eigene Links, so zeigt sich, welcher Eintrag seinen Preis wert ist.",
       },
       {
         title: "Social-Media-Profile",
@@ -34,7 +34,7 @@ const guide: ToolGuideSet = {
       {
         title: "Zieladresse eintragen",
         description:
-          "Am Anfang steht die Seite, auf der die Besucher landen sollen — vollständig mit https:// und möglichst genau die passende Unterseite, nicht pauschal die Startseite.",
+          "Am Anfang steht die Seite, auf der die Besucher landen sollen, vollständig mit https:// und möglichst genau die passende Unterseite, nicht pauschal die Startseite.",
       },
       {
         title: "Quelle und Medium angeben",
@@ -53,7 +53,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Der Link wird ausschließlich im Browser zusammengesetzt; weder Zieladresse noch Kampagnenname werden übertragen oder gespeichert. Ein Hinweis zur Sache selbst: UTM-Parameter sind für Besucher sichtbar, sie stehen in der Adresszeile. Hinein gehört deshalb nichts, was nicht öffentlich sein soll — interne Kürzel, Budgetzahlen oder Kundennamen haben dort nichts verloren.",
+      "Der Link wird ausschließlich im Browser zusammengesetzt; weder Zieladresse noch Kampagnenname werden übertragen oder gespeichert. Ein Hinweis zur Sache selbst: UTM-Parameter sind für Besucher sichtbar, sie stehen in der Adresszeile. Hinein gehört deshalb nichts, was nicht öffentlich sein soll, interne Kürzel, Budgetzahlen oder Kundennamen haben dort nichts verloren.",
     faq: [
       {
         q: "Welche Parameter brauche ich wirklich?",
@@ -61,7 +61,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Schadet ein UTM-Link meinem SEO?",
-        a: "Für Links, die auf die eigene Seite zeigen und in Werbung, Newslettern oder auf Druckerzeugnissen stehen, ist das unkritisch. Für die interne Verlinkung innerhalb der eigenen Website taugen UTM-Parameter aber nicht — dort erzeugen sie mehrere Adressen für dieselbe Seite und stören die Auswertung.",
+        a: "Für Links, die auf die eigene Seite zeigen und in Werbung, Newslettern oder auf Druckerzeugnissen stehen, ist das unkritisch. Für die interne Verlinkung innerhalb der eigenen Website taugen UTM-Parameter aber nicht, dort erzeugen sie mehrere Adressen für dieselbe Seite und stören die Auswertung.",
       },
       {
         q: "Warum werden meine Eingaben kleingeschrieben?",
@@ -73,21 +73,21 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Kann ich den Link kürzen?",
-        a: "Ja, ein Kurzlink-Dienst oder eine eigene Weiterleitung behält die Parameter beim Weiterleiten bei. Für gedruckte Werbung ist das sinnvoll — dort steht ohnehin meist ein QR-Code, und dann spielt die Länge des Links keine Rolle mehr.",
+        a: "Ja, ein Kurzlink-Dienst oder eine eigene Weiterleitung behält die Parameter beim Weiterleiten bei. Für gedruckte Werbung ist das sinnvoll, dort steht ohnehin meist ein QR-Code, und dann spielt die Länge des Links keine Rolle mehr.",
       },
     ],
     related: ["qr-code-generator", "kontrast-checker"],
   },
   en: {
     intro: [
-      "If you run ads, send a newsletter or hand out flyers, your website statistics afterwards usually tell you one thing: visitors arrived. Exactly where from stays open — and with it the question of which effort paid off. UTM parameters solve that by attaching the origin to the link itself. Your analytics reads them and files the visit under the right source.",
+      "If you run ads, send a newsletter or hand out flyers, your website statistics afterwards usually tell you one thing: visitors arrived. Exactly where from stays open, and with it the question of which effort paid off. UTM parameters solve that by attaching the origin to the link itself. Your analytics reads them and files the visit under the right source.",
       "Such a link looks like your normal address, extended with values like utm_source, utm_medium and utm_campaign. This UTM generator assembles it correctly and for free: it encodes special characters, turns your input into clean lower case without spaces, and shows the finished link ready to copy.",
       "The value of all this stands or falls with consistency. Newsletter, newsletter and Newsletter-May are three different sources to a report, and nobody notices until it splits into five rows that all mean the same thing. Decide on one spelling and stick to it.",
     ],
     useCases: [
       {
         title: "Measuring a newsletter",
-        text: "A separate link per send shows which subject actually produced clicks — not merely who opened the mail.",
+        text: "A separate link per send shows which subject actually produced clicks, not merely who opened the mail.",
       },
       {
         title: "Separating paid ads",
@@ -99,7 +99,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Directory listings",
-        text: "Trade directories, classifieds and map services each get their own link — so you can see which listing is worth its price.",
+        text: "Trade directories, classifieds and map services each get their own link, so you can see which listing is worth its price.",
       },
       {
         title: "Social media profiles",
@@ -110,7 +110,7 @@ const guide: ToolGuideSet = {
       {
         title: "Enter the destination",
         description:
-          "Start with the page visitors should land on — complete with https://, and ideally the precise sub-page rather than the home page by default.",
+          "Start with the page visitors should land on, complete with https://, and ideally the precise sub-page rather than the home page by default.",
       },
       {
         title: "Give a source and a medium",
@@ -129,7 +129,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "The link is assembled entirely in your browser; neither the destination nor the campaign name is transmitted or stored. A note about the thing itself: UTM parameters are visible to your visitors, sitting in plain view in the address bar. So do not put anything in them that should not be public — internal codes, budget figures or client names have no place there.",
+      "The link is assembled entirely in your browser; neither the destination nor the campaign name is transmitted or stored. A note about the thing itself: UTM parameters are visible to your visitors, sitting in plain view in the address bar. So do not put anything in them that should not be public, internal codes, budget figures or client names have no place there.",
     faq: [
       {
         q: "Which parameters do I actually need?",
@@ -137,7 +137,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Do UTM links hurt my SEO?",
-        a: "For links pointing at your own site from ads, newsletters or printed material this is not a concern. Do not use UTM parameters for internal links within your website, though — there they create several addresses for one page and muddle the reporting.",
+        a: "For links pointing at your own site from ads, newsletters or printed material this is not a concern. Do not use UTM parameters for internal links within your website, though, there they create several addresses for one page and muddle the reporting.",
       },
       {
         q: "Why is my input converted to lower case?",
@@ -149,7 +149,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Can I shorten the link?",
-        a: "Yes — a link shortener or a redirect of your own preserves the parameters when forwarding. For printed advertising that makes sense; there a QR code usually carries the link anyway, at which point its length stops mattering.",
+        a: "Yes, a link shortener or a redirect of your own preserves the parameters when forwarding. For printed advertising that makes sense; there a QR code usually carries the link anyway, at which point its length stops mattering.",
       },
     ],
     related: ["qr-code-generator", "kontrast-checker"],

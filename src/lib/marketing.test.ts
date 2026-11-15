@@ -76,7 +76,7 @@ describe("the positioning rules", () => {
     expect(allText).not.toMatch(/hofladen|referenzkunde|case study|fallstudie/);
   });
 
-  it("never calls the SITE free — 8 of the 14 composed tools are premium", () => {
+  it("never calls the SITE free, 8 of the 14 composed tools are premium", () => {
     // "vieles kostenlos" is the honest form and is used throughout. What must
     // not come back is the unqualified claim: "kostenlose Werkzeuge",
     // "kostenlose digitale Werkzeuge", "free tools". The per-tool badge is

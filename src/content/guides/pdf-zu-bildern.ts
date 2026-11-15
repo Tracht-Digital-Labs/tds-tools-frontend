@@ -5,7 +5,7 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Manchmal ist ein PDF das falsche Format. In eine Präsentation lässt es sich nicht einfügen, in einem Social-Media-Beitrag zeigt es niemand an, und für eine Vorschau auf der eigenen Website braucht es ohnehin ein Bild. Dann hilft der umgekehrte Weg: die gewünschte Seite als PNG oder JPG herausrechnen und wie jedes andere Bild weiterverwenden.",
-      "Dieses Werkzeug rendert die Seiten so, wie ein Betrachter sie anzeigen würde — mit Schriften, Vektorgrafiken und Layout, nicht als Ausschnitt eines Screenshots. Die Auflösung ist wählbar: 96 dpi für den Bildschirm, 150 dpi als guter Mittelweg, 300 dpi, wenn das Ergebnis gedruckt wird.",
+      "Dieses Werkzeug rendert die Seiten so, wie ein Betrachter sie anzeigen würde, mit Schriften, Vektorgrafiken und Layout, nicht als Ausschnitt eines Screenshots. Die Auflösung ist wählbar: 96 dpi für den Bildschirm, 150 dpi als guter Mittelweg, 300 dpi, wenn das Ergebnis gedruckt wird.",
       "Die erzeugten Seiten erscheinen als Vorschau, mit Größe und Abmessung je Bild und einem eigenen Knopf zum Herunterladen. So lässt sich gezielt die eine Seite laden, die gebraucht wird, statt einen Ordner voller Dateien zu sortieren, von denen neun wieder im Papierkorb landen.",
     ],
     useCases: [
@@ -19,7 +19,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Einzelne Seite weitergeben",
-        text: "Wenn nur eine Seite gebraucht wird, ist ein Bild oft der einfachere Weg als ein neues PDF — der Empfänger sieht es sofort, ohne etwas zu öffnen.",
+        text: "Wenn nur eine Seite gebraucht wird, ist ein Bild oft der einfachere Weg als ein neues PDF, der Empfänger sieht es sofort, ohne etwas zu öffnen.",
       },
       {
         title: "Plan auf die Baustelle schicken",
@@ -27,7 +27,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Vorlage für die Texterkennung",
-        text: "Ein gescanntes PDF ist für eine Texterkennung erst nutzbar, wenn die Seite als Bild vorliegt — dieser Schritt liefert genau das, in der passenden Auflösung.",
+        text: "Ein gescanntes PDF ist für eine Texterkennung erst nutzbar, wenn die Seite als Bild vorliegt, dieser Schritt liefert genau das, in der passenden Auflösung.",
       },
     ],
     steps: [
@@ -37,7 +37,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Seiten eingrenzen",
-        description: "Leer lassen wandelt das ganze Dokument um. Bei einem längeren PDF lohnt sich eine Angabe wie 1 oder 2-4 — pro Durchgang werden höchstens fünfzig Seiten gerendert, weil ein ganzes Buch bei 300 dpi den Arbeitsspeicher des Geräts sprengen würde.",
+        description: "Leer lassen wandelt das ganze Dokument um. Bei einem längeren PDF lohnt sich eine Angabe wie 1 oder 2-4, pro Durchgang werden höchstens fünfzig Seiten gerendert, weil ein ganzes Buch bei 300 dpi den Arbeitsspeicher des Geräts sprengen würde.",
       },
       {
         title: "Auflösung und Format wählen",
@@ -45,7 +45,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Vorschau prüfen und laden",
-        description: "Unter jeder Seite stehen Abmessung und Dateigröße. Einzelne Seiten kommen über den Knopf daneben, alle auf einmal über den Sammelknopf — der Browser fragt je nach Einstellung einmal nach, ob er mehrere Dateien speichern darf.",
+        description: "Unter jeder Seite stehen Abmessung und Dateigröße. Einzelne Seiten kommen über den Knopf daneben, alle auf einmal über den Sammelknopf, der Browser fragt je nach Einstellung einmal nach, ob er mehrere Dateien speichern darf.",
       },
     ],
     privacy:
@@ -73,7 +73,7 @@ const guide: ToolGuideSet = {
   en: {
     intro: [
       "Sometimes a PDF is the wrong format. It cannot be dropped into a presentation, nobody's social feed will display it, and a preview on your own website needs a picture anyway. Then the reverse route helps: render the page you want as a PNG or JPG and use it like any other image.",
-      "This tool renders the pages the way a viewer would show them — with fonts, vector graphics and layout, not as a crop of a screenshot. You choose the resolution: 96 dpi for the screen, 150 dpi as a good middle ground, 300 dpi when the result will be printed.",
+      "This tool renders the pages the way a viewer would show them, with fonts, vector graphics and layout, not as a crop of a screenshot. You choose the resolution: 96 dpi for the screen, 150 dpi as a good middle ground, 300 dpi when the result will be printed.",
       "The rendered pages appear as previews, each with its size and dimensions and its own download button. That way you take the one page you need instead of sorting through a folder of files, nine of which you delete again.",
     ],
     useCases: [
@@ -87,7 +87,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Passing on a single page",
-        text: "When only one page is needed, an image is often simpler than a new PDF — the recipient sees it immediately, without opening anything.",
+        text: "When only one page is needed, an image is often simpler than a new PDF, the recipient sees it immediately, without opening anything.",
       },
       {
         title: "Sending a plan to the site",
@@ -95,7 +95,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Preparing input for text recognition",
-        text: "A scanned PDF only becomes usable for text recognition once the page exists as an image — this step delivers exactly that, at a suitable resolution.",
+        text: "A scanned PDF only becomes usable for text recognition once the page exists as an image, this step delivers exactly that, at a suitable resolution.",
       },
     ],
     steps: [
@@ -105,7 +105,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Narrow the pages",
-        description: "Left empty, the whole document is converted. For a longer PDF an entry like 1 or 2-4 pays off — at most fifty pages are rendered per run, because a whole book at 300 dpi would exhaust the device's memory.",
+        description: "Left empty, the whole document is converted. For a longer PDF an entry like 1 or 2-4 pays off, at most fifty pages are rendered per run, because a whole book at 300 dpi would exhaust the device's memory.",
       },
       {
         title: "Choose resolution and format",
@@ -113,7 +113,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Check the preview and download",
-        description: "Dimensions and file size are shown under each page. Take individual pages with the button beside them, or all at once — depending on its settings the browser will ask once whether it may save several files.",
+        description: "Dimensions and file size are shown under each page. Take individual pages with the button beside them, or all at once, depending on its settings the browser will ask once whether it may save several files.",
       },
     ],
     privacy:

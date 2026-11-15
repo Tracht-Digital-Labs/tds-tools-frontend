@@ -4,9 +4,9 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Bilder aus einer Handy- oder Systemkamera sind für das Web unnötig groß: vier bis zwölf Megabyte, mehrere tausend Pixel breit. Auf einer Website wird davon meist ein Ausschnitt von tausend Pixeln angezeigt — der Rest wird übertragen, bezahlt und dann verworfen. Auf dem Telefon im Mobilfunknetz entscheidet das darüber, ob eine Seite in einer oder in acht Sekunden steht.",
-      "Dieses Werkzeug komprimiert Bilder und verkleinert JPG-Dateien, ohne sie irgendwo hochzuladen. Mehrere Fotos lassen sich auf einmal auswählen oder in das Feld ziehen; dazu kommen eine maximale Breite und Höhe in Pixeln und das Ausgabeformat JPG, WebP, PNG oder — in aktuellen Browsern — AVIF. Muss eine feste Grenze eingehalten werden, etwa höchstens 500 KB für ein Bewerbungsportal, genügt eine Zielgröße: Die Qualität wird dann automatisch gerade so weit gesenkt, bis die Datei passt.",
-      "Für die Bildkomprimierung im Alltag gilt eine einfache Faustregel: Zielbreite 1600 Pixel für großflächige Bilder, 800 für Bilder in Textbreite, Qualität um 80 Prozent. Damit landen die meisten Fotos zwischen 60 und 300 Kilobyte — statt bei acht Megabyte — ohne dass ein Unterschied auffällt. Den größten Anteil daran hat übrigens das Verkleinern der Pixelmaße, nicht die Qualitätsstufe.",
+      "Bilder aus einer Handy- oder Systemkamera sind für das Web unnötig groß: vier bis zwölf Megabyte, mehrere tausend Pixel breit. Auf einer Website wird davon meist ein Ausschnitt von tausend Pixeln angezeigt, der Rest wird übertragen, bezahlt und dann verworfen. Auf dem Telefon im Mobilfunknetz entscheidet das darüber, ob eine Seite in einer oder in acht Sekunden steht.",
+      "Dieses Werkzeug komprimiert Bilder und verkleinert JPG-Dateien, ohne sie irgendwo hochzuladen. Mehrere Fotos lassen sich auf einmal auswählen oder in das Feld ziehen; dazu kommen eine maximale Breite und Höhe in Pixeln und das Ausgabeformat JPG, WebP, PNG oder (in aktuellen Browsern) AVIF. Muss eine feste Grenze eingehalten werden, etwa höchstens 500 KB für ein Bewerbungsportal, genügt eine Zielgröße: Die Qualität wird dann automatisch gerade so weit gesenkt, bis die Datei passt.",
+      "Für die Bildkomprimierung im Alltag gilt eine einfache Faustregel: Zielbreite 1600 Pixel für großflächige Bilder, 800 für Bilder in Textbreite, Qualität um 80 Prozent. Damit landen die meisten Fotos zwischen 60 und 300 Kilobyte (statt bei acht Megabyte) ohne dass ein Unterschied auffällt. Den größten Anteil daran hat übrigens das Verkleinern der Pixelmaße, nicht die Qualitätsstufe.",
     ],
     useCases: [
       {
@@ -19,11 +19,11 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Anhänge, die durch das Postfach passen",
-        text: "Viele Postfächer nehmen Anhänge nur bis zu einer bestimmten Größe an. Zehn komprimierte Fotos passen, wo zwei Originale scheitern — gesammelt als eine ZIP-Datei.",
+        text: "Viele Postfächer nehmen Anhänge nur bis zu einer bestimmten Größe an. Zehn komprimierte Fotos passen, wo zwei Originale scheitern, gesammelt als eine ZIP-Datei.",
       },
       {
         title: "Fotos für Kleinanzeigen und Portale",
-        text: "Verkaufsportale rechnen Bilder ohnehin herunter — oft schlechter als nötig. Wer selbst verkleinert, behält die Kontrolle über Ausschnitt und Schärfe.",
+        text: "Verkaufsportale rechnen Bilder ohnehin herunter, oft schlechter als nötig. Wer selbst verkleinert, behält die Kontrolle über Ausschnitt und Schärfe.",
       },
       {
         title: "Dokumentation aus dem Betrieb",
@@ -48,7 +48,7 @@ const guide: ToolGuideSet = {
       {
         title: "Qualität oder Zielgröße einstellen",
         description:
-          "Zwischen 70 und 85 Prozent Qualität liegt der brauchbare Bereich; darunter werden Kanten und Flächen sichtbar unruhig. Muss die Datei unter eine feste Grenze, kommt die Zielgröße in KB ins Feld — das Werkzeug senkt die Qualität und notfalls die Pixelmaße, bis sie passt.",
+          "Zwischen 70 und 85 Prozent Qualität liegt der brauchbare Bereich; darunter werden Kanten und Flächen sichtbar unruhig. Muss die Datei unter eine feste Grenze, kommt die Zielgröße in KB ins Feld, das Werkzeug senkt die Qualität und notfalls die Pixelmaße, bis sie passt.",
       },
       {
         title: "Komprimieren und vergleichen",
@@ -62,7 +62,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "Die Bilder werden nicht hochgeladen. Der Browser zeichnet sie über ein Canvas-Element neu und komprimiert sie dort, und auch die ZIP-Datei entsteht auf dem eigenen Gerät — die Fotos verlassen es zu keinem Zeitpunkt. Das ist der eigentliche Unterschied zu den verbreiteten Kompressionsdiensten: Dort landen die Aufnahmen auf einem fremden Server, was bei Baustellen-, Schadens- oder Personenaufnahmen nicht nur eine Geschmacksfrage ist, sondern eine datenschutzrechtliche.",
+      "Die Bilder werden nicht hochgeladen. Der Browser zeichnet sie über ein Canvas-Element neu und komprimiert sie dort, und auch die ZIP-Datei entsteht auf dem eigenen Gerät, die Fotos verlassen es zu keinem Zeitpunkt. Das ist der eigentliche Unterschied zu den verbreiteten Kompressionsdiensten: Dort landen die Aufnahmen auf einem fremden Server, was bei Baustellen-, Schadens- oder Personenaufnahmen nicht nur eine Geschmacksfrage ist, sondern eine datenschutzrechtliche.",
     faq: [
       {
         q: "Wie verkleinere ich die Größe einer JPG-Datei?",
@@ -86,7 +86,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "JPEG, WebP, PNG oder AVIF?",
-        a: "Für Websites WebP oder AVIF: gleiche wahrgenommene Qualität bei deutlich weniger Daten, dazu Transparenz. JPEG bleibt die sichere Wahl für E-Mail, ältere Programme und Portale, die nur JPG annehmen. PNG ist verlustfrei und eignet sich für Grafiken, Logos und Screenshots — kleiner wird es nur über die Pixelmaße.",
+        a: "Für Websites WebP oder AVIF: gleiche wahrgenommene Qualität bei deutlich weniger Daten, dazu Transparenz. JPEG bleibt die sichere Wahl für E-Mail, ältere Programme und Portale, die nur JPG annehmen. PNG ist verlustfrei und eignet sich für Grafiken, Logos und Screenshots, kleiner wird es nur über die Pixelmaße.",
       },
       {
         q: "Werden meine Bilder auf einen Server geladen?",
@@ -94,16 +94,16 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Bleiben Aufnahmedatum und Ort erhalten?",
-        a: "Nein. Beim Neuzeichnen im Browser gehen die EXIF-Daten verloren, also auch GPS-Koordinaten und Kameramodell. Für Bilder im Internet ist das ein Vorteil — wer die Angaben braucht, bewahrt das Original auf.",
+        a: "Nein. Beim Neuzeichnen im Browser gehen die EXIF-Daten verloren, also auch GPS-Koordinaten und Kameramodell. Für Bilder im Internet ist das ein Vorteil, wer die Angaben braucht, bewahrt das Original auf.",
       },
     ],
     related: ["pdf-komprimieren", "bilder-zu-pdf", "pdf-werkzeuge", "ki-kennzeichnung-bilder"],
   },
   en: {
     intro: [
-      "Photos out of a phone or system camera are needlessly large for the web: four to twelve megabytes, several thousand pixels wide. A website usually displays a thousand-pixel crop of that — the rest is transferred, paid for and then discarded. On a phone over mobile data, that is the difference between a page appearing in one second and in eight.",
-      "This tool compresses images and reduces the file size of JPGs without uploading them anywhere. Pick several photos at once or drag them in, set a maximum width and height in pixels, and save the result as JPG, WebP, PNG or — in current browsers — AVIF. If you have to stay under a fixed limit, say 500 KB for an application portal, enter a target size: quality is then lowered automatically just far enough for the file to fit.",
-      "A workable rule of thumb for everyday image compression: a target width of 1600 pixels for full-width images, 800 for images inside text, and quality around 80 per cent. That puts most photos between 60 and 300 kilobytes — instead of eight megabytes — without any visible difference. Most of that saving, incidentally, comes from reducing the pixel dimensions, not from the quality setting.",
+      "Photos out of a phone or system camera are needlessly large for the web: four to twelve megabytes, several thousand pixels wide. A website usually displays a thousand-pixel crop of that, the rest is transferred, paid for and then discarded. On a phone over mobile data, that is the difference between a page appearing in one second and in eight.",
+      "This tool compresses images and reduces the file size of JPGs without uploading them anywhere. Pick several photos at once or drag them in, set a maximum width and height in pixels, and save the result as JPG, WebP, PNG or (in current browsers) AVIF. If you have to stay under a fixed limit, say 500 KB for an application portal, enter a target size: quality is then lowered automatically just far enough for the file to fit.",
+      "A workable rule of thumb for everyday image compression: a target width of 1600 pixels for full-width images, 800 for images inside text, and quality around 80 per cent. That puts most photos between 60 and 300 kilobytes (instead of eight megabytes) without any visible difference. Most of that saving, incidentally, comes from reducing the pixel dimensions, not from the quality setting.",
     ],
     useCases: [
       {
@@ -116,11 +116,11 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Attachments that fit through a mailbox",
-        text: "Many mailboxes only accept attachments up to a certain size. Ten compressed photos fit where two originals fail — bundled as one ZIP file.",
+        text: "Many mailboxes only accept attachments up to a certain size. Ten compressed photos fit where two originals fail, bundled as one ZIP file.",
       },
       {
         title: "Photos for classifieds and portals",
-        text: "Selling portals downscale images anyway — often worse than necessary. Doing it yourself keeps control of crop and sharpness.",
+        text: "Selling portals downscale images anyway, often worse than necessary. Doing it yourself keeps control of crop and sharpness.",
       },
       {
         title: "Documentation from the field",
@@ -145,7 +145,7 @@ const guide: ToolGuideSet = {
       {
         title: "Set the quality or a target size",
         description:
-          "Between 70 and 85 per cent quality is the usable range; below that edges and flat areas become visibly restless. If the file must stay under a fixed limit, enter the target size in KB — the tool lowers quality and, if needed, the pixel dimensions until it fits.",
+          "Between 70 and 85 per cent quality is the usable range; below that edges and flat areas become visibly restless. If the file must stay under a fixed limit, enter the target size in KB, the tool lowers quality and, if needed, the pixel dimensions until it fits.",
       },
       {
         title: "Compress and compare",
@@ -159,7 +159,7 @@ const guide: ToolGuideSet = {
       },
     ],
     privacy:
-      "The images are not uploaded. They are redrawn and compressed in your browser through a canvas element, and the ZIP file is assembled on your device too — the photos never leave it at any point. That is the real difference from the widespread compression services: there your pictures land on somebody else's server, which for site, damage or personal photographs is not a matter of taste but of data protection law.",
+      "The images are not uploaded. They are redrawn and compressed in your browser through a canvas element, and the ZIP file is assembled on your device too, the photos never leave it at any point. That is the real difference from the widespread compression services: there your pictures land on somebody else's server, which for site, damage or personal photographs is not a matter of taste but of data protection law.",
     faq: [
       {
         q: "How do I reduce the file size of a JPG?",
@@ -183,7 +183,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "JPEG, WebP, PNG or AVIF?",
-        a: "For websites WebP or AVIF: the same perceived quality at noticeably fewer bytes, plus transparency. JPEG remains the safe choice for email, older software and portals that only accept JPG. PNG is lossless and suits graphics, logos and screenshots — it only gets smaller through its pixel dimensions.",
+        a: "For websites WebP or AVIF: the same perceived quality at noticeably fewer bytes, plus transparency. JPEG remains the safe choice for email, older software and portals that only accept JPG. PNG is lossless and suits graphics, logos and screenshots, it only gets smaller through its pixel dimensions.",
       },
       {
         q: "Are my images uploaded to a server?",
@@ -191,7 +191,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Are the capture date and location preserved?",
-        a: "No. Redrawing in the browser discards the EXIF data, including GPS coordinates and camera model. For images destined for the internet that is an advantage — if you need the values, keep the original.",
+        a: "No. Redrawing in the browser discards the EXIF data, including GPS coordinates and camera model. For images destined for the internet that is an advantage, if you need the values, keep the original.",
       },
     ],
     related: ["pdf-komprimieren", "bilder-zu-pdf", "pdf-werkzeuge", "ki-kennzeichnung-bilder"],

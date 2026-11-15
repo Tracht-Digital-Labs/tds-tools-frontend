@@ -4,7 +4,7 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Ein Impressum ist keine Höflichkeit, sondern eine Auskunft: Wer betreibt diese Seite, und wo ist diese Person erreichbar, wenn etwas zu klären ist? § 5 des Digitale-Dienste-Gesetzes verlangt diese Angaben von jedem, der eine Website geschäftsmäßig betreibt, und „geschäftsmäßig“ beginnt deutlich früher, als die meisten annehmen. Eine Seite, auf der eine Leistung beschrieben und eine Telefonnummer genannt wird, ist bereits erfasst.",
+      "Ein Impressum ist keine Höflichkeit, sondern eine Auskunft: Wer betreibt diese Seite, und wo ist diese Person erreichbar, wenn etwas zu klären ist? § 5 des Digitale-Dienste-Gesetzes verlangt diese Angaben von jedem, der eine Website geschäftsmäßig betreibt und „geschäftsmäßig“ beginnt deutlich früher, als die meisten annehmen. Eine Seite, auf der eine Leistung beschrieben und eine Telefonnummer genannt wird, ist bereits erfasst.",
       "Dieser Generator stellt ein Muster aus den eigenen Angaben zusammen: Rechtsform, Anschrift und Kontakt, dazu ein Haken bei allem, was auf den Betrieb zutrifft: Registereintrag, Umsatzsteuer-Identifikationsnummer, ein reglementierter Beruf mit Kammer, eine Aufsichtsbehörde, eine redaktionell verantwortliche Person nach dem Medienstaatsvertrag. Jede Ankreuzung fügt genau einen Abschnitt hinzu, jede zurückgenommene Ankreuzung entfernt ihn wieder.",
       "Zwei Dinge unterscheiden das Ergebnis von den Mustern, die seit Jahren unverändert im Netz stehen. Es verweist nicht auf die Online-Streitbeilegungsplattform der Europäischen Kommission, die wurde im Juli 2025 abgeschaltet, der Link führt seither ins Leere. Und es fragt nicht nach der Steuernummer: Ins Impressum gehört die Umsatzsteuer-Identifikationsnummer, nicht die Nummer, unter der das Finanzamt einen Betrieb führt.",
     ],
@@ -62,7 +62,7 @@ const guide: ToolGuideSet = {
     faq: [
       {
         q: "Brauche ich ein Impressum, wenn ich nur eine kleine Seite ohne Shop habe?",
-        a: "Sobald die Seite geschäftsmäßig betrieben wird, ja, und das beginnt nicht erst beim Verkauf. Eine Seite, die eine Leistung beschreibt und zur Kontaktaufnahme einlädt, ist bereits geschäftsmäßig. Rein private Seiten ohne jeden geschäftlichen Bezug sind ausgenommen, aber die Grenze ist enger, als sie klingt.",
+        a: "Sobald die Seite geschäftsmäßig betrieben wird, ja und das beginnt nicht erst beim Verkauf. Eine Seite, die eine Leistung beschreibt und zur Kontaktaufnahme einlädt, ist bereits geschäftsmäßig. Rein private Seiten ohne jeden geschäftlichen Bezug sind ausgenommen, aber die Grenze ist enger, als sie klingt.",
       },
       {
         q: "Warum verweist der Text nicht auf die OS-Plattform der EU?",
@@ -78,7 +78,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Ersetzt dieses Werkzeug die Prüfung durch eine Kanzlei?",
-        a: "Nein. Es stellt ein Muster aus den Angaben zusammen und macht sichtbar, welche Abschnitte üblicherweise dazugehören. Welche Pflichtangaben ein Betrieb tatsächlich schuldet, hängt an Rechtsform, Branche und Tätigkeit, und diese Umstände kennt das Werkzeug nicht. Vor der Veröffentlichung gehört der fertige Text in eine rechtliche Prüfung.",
+        a: "Nein. Es stellt ein Muster aus den Angaben zusammen und macht sichtbar, welche Abschnitte üblicherweise dazugehören. Welche Pflichtangaben ein Betrieb tatsächlich schuldet, hängt an Rechtsform, Branche und Tätigkeit und diese Umstände kennt das Werkzeug nicht. Vor der Veröffentlichung gehört der fertige Text in eine rechtliche Prüfung.",
       },
     ],
     related: ["datenschutzerklaerung-generator", "barrierefreiheitserklaerung-generator"],

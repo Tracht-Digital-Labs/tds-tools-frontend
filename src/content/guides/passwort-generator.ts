@@ -6,7 +6,7 @@ const guide: ToolGuideSet = {
     intro: [
       "Die meisten Passwörter in kleinen Betrieben sind gewachsen, nicht gewählt: der Firmenname mit einer Jahreszahl, der Ort mit einem Ausrufezeichen, ein Muster, das sich auf der Tastatur gut anfühlt. Angriffe raten heute aber nicht Zeichen für Zeichen, sondern probieren Listen aus geleakten Passwörtern und ihre naheliegenden Abwandlungen durch. Gegen diese Listen hilft nur eines: ein Passwort, das niemand gewählt hat, sondern der Zufall.",
       "Dieser Generator erzeugt genau solche Passwörter. Länge und Zeichenauswahl (Großbuchstaben, Kleinbuchstaben, Ziffern, Sonderzeichen) sind frei einstellbar, und eine Anzeige schätzt die Stärke des Ergebnisses ein. Auf Wunsch bleiben leicht verwechselbare Zeichen wie große i, kleine L, Null und großes O außen vor: sinnvoll überall dort, wo ein Passwort auch einmal vorgelesen oder abgeschrieben werden muss.",
-      "Zur Einordnung: Länge wirkt stärker als Sonderzeichen. Ein zwanzig Zeichen langes Passwort aus Buchstaben und Ziffern ist erheblich schwerer zu brechen als ein achtstelliges mit drei Sonderzeichen, und mit einem Passwortmanager muss ohnehin niemand eines von beiden auswendig kennen.",
+      "Zur Einordnung: Länge wirkt stärker als Sonderzeichen. Ein zwanzig Zeichen langes Passwort aus Buchstaben und Ziffern ist erheblich schwerer zu brechen als ein achtstelliges mit drei Sonderzeichen und mit einem Passwortmanager muss ohnehin niemand eines von beiden auswendig kennen.",
     ],
     useCases: [
       {

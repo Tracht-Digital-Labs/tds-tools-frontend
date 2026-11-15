@@ -4,7 +4,7 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Arbeitszeiten müssen aufgezeichnet werden, und in vielen kleinen Betrieben passiert das bis heute auf einem Zettel im Fahrzeug oder in einer Tabelle, die jeden Monat neu zusammenkopiert wird. Beides funktioniert, solange niemand nachfragt, und beides ist mühsam in genau dem Moment, in dem jemand nachfragt.",
+      "Arbeitszeiten müssen aufgezeichnet werden, und in vielen kleinen Betrieben passiert das bis heute auf einem Zettel im Fahrzeug oder in einer Tabelle, die jeden Monat neu zusammenkopiert wird. Beides funktioniert, solange niemand nachfragt und beides ist mühsam in genau dem Moment, in dem jemand nachfragt.",
       "Dieses Werkzeug erzeugt einen Arbeitszeitnachweis für einen ganzen Monat als PDF. Beginn, Ende und Pause eintragen, Tagesstunden und Monatssumme werden gerechnet, und heraus kommt ein Blatt zum Ausdrucken und Unterschreiben, mit Namen, Betrieb, Monat und je einem Feld für beide Unterschriften.",
       "Damit das Ausfüllen nicht dreißigmal dasselbe ist, gibt es eine Vorbelegung: Die üblichen Zeiten einmal angeben, für alle Werktage übernehmen und danach nur noch die Ausnahmen ändern. Wochenenden bleiben leer, sind aber vorhanden, ein Samstagseinsatz muss schließlich irgendwo hin.",
     ],

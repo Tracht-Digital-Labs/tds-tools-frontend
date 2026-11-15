@@ -19,7 +19,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Unterlagen für ein Portal hochladen",
-        text: "Förderportale, Ausschreibungsplattformen und Versicherungen setzen oft harte Obergrenzen je Datei, und melden die Überschreitung erst nach dem Ausfüllen des ganzen Formulars.",
+        text: "Förderportale, Ausschreibungsplattformen und Versicherungen setzen oft harte Obergrenzen je Datei und melden die Überschreitung erst nach dem Ausfüllen des ganzen Formulars.",
       },
       {
         title: "Archiv aufräumen",

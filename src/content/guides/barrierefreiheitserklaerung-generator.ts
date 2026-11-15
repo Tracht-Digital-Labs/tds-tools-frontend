@@ -5,7 +5,7 @@ const guide: ToolGuideSet = {
   de: {
     intro: [
       "Seit dem 28. Juni 2025 gilt das Barrierefreiheitsstärkungsgesetz. Es verpflichtet Unternehmen, die bestimmte Dienstleistungen an Verbraucher erbringen: Onlineshops, Buchungs- und Terminsysteme, Bankdienste, Personenbeförderung —, ihre digitalen Angebote barrierefrei zu gestalten und darüber öffentlich Auskunft zu geben. Öffentliche Stellen trifft dieselbe Auskunftspflicht schon länger, allerdings über einen anderen Weg: § 12b des Behindertengleichstellungsgesetzes und die Barrierefreie-Informationstechnik-Verordnung.",
-      "Das sind zwei verschiedene Erklärungen, und sie sehen einander zum Verwechseln ähnlich. Der Unterschied steht am Ende: Eine öffentliche Stelle verweist auf die Schlichtungsstelle nach § 16 BGG, ein Unternehmen auf die Marktüberwachungsstelle der Länder. Vertauscht sind beide Texte falsch, und zwar an einer Stelle, die niemand liest, solange sich niemand beschwert. Dieser Generator fragt deshalb als Erstes, wer die Erklärung abgibt, und richtet den ganzen Text danach aus.",
+      "Das sind zwei verschiedene Erklärungen, und sie sehen einander zum Verwechseln ähnlich. Der Unterschied steht am Ende: Eine öffentliche Stelle verweist auf die Schlichtungsstelle nach § 16 BGG, ein Unternehmen auf die Marktüberwachungsstelle der Länder. Vertauscht sind beide Texte falsch und zwar an einer Stelle, die niemand liest, solange sich niemand beschwert. Dieser Generator fragt deshalb als Erstes, wer die Erklärung abgibt, und richtet den ganzen Text danach aus.",
       "Alles Weitere ist die ehrliche Bestandsaufnahme: Ist das Angebot vollständig, teilweise oder nicht mit dem angewandten Standard vereinbar? Welche Inhalte sind es nicht, und warum? Wie erreicht man den Betreiber, wenn jemand an eine Hürde stößt, und wie schnell kommt eine Antwort? Eine Erklärung, die überall „vollständig vereinbar“ behauptet, ist selten glaubwürdig und im Zweifel eine falsche Angabe.",
     ],
     useCases: [
@@ -70,7 +70,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Was schreibe ich in die Liste der nicht barrierefreien Inhalte?",
-        a: "Konkret das, was bekannt ist: ein nicht getaggtes PDF, ein Video ohne Untertitel, ein Formular ohne verbundene Beschriftungen, eine Karte ohne Textalternative. Je genauer die Angabe, desto eher findet jemand den Weg zu der Fassung, die er nutzen kann, und desto glaubwürdiger ist die Erklärung insgesamt.",
+        a: "Konkret das, was bekannt ist: ein nicht getaggtes PDF, ein Video ohne Untertitel, ein Formular ohne verbundene Beschriftungen, eine Karte ohne Textalternative. Je genauer die Angabe, desto eher findet jemand den Weg zu der Fassung, die er nutzen kann und desto glaubwürdiger ist die Erklärung insgesamt.",
       },
       {
         q: "Wie oft muss ich die Erklärung überprüfen?",

@@ -4,14 +4,14 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Wer Werbung schaltet, einen Newsletter verschickt oder einen Flyer verteilt, sieht in der Website-Statistik hinterher meist nur eines: Es kamen Besucher. Woher genau, bleibt offen, und damit auch die Frage, welche Maßnahme sich gelohnt hat. UTM-Parameter lösen das, indem sie die Herkunft an den Link selbst hängen. Die Statistik liest sie aus und ordnet den Besuch der richtigen Quelle zu.",
+      "Wer Werbung schaltet, einen Newsletter verschickt oder einen Flyer verteilt, sieht in der Website-Statistik hinterher meist nur eines: Es kamen Besucher. Woher genau, bleibt offen und damit auch die Frage, welche Maßnahme sich gelohnt hat. UTM-Parameter lösen das, indem sie die Herkunft an den Link selbst hängen. Die Statistik liest sie aus und ordnet den Besuch der richtigen Quelle zu.",
       "Ein solcher Link sieht aus wie die normale Adresse, ergänzt um Angaben wie utm_source, utm_medium und utm_campaign. Dieser UTM-Generator baut ihn kostenlos und korrekt zusammen: Es kodiert Sonderzeichen, wandelt die Eingaben in saubere Kleinschreibung ohne Leerzeichen um und zeigt den fertigen Link zum Kopieren an.",
       "Der Nutzen steht und fällt mit der Einheitlichkeit. Newsletter, newsletter und Newsletter-Mai sind für die Auswertung drei verschiedene Quellen, und niemand merkt es, bis der Bericht in fünf Zeilen zerfällt, die alle dasselbe meinen. Einmal eine Schreibweise festlegen und dabei bleiben.",
     ],
     useCases: [
       {
         title: "Newsletter auswerten",
-        text: "Ein eigener Link je Aussendung zeigt, welches Thema tatsächlich Klicks gebracht hat, und nicht nur, wer die Mail geöffnet hat.",
+        text: "Ein eigener Link je Aussendung zeigt, welches Thema tatsächlich Klicks gebracht hat und nicht nur, wer die Mail geöffnet hat.",
       },
       {
         title: "Bezahlte Anzeigen trennen",

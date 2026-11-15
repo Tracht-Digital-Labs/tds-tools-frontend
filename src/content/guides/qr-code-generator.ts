@@ -15,7 +15,7 @@ const guide: ToolGuideSet = {
       },
       {
         title: "Speisekarte, Preisliste, Anleitung",
-        text: "Ein Code am Tisch, am Regal oder auf der Maschine führt zur aktuellen Fassung, und künftig wird die Seite ausgetauscht statt des Aufstellers.",
+        text: "Ein Code am Tisch, am Regal oder auf der Maschine führt zur aktuellen Fassung und künftig wird die Seite ausgetauscht statt des Aufstellers.",
       },
       {
         title: "Visitenkarte, die im Adressbuch landet",

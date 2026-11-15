@@ -65,7 +65,7 @@ const guide: ToolGuideSet = {
       },
       {
         q: "Gilt das auch für Logos und Bilder?",
-        a: "Für reine Logos nicht, die sind ausgenommen. Text, der als Teil eines Bildes gesetzt ist, muss die Anforderung dagegen erfüllen, und Bedienelemente sowie Grafiken, die Information tragen, brauchen mindestens 3:1 gegenüber ihrer Umgebung.",
+        a: "Für reine Logos nicht, die sind ausgenommen. Text, der als Teil eines Bildes gesetzt ist, muss die Anforderung dagegen erfüllen und Bedienelemente sowie Grafiken, die Information tragen, brauchen mindestens 3:1 gegenüber ihrer Umgebung.",
       },
       {
         q: "Mein Grau scheitert knapp. Was tun?",

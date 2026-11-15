@@ -6,7 +6,7 @@ const guide: ToolGuideSet = {
     intro: [
       "PDF ist das Format, in dem Angebote, Rechnungen, Lieferscheine und Nachweise durch den Betrieb wandern. Genau deshalb fallen ständig kleine Handgriffe an: drei Scans zu einem Dokument zusammenfassen, aus einem zwanzigseitigen Vertrag die zwei relevanten Seiten herauslösen, eine quer eingezogene Seite geraderücken.",
       "Diese Werkzeuge erledigen genau das, zusammenführen, aufteilen und drehen. Beim Zusammenführen ist die Reihenfolge frei wählbar, beim Aufteilen genügt ein Seitenbereich wie 1-3,5, und das Drehen wirkt auf die gewählten Seiten. Das Ergebnis steht unmittelbar als neue Datei zum Herunterladen bereit.",
-      "Der übliche Weg für diese Aufgaben führt über einen der großen Online-Dienste, und damit über einen Upload. Bei einem Angebot mit Preisen, einer Rechnung mit Bankverbindung oder einer Personalakte ist das der Punkt, an dem es aufhört, eine reine Bequemlichkeitsfrage zu sein. Hier bleibt die Datei auf dem eigenen Gerät.",
+      "Der übliche Weg für diese Aufgaben führt über einen der großen Online-Dienste und damit über einen Upload. Bei einem Angebot mit Preisen, einer Rechnung mit Bankverbindung oder einer Personalakte ist das der Punkt, an dem es aufhört, eine reine Bequemlichkeitsfrage zu sein. Hier bleibt die Datei auf dem eigenen Gerät.",
     ],
     useCases: [
       {

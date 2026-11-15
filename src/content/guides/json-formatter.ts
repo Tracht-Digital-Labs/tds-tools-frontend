@@ -4,7 +4,7 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "JSON ist das Format, in dem sich Programme heute Daten schicken: Schnittstellen antworten damit, Konfigurationsdateien sind darin geschrieben, Exporte aus Warenwirtschaft, Shop oder Buchhaltung liegen oft in dieser Form vor. Solange alles funktioniert, sieht man es nie. Man sieht es genau dann, wenn etwas klemmt, und dann meist als eine einzige, endlos lange Zeile ohne Umbrüche.",
+      "JSON ist das Format, in dem sich Programme heute Daten schicken: Schnittstellen antworten damit, Konfigurationsdateien sind darin geschrieben, Exporte aus Warenwirtschaft, Shop oder Buchhaltung liegen oft in dieser Form vor. Solange alles funktioniert, sieht man es nie. Man sieht es genau dann, wenn etwas klemmt und dann meist als eine einzige, endlos lange Zeile ohne Umbrüche.",
       "Dieses Werkzeug macht daraus lesbaren Text: Es rückt die Struktur ein, prüft sie auf Gültigkeit und nennt bei einem Fehler die Stelle mit Zeile und Spalte, statt nur zu behaupten, irgendwo stimme etwas nicht. Umgekehrt minimiert es auch, entfernt also alle überflüssigen Leerzeichen, wenn die Daten wieder kompakt weitergegeben werden sollen.",
       "Für den Alltag heißt das: Eine Schnittstellenantwort lässt sich selbst ansehen, bevor sie weitergeht, und eine abgelehnte Konfigurationsdatei prüfen, ohne zu raten. Häufigste Ursachen sind ein Komma hinter dem letzten Eintrag, einfache statt doppelte Anführungszeichen und eine Klammer, die nicht geschlossen wurde.",
     ],
@@ -49,7 +49,7 @@ const guide: ToolGuideSet = {
       {
         title: "Ergebnis übernehmen",
         description:
-          "Das eingerückte Ergebnis zur Weiterverwendung kopieren, oder vorher minimieren, wenn es maschinell weiterverarbeitet wird.",
+          "Das eingerückte Ergebnis zur Weiterverwendung kopieren oder vorher minimieren, wenn es maschinell weiterverarbeitet wird.",
       },
     ],
     privacy:

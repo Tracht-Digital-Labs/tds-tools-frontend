@@ -4,7 +4,7 @@ const guide: ToolGuideSet = {
   updatedAt: "2026-10-21",
   de: {
     intro: [
-      "Der Scanner steht im Büro, die Belege liegen im Fahrzeug, und abfotografiert ist ein Lieferschein in drei Sekunden. Was danach fehlt, ist die Form: Zwölf einzelne Handybilder sind kein Dokument, sie sind zwölf Anhänge in unklarer Reihenfolge, mit denen in der Buchhaltung niemand etwas anfangen kann.",
+      "Der Scanner steht im Büro, die Belege liegen im Fahrzeug und abfotografiert ist ein Lieferschein in drei Sekunden. Was danach fehlt, ist die Form: Zwölf einzelne Handybilder sind kein Dokument, sie sind zwölf Anhänge in unklarer Reihenfolge, mit denen in der Buchhaltung niemand etwas anfangen kann.",
       "Dieses Werkzeug macht daraus ein PDF. Die Bilder werden ausgewählt, in die richtige Reihenfolge gebracht, und dann steht fest, wie die Seiten aussehen sollen: A4, A5 oder Letter, hoch oder quer, mit Rand oder randlos. Jedes Bild wird eine Seite, und heraus kommt eine Datei, die sich verschicken, ablegen und ausdrucken lässt wie jedes andere Dokument.",
       "Für die Ausrichtung gibt es bewusst eine Automatik: Ein querformatiges Foto bekommt eine querformatige Seite, ein hochkant aufgenommenes eine hochkante. Damit passt der Stapel auch dann, wenn er gemischt ist, was er bei zwischendurch abfotografierten Belegen praktisch immer ist.",
     ],

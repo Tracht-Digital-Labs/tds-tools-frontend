@@ -67,7 +67,7 @@ export const seoConfig = {
   /** Public social URLs — surface in JSON-LD `sameAs`. */
   socials: {
     linkedin: "https://www.linkedin.com/in/julian-tracht/",
-    github: "https://github.com/Tracht-Digital-Solutions",
+    github: "https://github.com/Tracht-Digital-Labs",
   } as { linkedin?: string; github?: string },
   /**
    * Default OG card, generated at build time by `src/pages/og/default.png.ts`.
@@ -107,4 +107,4 @@ export const EN_ENABLED = true;
  * operation; the helpers live in tds-shared since 0.59 (the landing page and
  * the shop use them too). `x-default` points at the German page.
  */
-export { localizedPath, neutralPath, OG_LOCALE as ogLocale } from "@tracht-digital-solutions/tds-shared/i18n";
+export { localizedPath, neutralPath, OG_LOCALE as ogLocale } from "@tracht-digital-labs/tds-shared/i18n";

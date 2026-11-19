@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { buildManifest, MANIFEST_HEADERS } from "@tracht-digital-solutions/tds-shared/pwa";
+import { buildManifest, MANIFEST_HEADERS } from "@tracht-digital-labs/tds-shared/pwa";
 
 /** Installable tools site (tds-shared/pwa). Prerendered — never varies per request. */
 export const prerender = true;

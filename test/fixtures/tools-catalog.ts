@@ -8,7 +8,7 @@
  * login-required, and one premium tool with a price — enough to exercise every
  * branch of the manifest-default → admin-override merge.
  */
-import type { ToolDef } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolDef } from "@tracht-digital-labs/tds-tools-contract";
 
 export const catalog: { tools: ToolDef[] } = {
   tools: [

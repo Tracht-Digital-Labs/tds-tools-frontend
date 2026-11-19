@@ -26,7 +26,7 @@ import { enabledTools } from "./catalog";
 import { guideUpdatedAt } from "./guides";
 import { EN_ENABLED, localizedPath, type Lang } from "./seo";
 import { site } from "./site";
-import { newestDay, renderSectionedSitemapIndex, renderUrlset as renderUrlsetXml } from "@tracht-digital-solutions/tds-shared/site";
+import { newestDay, renderSectionedSitemapIndex, renderUrlset as renderUrlsetXml } from "@tracht-digital-labs/tds-shared/site";
 import { exclusionPatterns, groupExcluded, hreflangGroup } from "./sitemapExclusions";
 import { SITEMAP_SECTIONS, sectionPath, type SitemapSection } from "./sitemapSections";
 

@@ -14,7 +14,7 @@ import { describe, expect, it } from "vitest";
  * Reads the INSTALLED packs, which are what this site builds from, so a new
  * pack is covered the moment it is composed.
  */
-const scope = join(process.cwd(), "node_modules", "@tracht-digital-solutions");
+const scope = join(process.cwd(), "node_modules", "@tracht-digital-labs");
 const packs = readdirSync(scope).filter((name) => name.startsWith("tds-tool-"));
 
 /** Every island file under `dir`, subfolders included (the devkit studio keeps its steps in one). */

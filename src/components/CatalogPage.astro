@@ -22,7 +22,7 @@ import {
   webPageNode,
   websiteSchema,
 } from "~/lib/jsonld";
-import type { ToolCategory } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolCategory } from "@tracht-digital-labs/tds-tools-contract";
 
 interface Props {
   lang: Lang;
@@ -255,7 +255,7 @@ const jsonLd = asGraph(
     mountCardTilt(grid);
   }
 
-  import { matchesAllWords, mountFilterBar } from "@tracht-digital-solutions/tds-shared/filter";
+  import { matchesAllWords, mountFilterBar } from "@tracht-digital-labs/tds-shared/filter";
 
   const filter = document.querySelector<HTMLElement>("[data-tool-filter]");
   if (filter) {
@@ -277,7 +277,7 @@ const jsonLd = asGraph(
     });
   }
 
-  import { runtimeSetting } from "@tracht-digital-solutions/tds-shared/api";
+  import { runtimeSetting } from "@tracht-digital-labs/tds-shared/api";
   import { mountPremium } from "~/lib/premiumClient";
 
   const premiumArea = document.querySelector<HTMLElement>("[data-premium-area]");

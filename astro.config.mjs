@@ -3,21 +3,21 @@ import node from "@astrojs/node";
 import react from "@astrojs/react";
 // Shared CSS minify settings (incl. the cssTarget that keeps lightningcss
 // from dropping the header backdrop-filter prefix). See tds-shared#10.
-import { motionSsrNoExternal, tdsViteBuild } from "@tracht-digital-solutions/tds-shared/astro";
-import { toolHost } from "@tracht-digital-solutions/tds-tools-contract/astro";
+import { motionSsrNoExternal, tdsViteBuild } from "@tracht-digital-labs/tds-shared/astro";
+import { toolHost } from "@tracht-digital-labs/tds-tools-contract/astro";
 
 // The tool packs composed into this build. Adding a `tds-tool-*` package here
 // (plus the matching dependency in package.json) is this repo's ONLY tool
 // composition decision — routes + catalog come from the manifests. `toolHost`
 // hard-errors the build on an id/slug collision or a missing dependency.
-import qr from "@tracht-digital-solutions/tds-tool-qr";
-import textkit from "@tracht-digital-solutions/tds-tool-textkit";
-import devkit from "@tracht-digital-solutions/tds-tool-devkit";
-import media from "@tracht-digital-solutions/tds-tool-media";
-import pdf from "@tracht-digital-solutions/tds-tool-pdf";
-import office from "@tracht-digital-solutions/tds-tool-office";
-import legal from "@tracht-digital-solutions/tds-tool-legal";
-import businesscard from "@tracht-digital-solutions/tds-tool-businesscard";
+import qr from "@tracht-digital-labs/tds-tool-qr";
+import textkit from "@tracht-digital-labs/tds-tool-textkit";
+import devkit from "@tracht-digital-labs/tds-tool-devkit";
+import media from "@tracht-digital-labs/tds-tool-media";
+import pdf from "@tracht-digital-labs/tds-tool-pdf";
+import office from "@tracht-digital-labs/tds-tool-office";
+import legal from "@tracht-digital-labs/tds-tool-legal";
+import businesscard from "@tracht-digital-labs/tds-tool-businesscard";
 
 const packs = [qr, textkit, devkit, media, pdf, office, legal, businesscard];
 
@@ -95,7 +95,7 @@ export default defineConfig({
       // silent no-op, which is exactly why it survived.
       // `motion` (lazily imported by tds-shared's panel components)
       // is bundled so the release tree never needs a copy; tds-shared owns the list.
-      noExternal: [/^@tracht-digital-solutions\//, "zod", ...motionSsrNoExternal],
+      noExternal: [/^@tracht-digital-labs\//, "zod", ...motionSsrNoExternal],
       // Native addons cannot be bundled.
       external: ["sharp"],
     },

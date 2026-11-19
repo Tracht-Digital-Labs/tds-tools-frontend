@@ -1,4 +1,4 @@
-import type {ToolCategory} from '@tracht-digital-solutions/tds-tools-contract';
+import type {ToolCategory} from '@tracht-digital-labs/tds-tools-contract';
 
 /** Illustrative subjects, never screenshots or promises about tool results. */
 export const categoryArtwork: Record<ToolCategory, string> = {

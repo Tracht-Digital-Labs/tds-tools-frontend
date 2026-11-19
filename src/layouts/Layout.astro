@@ -2,7 +2,7 @@
 // Font faces must be imported here (not via @import in global.css):
 // @tailwindcss/postcss inlines CSS @imports without rebasing their relative
 // url(./files/*.woff2) refs, so Vite never emits the fonts otherwise.
-import { serializeJsonLd } from "@tracht-digital-solutions/tds-shared/site";
+import { serializeJsonLd } from "@tracht-digital-labs/tds-shared/site";
 // The two font files the first paint needs, imported for their hashed URLs so
 // they can be preloaded (same pattern as the landingpage). Without it the body
 // face and the 800-weight display face arrived after first paint and swapped
@@ -17,7 +17,7 @@ import "@fontsource/lato/900.css";
 import "@fontsource-variable/plus-jakarta-sans";
 import "@fontsource-variable/jetbrains-mono";
 import "~/styles/global.css";
-import { consentBannerHostMarkup } from "@tracht-digital-solutions/tds-shared/dom";
+import { consentBannerHostMarkup } from "@tracht-digital-labs/tds-shared/dom";
 import {
   errorBounceScript,
   hoverTipScript,
@@ -26,7 +26,7 @@ import {
   pageTransitionOptIn,
   speculationRules,
   themeBootstrapScript,
-} from "@tracht-digital-solutions/tds-shared/astro";
+} from "@tracht-digital-labs/tds-shared/astro";
 import AppChrome from "~/components/AppChrome.astro";
 import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
@@ -265,8 +265,8 @@ const jsonLdText = jsonLd ? serializeJsonLd(jsonLd) : null;
     <AppChrome lang={lang} />
 
     <script>
-      import { startAccountPrefsSync } from "@tracht-digital-solutions/tds-shared/prefs";
-      import { registerServiceWorker } from "@tracht-digital-solutions/tds-shared/app";
+      import { startAccountPrefsSync } from "@tracht-digital-labs/tds-shared/prefs";
+      import { registerServiceWorker } from "@tracht-digital-labs/tds-shared/app";
       // Signed in? Theme and language follow the account to other devices.
       void startAccountPrefsSync();
       // Installable; tool pages opened once keep working offline (src/pages/sw.js.ts).
@@ -277,7 +277,7 @@ const jsonLdText = jsonLd ? serializeJsonLd(jsonLd) : null;
         the banner below; withdrawing deletes the ids. Tool inputs are never
         read — only `data-track` clicks, sections and page views. */}
     <script>
-      import { startAnalytics } from "@tracht-digital-solutions/tds-shared/analytics";
+      import { startAnalytics } from "@tracht-digital-labs/tds-shared/analytics";
 
       startAnalytics({
         site: "tools",
@@ -313,7 +313,7 @@ const jsonLdText = jsonLd ? serializeJsonLd(jsonLd) : null;
       })}
     />
     <script>
-      import { mountConsentBannerHost } from "@tracht-digital-solutions/tds-shared/dom";
+      import { mountConsentBannerHost } from "@tracht-digital-labs/tds-shared/dom";
 
       mountConsentBannerHost();
     </script>

@@ -1,7 +1,7 @@
 import { defineMiddleware, sequence } from "astro:middleware";
 
 import { siteCache } from "./lib/pageCache";
-import { guardSiteKey, withUtf8Charset } from "@tracht-digital-solutions/tds-shared/site";
+import { guardSiteKey, withUtf8Charset } from "@tracht-digital-labs/tds-shared/site";
 import { ensureCatalogSynced } from "./lib/connection";
 
 /**

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Copy the OCR engine into `public/ocr/` so the Texterkennung tool
- * (`@tracht-digital-solutions/tds-tool-office`) is served entirely by this site.
+ * (`@tracht-digital-labs/tds-tool-office`) is served entirely by this site.
  *
  * WHY THIS EXISTS. tesseract.js otherwise fetches its worker, its WebAssembly
  * core and its language data from a third-party CDN at first use. That would
@@ -62,7 +62,7 @@ function resolvePackageDir(name) {
     join(
       root,
       "node_modules",
-      "@tracht-digital-solutions",
+      "@tracht-digital-labs",
       "tds-tool-office",
       "node_modules",
       name,

@@ -31,8 +31,8 @@ AdSense laufen komplett statisch** und sind unabhängig vom Backend. Der
 
 - **Node 22** und **npm**, **PHP 8.3** + **Composer** (nur fürs Backend).
 - **GitHub PAT (classic)** mit `read:packages`, `write:packages`,
-  `delete:packages`, `repo`, `workflow` — für die Org `Tracht-Digital-Solutions`
-  **SSO-autorisiert**. Die `@tracht-digital-solutions/*`-Pakete liegen auf GitHub
+  `delete:packages`, `repo`, `workflow` — für die Org `Tracht-Digital-Labs`
+  **SSO-autorisiert**. Die `@tracht-digital-labs/*`-Pakete liegen auf GitHub
   Packages, nicht auf npmjs.
 - **In GitHub** ist der PAT als Repo-/Org-Secret **`PACKAGE_TOKEN`** hinterlegt
   (bereits erledigt). In allen neuen Repos speist `PACKAGE_TOKEN` die CI-Variable
@@ -40,7 +40,7 @@ AdSense laufen komplett statisch** und sind unabhängig vom Backend. Der
 - **Lokal** braucht `npm install` denselben Token. Entweder global in
   `~/.npmrc`:
   ```
-  @tracht-digital-solutions:registry=https://npm.pkg.github.com
+  @tracht-digital-labs:registry=https://npm.pkg.github.com
   //npm.pkg.github.com/:_authToken=DEIN_PAT
   ```
   …oder die Umgebungsvariable setzen, die die committete `.npmrc` referenziert:
@@ -149,7 +149,7 @@ zweiten Release auslöst (keine Endlosschleife). Bei `tds-ext-tools-pkg` wird zu
 workflow** (Bump wählen). Oder per CLI:
 
 ```bash
-gh workflow run release.yml -R Tracht-Digital-Solutions/tds-tools-contract-pkg -f bump=minor
+gh workflow run release.yml -R Tracht-Digital-Labs/tds-tools-contract-pkg -f bump=minor
 ```
 
 - **Versionslinien:** Tool-Pakete + Extension bleiben in `0.1.x` (Site/Frontend pinnen
@@ -186,7 +186,7 @@ Publisher-ID im Frontend gesetzt ist (siehe unten).
 **4. Optional, aber empfohlen: `https://tools.tracht-digital.de/install`.**
 Jeder Build liefert einen Setup-Assistenten mit — eine Seite der Site, die
 vollständig im Browser läuft (Quelle:
-`@tracht-digital-solutions/tds-shared/install`). Auf dieser Domain ist PHP
+`@tracht-digital-labs/tds-shared/install`). Auf dieser Domain ist PHP
 abgeschaltet, deshalb schreibt der Assistent nichts selbst: er erzeugt die
 `tds-runtime.json` zum Herunterladen und bestätigt danach, dass sie liegt.
 Er meldet sich per Plattform-Admin-Login an, prüft `GET /tools/catalog` auf
@@ -223,7 +223,7 @@ Tools / AdSense** (Namespace `tools`, DB-first + Env-Fallback):
 | Feld | Wirkung |
 |---|---|
 | AdSense aktivieren + **Publisher-ID** (`ca-pub-…`) + Slots | schaltet die Consent-gated Werbung frei |
-| **Rebuild-Repo** (`Tracht-Digital-Solutions/tds-tools-frontend`) + Workflow (`release.yml`) + **Rebuild-Token** | löst nach Katalog-Änderungen einen Rebuild der Website aus. **Nicht `dev.yml`** — dieser Workflow wurde am 2026-08-24 gelöscht, als der Deploy aufhörte, bei jedem Push zu laufen. Der Dispatch schlägt nie fehl, er lief nur ins Leere |
+| **Rebuild-Repo** (`Tracht-Digital-Labs/tds-tools-frontend`) + Workflow (`release.yml`) + **Rebuild-Token** | löst nach Katalog-Änderungen einen Rebuild der Website aus. **Nicht `dev.yml`** — dieser Workflow wurde am 2026-08-24 gelöscht, als der Deploy aufhörte, bei jedem Push zu laufen. Der Dispatch schlägt nie fehl, er lief nur ins Leere |
 | **Seiten-Cache: Basis-URL + Token** | re-rendert einzelne Seiten, wenn Ratgeber-Texte gespeichert werden — Sekunden statt CI-Build. Ohne Token passiert nichts |
 | **Registry-Sync-Token** | muss identisch im Setup-Assistenten der Website (`/install`) eingegeben werden — er überträgt die Tool-Liste. Ohne diesen Eintrag hier antwortet `POST /tools/registry` mit 503 |
 | **Stripe Secret Key** + **Webhook Secret** + Währung + Success/Cancel-URL | Premium-Bezahlung (Checkout) |
@@ -254,7 +254,7 @@ rein clientseitige Tools ohne Extra-Dependency).
 **a) Repo anlegen & umbenennen**
 
 Alle Vorkommen des alten Namens ersetzen:
-- `package.json`: `name` (`@tracht-digital-solutions/tds-tool-<neu>`), `description`,
+- `package.json`: `name` (`@tracht-digital-labs/tds-tool-<neu>`), `description`,
   `repository`, ggf. `dependencies` (z. B. eine Lib fürs Tool).
 - `.github/workflows/_build.yml`: `package-name:` (1×).
 - `src/index.ts`: das Manifest (siehe b).
@@ -262,7 +262,7 @@ Alle Vorkommen des alten Namens ersetzen:
 **b) Manifest schreiben** (`src/index.ts`) — ein Paket darf mehrere Tools liefern:
 
 ```ts
-import { defineToolPack, defineTool } from "@tracht-digital-solutions/tds-tools-contract";
+import { defineToolPack, defineTool } from "@tracht-digital-labs/tds-tools-contract";
 
 export default defineToolPack({
   id: "mein-pack",                 // kebab-case, eindeutig
@@ -277,7 +277,7 @@ export default defineToolPack({
       description: "Kurzbeschreibung fürs Katalog-Kärtchen + Meta-Description.",
       icon: "braces",
       keywords: ["…"],
-      component: "@tracht-digital-solutions/tds-tool-mein/tools/MeinTool.astro",
+      component: "@tracht-digital-labs/tds-tool-mein/tools/MeinTool.astro",
       // Defaults (überschreibbar im Admin-Frontend):
       // requiresLoginDefault: true,
       // premiumDefault: true, priceCentsDefault: 500,
@@ -295,17 +295,17 @@ Styling über tds-shared-Tokens + Tailwind-Utilities.
 
 ```js
 // astro.config.mjs
-import mein from "@tracht-digital-solutions/tds-tool-mein";
+import mein from "@tracht-digital-labs/tds-tool-mein";
 const packs = [qr, textkit, devkit, media, mein];   // hinzufügen
 ```
 ```jsonc
 // package.json → dependencies
-"@tracht-digital-solutions/tds-tool-mein": "^0.1.0",
+"@tracht-digital-labs/tds-tool-mein": "^0.1.0",
 ```
 ```css
 /* src/styles/global.css — NACH den @imports, damit Tailwind die Utility-Klassen
    der Insel scannt (sonst fehlen flex/grid/gap etc. im Build) */
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-mein/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-mein/**/*.{astro,tsx}";
 ```
 
 **e) Veröffentlichen & ausrollen:** neues Paket **Release** drücken → dann

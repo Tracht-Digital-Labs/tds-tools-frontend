@@ -37,7 +37,7 @@
  */
 
 import { catalog as composed } from "virtual:tools-catalog";
-import type { ToolDef } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolDef } from "@tracht-digital-labs/tds-tools-contract";
 import { apiBase } from "./connection";
 import { memoisedOr, readContentJson } from "./contentFetch";
 

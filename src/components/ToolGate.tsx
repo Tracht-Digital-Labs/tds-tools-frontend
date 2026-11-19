@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { runtimeSetting } from "@tracht-digital-solutions/tds-shared/api";
+import { runtimeSetting } from "@tracht-digital-labs/tds-shared/api";
 import { signupUrl } from "~/lib/premiumClient";
 
 interface Props {

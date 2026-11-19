@@ -35,7 +35,7 @@ pass `/tools/entitlement`.
 
 ## Account menu
 
-`AccountMenu` from `@tracht-digital-solutions/tds-shared/components`: avatar, name and dropdown, top right.
+`AccountMenu` from `@tracht-digital-labs/tds-shared/components`: avatar, name and dropdown, top right.
 
 - **Signed out it shows a sign-in link** (`loggedOut="login"`), painted immediately rather than after the `/me`
   probe.

@@ -25,10 +25,10 @@ const pkg = JSON.parse(read("package.json")) as { dependencies?: Record<string, 
 const astroConfig = read("astro.config.mjs");
 const globalCss = read("src/styles/global.css");
 
-/** Every `@tracht-digital-solutions/tds-tool-*` this site depends on. */
+/** Every `@tracht-digital-labs/tds-tool-*` this site depends on. */
 const packs = Object.keys(pkg.dependencies ?? {})
-  .filter((name) => name.startsWith("@tracht-digital-solutions/tds-tool-"))
-  .map((name) => name.replace("@tracht-digital-solutions/", ""))
+  .filter((name) => name.startsWith("@tracht-digital-labs/tds-tool-"))
+  .map((name) => name.replace("@tracht-digital-labs/", ""))
   .sort();
 
 describe("every tool pack this site depends on", () => {
@@ -38,10 +38,10 @@ describe("every tool pack this site depends on", () => {
   });
 
   it.each(packs)("%s is imported and composed in astro.config.mjs", (pack) => {
-    expect(astroConfig, `import of ${pack}`).toContain(`@tracht-digital-solutions/${pack}`);
+    expect(astroConfig, `import of ${pack}`).toContain(`@tracht-digital-labs/${pack}`);
     // The import alone is not composition: the local name has to reach `packs`.
     const imported = astroConfig.match(
-      new RegExp(`import\\s+(\\w+)\\s+from\\s+"@tracht-digital-solutions/${pack}"`),
+      new RegExp(`import\\s+(\\w+)\\s+from\\s+"@tracht-digital-labs/${pack}"`),
     );
     expect(imported, `import statement for ${pack}`).not.toBeNull();
     const list = astroConfig.match(/const packs = \[([^\]]*)\]/)?.[1] ?? "";
@@ -53,14 +53,14 @@ describe("every tool pack this site depends on", () => {
 
   it.each(packs)("%s is scanned by Tailwind (@source in global.css)", (pack) => {
     expect(globalCss, `@source for ${pack}`).toContain(
-      `@source "../../node_modules/@tracht-digital-solutions/${pack}/**/*.{astro,tsx}";`,
+      `@source "../../node_modules/@tracht-digital-labs/${pack}/**/*.{astro,tsx}";`,
     );
   });
 
   it("has no @source line for a pack it does not depend on", () => {
     // The other direction: a pack removed from the dependencies but left in
     // the scan list makes Tailwind read a folder that is not there.
-    const scanned = [...globalCss.matchAll(/@source "\.\.\/\.\.\/node_modules\/@tracht-digital-solutions\/(tds-tool-[a-z-]+)\//g)]
+    const scanned = [...globalCss.matchAll(/@source "\.\.\/\.\.\/node_modules\/@tracht-digital-labs\/(tds-tool-[a-z-]+)\//g)]
       .map((match) => match[1]!)
       .sort();
     expect(scanned).toEqual(packs);

@@ -43,27 +43,27 @@
                 disclosure FAQ. Importing it would mean overriding it in three
                 places. The `.tool-guide*` block at the end of this file is
                 ~60 lines and fights nothing. */
-@import "@tracht-digital-solutions/tds-shared/styles/base.css";
-@import "@tracht-digital-solutions/tds-shared/styles/primitives.css";
-@import "@tracht-digital-solutions/tds-shared/styles/surfaces/blog.css";
+@import "@tracht-digital-labs/tds-shared/styles/base.css";
+@import "@tracht-digital-labs/tds-shared/styles/primitives.css";
+@import "@tracht-digital-labs/tds-shared/styles/surfaces/blog.css";
 /* Cross-page fade between two pages of the tools site — no script, opacity
    only, off under reduced motion. */
-@import "@tracht-digital-solutions/tds-shared/styles/page-transitions.css";
-@import "@tracht-digital-solutions/tds-shared/styles/app-shell.css";
+@import "@tracht-digital-labs/tds-shared/styles/page-transitions.css";
+@import "@tracht-digital-labs/tds-shared/styles/app-shell.css";
 
 /* Scan the composed tool packages (in node_modules) for Tailwind utility
    classes. Tailwind ignores node_modules by default, so without this the
    flex/grid/gap utilities used inside the tool islands are never generated.
    MUST come AFTER the @imports (@source before @import errors). Mirrors the
    frontend host's global.css @source rule. */
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-qr/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-textkit/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-devkit/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-media/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-pdf/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-office/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-legal/**/*.{astro,tsx}";
-@source "../../node_modules/@tracht-digital-solutions/tds-tool-businesscard/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-qr/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-textkit/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-devkit/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-media/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-pdf/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-office/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-legal/**/*.{astro,tsx}";
+@source "../../node_modules/@tracht-digital-labs/tds-tool-businesscard/**/*.{astro,tsx}";
 /* …and tds-shared itself, for exactly the same reason. Its React islands are
    built out of utilities too (`ThemeToggle` is `inline-flex w-9 h-9
    rounded-full … hover:bg-black/5`), and this was the ONE app of the six
@@ -73,7 +73,7 @@
    redesign and two release rounds.
    Judge a fix here by grepping the BUILT css for `.w-9`, not by reading the
    diff. */
-@source "../../node_modules/@tracht-digital-solutions/tds-shared";
+@source "../../node_modules/@tracht-digital-labs/tds-shared";
 
 /* ---- Brand mark ---- */
 /* `.brand-logo` itself lives in tds-shared (primitives.css): a CSS mask over

@@ -1,4 +1,4 @@
-import { memoisedOr as sharedMemoisedOr } from "@tracht-digital-solutions/tds-shared/site";
+import { memoisedOr as sharedMemoisedOr } from "@tracht-digital-labs/tds-shared/site";
 
 import { contentCache } from "./cache";
 
@@ -6,7 +6,7 @@ import { contentCache } from "./cache";
  * This site's binding of tds-shared/site: the reader comes from `./siteKey`
  * (it needs the site's key), the memo is this site's generation cache.
  */
-export { ContentHttpError, isConnectionFailure } from "@tracht-digital-solutions/tds-shared/site";
+export { ContentHttpError, isConnectionFailure } from "@tracht-digital-labs/tds-shared/site";
 export { readContentJson } from "./siteKey";
 
 /** Remembers successes only — see `memoisedOr` in tds-shared/site. */

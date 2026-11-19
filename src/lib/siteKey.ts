@@ -1,4 +1,4 @@
-import { createContentReader, createSiteKeyGuard } from "@tracht-digital-solutions/tds-shared/site";
+import { createContentReader, createSiteKeyGuard } from "@tracht-digital-labs/tds-shared/site";
 
 import { connection } from "./connection";
 
@@ -24,4 +24,4 @@ export const { currentSiteKey, siteKeyHeaders, assertKeyAccepted } = guard;
 /** Key, 10s timeout, key check, throw on non-2xx. See tds-shared/site. */
 export const readContentJson = createContentReader(guard);
 
-export { SiteKeyRejectedError, siteKeyRejectionCount } from "@tracht-digital-solutions/tds-shared/site";
+export { SiteKeyRejectedError, siteKeyRejectionCount } from "@tracht-digital-labs/tds-shared/site";

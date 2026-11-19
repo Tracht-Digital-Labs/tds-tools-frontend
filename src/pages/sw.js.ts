@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { buildServiceWorker, SW_HEADERS } from "@tracht-digital-solutions/tds-shared/pwa";
+import { buildServiceWorker, SW_HEADERS } from "@tracht-digital-labs/tds-shared/pwa";
 
 /**
  * The service worker (tds-shared/pwa). Prerendered: its version is the build

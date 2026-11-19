@@ -1,13 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import businesscard from "@tracht-digital-solutions/tds-tool-businesscard";
-import devkit from "@tracht-digital-solutions/tds-tool-devkit";
-import media from "@tracht-digital-solutions/tds-tool-media";
-import pdf from "@tracht-digital-solutions/tds-tool-pdf";
-import office from "@tracht-digital-solutions/tds-tool-office";
-import qr from "@tracht-digital-solutions/tds-tool-qr";
-import textkit from "@tracht-digital-solutions/tds-tool-textkit";
-import legal from "@tracht-digital-solutions/tds-tool-legal";
+import businesscard from "@tracht-digital-labs/tds-tool-businesscard";
+import devkit from "@tracht-digital-labs/tds-tool-devkit";
+import media from "@tracht-digital-labs/tds-tool-media";
+import pdf from "@tracht-digital-labs/tds-tool-pdf";
+import office from "@tracht-digital-labs/tds-tool-office";
+import qr from "@tracht-digital-labs/tds-tool-qr";
+import textkit from "@tracht-digital-labs/tds-tool-textkit";
+import legal from "@tracht-digital-labs/tds-tool-legal";
 
 import { categoryLabels, copy, t, toolCopyEn, toolCopyFor } from "./i18n";
 import { guides } from "./guides";

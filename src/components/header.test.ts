@@ -140,7 +140,7 @@ describe("the DE|EN language switch", () => {
       join(
         process.cwd(),
         "node_modules",
-        "@tracht-digital-solutions",
+        "@tracht-digital-labs",
         "tds-shared",
         "styles",
         "primitives.css",
@@ -179,7 +179,7 @@ describe("the property bar", () => {
 
   it("takes its links from propertyNav, never from a local list", () => {
     expect(source).toMatch(
-      /import \{[^}]*\bpropertyNav\b[^}]*\} from "@tracht-digital-solutions\/tds-shared\/nav"/,
+      /import \{[^}]*\bpropertyNav\b[^}]*\} from "@tracht-digital-labs\/tds-shared\/nav"/,
     );
     expect(source).toContain('propertyNav("tools", lang, `${base}/`)');
     expect(source).not.toMatch(/links\.(blog|main)/);
@@ -198,7 +198,7 @@ describe("the property bar", () => {
   });
 
   it("resolves the bar in the INSTALLED tds-shared", () => {
-    const shared = join(process.cwd(), "node_modules", "@tracht-digital-solutions", "tds-shared");
+    const shared = join(process.cwd(), "node_modules", "@tracht-digital-labs", "tds-shared");
     const primitives = readFileSync(join(shared, "styles", "primitives.css"), "utf8");
     expect(primitives).toContain(".tds-sitebar__wide");
     expect(primitives).toContain(".tds-sitebar__island");
@@ -217,7 +217,7 @@ describe("the account menu", () => {
 
   it("comes from tds-shared, not from a local copy", () => {
     expect(source).toMatch(
-      /import \{[^}]*\bAccountMenu\b[^}]*\} from "@tracht-digital-solutions\/tds-shared\/(?:components|islands\/account-menu)"/,
+      /import \{[^}]*\bAccountMenu\b[^}]*\} from "@tracht-digital-labs\/tds-shared\/(?:components|islands\/account-menu)"/,
     );
   });
 
@@ -261,7 +261,7 @@ describe("the account menu", () => {
       join(
         process.cwd(),
         "node_modules",
-        "@tracht-digital-solutions",
+        "@tracht-digital-labs",
         "tds-shared",
         "dist",
         "components",

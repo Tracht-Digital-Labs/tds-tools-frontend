@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { resolveEvents } from "@tracht-digital-solutions/tds-shared/cache";
+import { resolveEvents } from "@tracht-digital-labs/tds-shared/cache";
 
 import { alwaysPaths, cacheEvents } from "./cache";
 

@@ -1,6 +1,6 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import { SW_PAGE_CACHE } from "@tracht-digital-solutions/tds-shared/pwa";
+import { SW_PAGE_CACHE } from "@tracht-digital-labs/tds-shared/pwa";
 // The service worker's fallback page (src/pages/sw.js.ts). Lists the tool
 // pages this device kept — they run in the browser, so they work offline.
 export const prerender = true;
@@ -17,7 +17,7 @@ export const prerender = true;
 </Layout>
 
 <script>
-  import { mountOfflineList } from "@tracht-digital-solutions/tds-shared/pwa";
+  import { mountOfflineList } from "@tracht-digital-labs/tds-shared/pwa";
 
   // The tool pages this device kept, newest first (tds-shared helper).
   document.getElementById("offline-retry")?.addEventListener("click", () => location.reload());

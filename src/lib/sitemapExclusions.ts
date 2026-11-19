@@ -24,12 +24,12 @@
  * neither end would go red.
  */
 
-import { createSitemapExclusions } from "@tracht-digital-solutions/tds-shared/site";
+import { createSitemapExclusions } from "@tracht-digital-labs/tds-shared/site";
 import { apiBase } from "./connection";
 import { memoisedOr, readContentJson } from "./contentFetch";
 import { EN_ENABLED, localizedPath, neutralPath, type Lang } from "./seo";
 
-export { canonicalPath, groupExcluded, matchesPattern } from "@tracht-digital-solutions/tds-shared/site";
+export { canonicalPath, groupExcluded, matchesPattern } from "@tracht-digital-labs/tds-shared/site";
 
 /** This site's id in the panel's site registry. */
 export const SITE_ID = "tools";

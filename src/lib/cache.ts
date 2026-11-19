@@ -14,7 +14,7 @@ import {
   forLanguages,
   type CacheEvent,
   type EventMap,
-} from "@tracht-digital-solutions/tds-shared/cache";
+} from "@tracht-digital-labs/tds-shared/cache";
 import { SITEMAP_PATHS } from "./sitemapSections";
 
 /**

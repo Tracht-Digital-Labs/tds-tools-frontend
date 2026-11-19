@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import * as route from "../pages/tds/studio/export";
-import { newProject } from "@tracht-digital-solutions/tds-tool-devkit/studio/model";
+import { newProject } from "@tracht-digital-labs/tds-tool-devkit/studio/model";
 
 /**
  * The Designsystem-Studio export as THIS site mounts it. The handler and its

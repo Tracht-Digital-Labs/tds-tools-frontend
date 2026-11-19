@@ -15,9 +15,9 @@
  * tds-shared/app) — the same shell as the journal and the shop. The bar tucks
  * away while scrolling down.
  */
-import { AccountMenu } from "@tracht-digital-solutions/tds-shared/islands/account-menu";
-import { ThemeToggle } from "@tracht-digital-solutions/tds-shared/islands/theme-toggle";
-import { propertyContact, propertyNav } from "@tracht-digital-solutions/tds-shared/nav";
+import { AccountMenu } from "@tracht-digital-labs/tds-shared/islands/account-menu";
+import { ThemeToggle } from "@tracht-digital-labs/tds-shared/islands/theme-toggle";
+import { propertyContact, propertyNav } from "@tracht-digital-labs/tds-shared/nav";
 import { site } from "~/lib/site";
 import { t } from "~/lib/i18n";
 import { EN_ENABLED, localizedPath, neutralPath, type Lang } from "~/lib/seo";
@@ -142,7 +142,7 @@ const langHrefs: { code: Lang; href: string; label: string }[] = [
 <script>
   // NOT `is:inline` — an inline script is not bundled, so this import would
   // reach the browser as a bare specifier.
-  import { mountAppHeader, mountPreferenceControls } from "@tracht-digital-solutions/tds-shared/app";
+  import { mountAppHeader, mountPreferenceControls } from "@tracht-digital-labs/tds-shared/app";
 
   const header = document.getElementById("site-header");
   if (header) {

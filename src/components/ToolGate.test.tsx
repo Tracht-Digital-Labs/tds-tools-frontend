@@ -5,7 +5,7 @@ import userEvent from "@testing-library/user-event";
 import {
   primeRuntimeConfig,
   resetRuntimeConfig,
-} from "@tracht-digital-solutions/tds-shared/api";
+} from "@tracht-digital-labs/tds-shared/api";
 import ToolGate from "./ToolGate";
 
 /**

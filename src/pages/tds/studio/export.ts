@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { handleExport } from "@tracht-digital-solutions/tds-tool-devkit/studio/exportRoute";
+import { handleExport } from "@tracht-digital-labs/tds-tool-devkit/studio/exportRoute";
 import { apiBase } from "~/lib/connection";
 
 /**

@@ -107,7 +107,7 @@ describe("site key", () => {
     // printed, nothing stopped.
     // The counter on globalThis lives in tds-shared/site now (and is tested
     // there); what this site must do is use that guard, not a copy.
-    expect(read("siteKey.ts")).toMatch(/from "@tracht-digital-solutions\/tds-shared\/site"/);
+    expect(read("siteKey.ts")).toMatch(/from "@tracht-digital-labs\/tds-shared\/site"/);
   });
 
   it("throws only on 401/403, and only when a key is configured", () => {

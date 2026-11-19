@@ -16,7 +16,7 @@
  * contract test asserts the exact string. `src/pages/llms.txt.ts` resolves it.
  */
 
-import type { ToolCategory } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolCategory } from "@tracht-digital-labs/tds-tools-contract";
 import { copy } from "./i18n";
 import { absolute } from "./sitemap";
 import { localizedPath, seoConfig } from "./seo";

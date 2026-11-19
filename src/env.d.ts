@@ -3,7 +3,7 @@
 
 // Virtual modules served by `toolHost` (tds-tools-contract/astro) at build time.
 declare module "virtual:tools-catalog" {
-  import type { ComposedCatalog } from "@tracht-digital-solutions/tds-tools-contract";
+  import type { ComposedCatalog } from "@tracht-digital-labs/tds-tools-contract";
   export const catalog: ComposedCatalog;
 }
 

@@ -1,6 +1,6 @@
-import type { ToolCategory } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolCategory } from "@tracht-digital-labs/tds-tools-contract";
 import { categoryLabels as labels, copy } from "./i18n";
-import { LEGAL_LINKS } from "@tracht-digital-solutions/tds-shared/nav";
+import { LEGAL_LINKS } from "@tracht-digital-labs/tds-shared/nav";
 
 /** Site-wide constants + copy. Keep the NAP in sync with the Impressum + seo.ts
  *  of the other TDS properties (SEO convention).

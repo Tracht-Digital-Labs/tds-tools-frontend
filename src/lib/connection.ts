@@ -7,7 +7,7 @@ import {
   runtimeConfigResponse,
   siteConnection,
   type SiteConnection,
-} from "@tracht-digital-solutions/tds-shared/connection";
+} from "@tracht-digital-labs/tds-shared/connection";
 
 const DEFAULT_API_BASE = "https://api.tracht-digital.de";
 

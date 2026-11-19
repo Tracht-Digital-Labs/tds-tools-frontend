@@ -2,14 +2,14 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 
-import businesscard from "@tracht-digital-solutions/tds-tool-businesscard";
-import devkit from "@tracht-digital-solutions/tds-tool-devkit";
-import legal from "@tracht-digital-solutions/tds-tool-legal";
-import media from "@tracht-digital-solutions/tds-tool-media";
-import office from "@tracht-digital-solutions/tds-tool-office";
-import pdf from "@tracht-digital-solutions/tds-tool-pdf";
-import qr from "@tracht-digital-solutions/tds-tool-qr";
-import textkit from "@tracht-digital-solutions/tds-tool-textkit";
+import businesscard from "@tracht-digital-labs/tds-tool-businesscard";
+import devkit from "@tracht-digital-labs/tds-tool-devkit";
+import legal from "@tracht-digital-labs/tds-tool-legal";
+import media from "@tracht-digital-labs/tds-tool-media";
+import office from "@tracht-digital-labs/tds-tool-office";
+import pdf from "@tracht-digital-labs/tds-tool-pdf";
+import qr from "@tracht-digital-labs/tds-tool-qr";
+import textkit from "@tracht-digital-labs/tds-tool-textkit";
 
 import { renderLlmsTxt, type LlmsTool } from "./llmsTxt";
 import { absolute } from "./sitemap";

@@ -1,4 +1,4 @@
-import type { ToolCategory } from "@tracht-digital-solutions/tds-tools-contract";
+import type { ToolCategory } from "@tracht-digital-labs/tds-tools-contract";
 import type { Lang } from "./seo";
 
 /**

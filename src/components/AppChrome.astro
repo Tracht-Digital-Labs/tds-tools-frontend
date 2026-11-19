@@ -9,7 +9,7 @@
  * category with its tools (the category tiles at the top jump to them); as
  * soon as something is typed it searches every tool in place.
  */
-import { propertyContact, propertyNav } from "@tracht-digital-solutions/tds-shared/nav";
+import { propertyContact, propertyNav } from "@tracht-digital-labs/tds-shared/nav";
 import { enabledTools } from "~/lib/catalog";
 import { categoryLabels, toolCopyFor } from "~/lib/i18n";
 import { categoryOrder, site } from "~/lib/site";
@@ -207,7 +207,7 @@ const t = de
 </style>
 
 <script>
-  import { mountAppTabBar, mountLiveFilter, mountPreferenceControls, mountTabPages } from "@tracht-digital-solutions/tds-shared/app";
+  import { mountAppTabBar, mountLiveFilter, mountPreferenceControls, mountTabPages } from "@tracht-digital-labs/tds-shared/app";
 
   const bar = document.getElementById("app-tabbar");
   if (bar) {

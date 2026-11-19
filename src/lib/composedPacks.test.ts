@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
  * Every test that reasons about "all composed tools" keeps its own copy of the
  * pack list, and on 2026-10-02 two of them were wrong in the same way:
  * `guides.test.ts` and `i18n.test.ts` both omitted
- * `@tracht-digital-solutions/tds-tool-businesscard`.
+ * `@tracht-digital-labs/tds-tool-businesscard`.
  *
  * Neither failure looked like a failure. "Has a guide for every composed tool"
  * passed while `visitenkarten-designer` had no guide — so that page emitted
@@ -23,7 +23,7 @@ import { describe, expect, it } from "vitest";
  * ALL of them, and this is the one guard that says so.
  */
 const LIB = resolve(process.cwd(), "src/lib");
-const PACK = /@tracht-digital-solutions\/(tds-tool-[a-z]+)"/g;
+const PACK = /@tracht-digital-labs\/(tds-tool-[a-z]+)"/g;
 
 const packsIn = (source: string) => new Set([...source.matchAll(PACK)].map((m) => m[1]!));
 

@@ -6,7 +6,7 @@
  *
  * No imports — `cache.ts` needs the paths without the catalog readers.
  */
-import { defineSitemapSections } from "@tracht-digital-solutions/tds-shared/site";
+import { defineSitemapSections } from "@tracht-digital-labs/tds-shared/site";
 
 const sections = defineSitemapSections(["pages", "tools"] as const);
 

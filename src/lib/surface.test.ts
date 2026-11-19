@@ -81,7 +81,7 @@ describe("the design surface", () => {
         SRC,
         "..",
         "node_modules",
-        "@tracht-digital-solutions",
+        "@tracht-digital-labs",
         "tds-shared",
         "styles",
         "surfaces",

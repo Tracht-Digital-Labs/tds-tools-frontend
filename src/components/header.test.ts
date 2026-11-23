@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { readSharedStyle } from "../__tests__/sharedStyle";
 
 /**
  * Header posture test.
@@ -136,17 +137,7 @@ describe("the DE|EN language switch", () => {
     // that predates the primitive, and the attribute then selects nothing —
     // invisible to astro check, to the build and to any test reading only this
     // repo. Assert against what node_modules actually holds.
-    const primitives = readFileSync(
-      join(
-        process.cwd(),
-        "node_modules",
-        "@tracht-digital-labs",
-        "tds-shared",
-        "styles",
-        "primitives.css",
-      ),
-      "utf8",
-    );
+    const primitives = readSharedStyle("primitives.css");
     expect(primitives).toContain(".tds-lang-toggle");
     expect(primitives).toContain(".tds-lang-toggle a.on");
   });
@@ -199,7 +190,7 @@ describe("the property bar", () => {
 
   it("resolves the bar in the INSTALLED tds-shared", () => {
     const shared = join(process.cwd(), "node_modules", "@tracht-digital-labs", "tds-shared");
-    const primitives = readFileSync(join(shared, "styles", "primitives.css"), "utf8");
+    const primitives = readSharedStyle("primitives.css");
     expect(primitives).toContain(".tds-sitebar__wide");
     expect(primitives).toContain(".tds-sitebar__island");
     const nav = readFileSync(join(shared, "dist", "nav", "index.d.ts"), "utf8");

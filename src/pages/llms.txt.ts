@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import { enabledTools } from "~/lib/catalog";
 import { guideOverrides, mergeCopy } from "~/lib/guideOverrides";
-import { toolCopyFor } from "~/lib/i18n";
+import { toolCopyFor } from "~/lib/toolCopy";
 import { renderLlmsTxt, type LlmsTool } from "~/lib/llmsTxt";
 import { site } from "~/lib/site";
 

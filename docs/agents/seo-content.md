@@ -32,7 +32,7 @@ names and shapes.
 - **`EN_ENABLED` gates the hreflang block** and must agree with the existence of `src/pages/en/` (`seo.test.ts`).
   An `hreflang="en"` pointing at a 404 invalidates the whole set.
 - Where strings live: a tool's **German** name, description and SEO title in its pack manifest; island labels in
-  the pack's `STRINGS`; site chrome **and English tool copy** in `lib/i18n.ts`; guides (both languages) in
+  the pack's `STRINGS`; site chrome in `lib/i18n.ts`, the **English tool copy** in `lib/toolCopy.ts`; guides (both languages) in
   `content/guides`.
 - `i18n.test.ts` applies the same budgets to English, requires DE and EN to differ, and requires an English guide
   for every tool.

@@ -1,7 +1,8 @@
 import type { APIRoute, GetStaticPaths } from "astro";
 import { renderToolOgPng } from "~/og/render";
 import { toolsData, type ResolvedTool } from "~/lib/catalog";
-import { categoryLabels, toolCopyFor } from "~/lib/i18n";
+import { categoryLabels } from "~/lib/i18n";
+import { toolCopyFor } from "~/lib/toolCopy";
 import { site } from "~/lib/site";
 
 /**

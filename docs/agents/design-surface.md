@@ -7,7 +7,7 @@ layer as `blog.tracht-digital.de`: no radii, nothing elevated, display voice at 
 (`--color-soft`, `--tds-flat-tint`, `--tds-flat-hover`) and 2 px accent bars. **Corners follow the panel** (since 2026-10-24): `global.css` remaps the `--tds-radius-*` tokens on
 `html[data-surface="blog"]` to the values of `surfaces/panel.css` (8 px cards and buttons, 0.75rem chips). Change a
 radius there, never on a class. `global.css` imports `base.css` →
-`primitives.css` → `surfaces/blog.css`.
+`primitives.css` → `surfaces/blog.css`, then the site's own rules as partials under `styles/global/`, in cascade order.
 
 - **`data-flat` is an explicit opt-in.** The blog base block keeps `--tds-border-hairline: 1px`; without
   `data-flat`, every button, chip, input and card gets an outline.
@@ -49,7 +49,7 @@ radius there, never on a class. `global.css` imports `base.css` →
 
 - **The header owns none of its chrome**: from 64rem it is two corner islands (`.tds-sitebar__island`, two
   wrappers in `Header.astro`) on a transparent `.brand-header`; fill, border and shadow come from tds-shared.
-  Only this site rounds them: `.tds-sitebar { --tds-radius-bar: var(--tds-radius-lg) }` in `global.css`.
+  Only this site rounds them: `.tds-sitebar { --tds-radius-bar: var(--tds-radius-lg) }` in `global/tools-nav.css`.
 - **The catalogue has no hero and no visible heading** (since 2026-10-24): it opens on the counter, the
   filter toggle and the grid. Its one `h1` is `sr-only` (the former hero headline); keep it.
 - **The brand mark is `.brand-logo`**, a CSS mask over `--color-primary` using `public/brand/td-logomark.webp`
@@ -78,7 +78,7 @@ path). Copy reaches the script as data attributes, never by importing `~/lib/i18
 
 - **Category colours:** `data-category` on each card (and on the filter chips, which double as the legend)
   sets `--tool-cat` from a shared token (`--color-cat-*`, `--color-primary`, `--color-info`, `--color-success`,
-  `--color-muted` for `other`), mapped at the end of `global.css`. In the grid the card takes a 22 % fill (30 % on
+  `--color-muted` for `other`), mapped in `global/category-colours.css`. In the grid the card takes a 22 % fill (30 % on
   hover) and a 4 px top band; icon, hover bar and `.tool-cat-swatch` follow it. Text never takes the colour.
   Muted text mixes ink 80 % into the card's own fill (≥ 6:1 measured in both
   themes). A new category needs a line in that map.

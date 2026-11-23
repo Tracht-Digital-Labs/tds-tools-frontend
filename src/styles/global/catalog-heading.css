@@ -1,0 +1,39 @@
+/* ---- Catalog heading ---- */
+.tool-card__photo { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: .75rem; }
+.tool-guide__photo { display: block; width: 100%; height: auto; max-height: 20rem; aspect-ratio: 2 / 1; object-fit: cover; margin-block: 2rem; }
+
+/* One display heading + a mono tool counter over a 2px accent bar — the flat
+   kit's own device — above the single catalog grid. The same mark also opens
+   the premium block. Never a hairline: this surface draws almost no borders.
+   `.tds-brandbar` is wrong here: it is punctuation, not a section marker.
+   (Until 0.23.0 this pair headed one section per category.) */
+.cat-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+}
+.cat-head__label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display);
+  letter-spacing: var(--tds-tracking-display);
+  /* Fluid: at 800 with -0.03em a fixed 1.875rem heading runs to the edge of a
+     375px phone once the count chip sits beside it. */
+  font-size: clamp(1.5rem, 1.15rem + 1.5vw, 1.875rem);
+  line-height: 1.15;
+  color: var(--color-black);
+}
+.cat-head__count {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+.cat-head__mark {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 0.625rem 0 1.25rem;
+  background: var(--color-accent);
+}

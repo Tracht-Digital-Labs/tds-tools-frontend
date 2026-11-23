@@ -1,0 +1,77 @@
+/* ---- Ratgeber on the tool page (2026-10-24) ----
+   The tool's article from the blog CMS, or the link to it. prose.css is not
+   imported on this site, so the few elements a markdown body uses get their
+   rhythm here, scoped to the block. */
+.tool-ratgeber {
+  margin-top: 3rem;
+  padding: clamp(1.25rem, 1rem + 1.5vw, 2rem);
+  border-radius: var(--tds-radius-card);
+  background: var(--color-soft);
+}
+.tool-ratgeber__eyebrow {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-ink);
+}
+.tool-ratgeber__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display);
+  letter-spacing: var(--tds-tracking-display);
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.75rem);
+  line-height: 1.2;
+  color: var(--color-black);
+}
+.tool-ratgeber__body {
+  max-width: 68ch;
+  line-height: 1.7;
+  color: var(--color-ink);
+}
+.tool-ratgeber__body > * + * {
+  margin-top: 1rem;
+}
+.tool-ratgeber__body :is(h2, h3, h4) {
+  margin-top: 1.75rem;
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display-tight);
+  line-height: 1.25;
+  color: var(--color-black);
+}
+.tool-ratgeber__body h2 { font-size: 1.375rem; }
+.tool-ratgeber__body :is(h3, h4) { font-size: 1.125rem; }
+.tool-ratgeber__body :is(ul, ol) {
+  padding-left: 1.25rem;
+}
+.tool-ratgeber__body ul { list-style: disc; }
+.tool-ratgeber__body ol { list-style: decimal; }
+.tool-ratgeber__body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.tool-ratgeber__body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--tds-radius-sm);
+}
+.tool-ratgeber__body :is(pre, code) {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+.tool-ratgeber__body pre {
+  overflow-x: auto;
+  padding: 0.75rem 1rem;
+  border-radius: var(--tds-radius-sm);
+  background: var(--color-paper);
+}
+.tool-ratgeber__body blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-primary);
+}
+.tool-ratgeber__link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}

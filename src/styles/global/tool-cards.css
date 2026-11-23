@@ -1,0 +1,133 @@
+/* ---- Tool cards ---- */
+/* The journal's flat card: a colour block, no border, no radius, no blurred shadow (the hard 2D offset is in `shadows.css`) —
+   `--color-soft` against the paper page. Hover deepens the fill to
+   `--tds-flat-hover` and grows a 2px accent bar down the left edge, which is
+   the blog's `.post-card` affordance verbatim in intent (the tokens are shared;
+   only these rules are local, because the two sites' cards hold different
+   content).
+   It used to be `.tds-card` + a tint on hover, i.e. the panel's bordered,
+   softly-elevated dashboard card. */
+.tool-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.25rem 1.375rem;
+  background: var(--color-soft);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color var(--tds-dur-base) var(--tds-ease-out);
+}
+.tool-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform var(--tds-dur-slow) var(--tds-ease-out);
+}
+/* `:focus-within` beside `:hover` on purpose — the card IS the link, so a
+   keyboard user reaching it must get the same cue. Never `outline: none`; the
+   library's global focus ring still does the actual work. */
+.tool-card:hover,
+.tool-card:focus-within {
+  background: var(--tds-flat-hover);
+}
+.tool-card:hover::before,
+.tool-card:focus-within::before {
+  transform: scaleY(1);
+}
+.tool-card__title {
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display-tight);
+  letter-spacing: var(--tds-tracking-display-tight);
+  font-size: 1.25rem;
+  line-height: 1.15;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color var(--tds-dur-base) var(--tds-ease-out);
+}
+.tool-card:hover .tool-card__title,
+.tool-card:focus-within .tool-card__title {
+  color: var(--color-primary);
+}
+.tool-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* The category label. Mono and small like the heading counter: a label, not a
+   second title. */
+.tool-card__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: var(--color-muted);
+}
+.tool-card__icon {
+  display: inline-flex;
+  flex: none;
+}
+/* "This goes somewhere": hidden at rest, it appears on hover and on keyboard
+   focus. It only SLIDES when motion is welcome — under reduced motion it
+   simply appears. */
+.tool-card__arrow {
+  display: inline-flex;
+  flex: none;
+  margin-left: auto;
+  color: var(--color-accent);
+  opacity: 0;
+}
+.tool-card:focus-visible .tool-card__arrow {
+  opacity: 1;
+}
+@media (hover: hover) {
+  .tool-card:hover .tool-card__arrow {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .tool-card__icon {
+    transition: transform var(--tds-dur-slow) var(--tds-ease-out);
+  }
+  .tool-card__arrow {
+    transform: translateX(-0.5rem);
+    transition:
+      opacity var(--tds-dur-base) var(--tds-ease-out),
+      transform var(--tds-dur-slow) var(--tds-ease-out);
+  }
+  .tool-card:focus-visible .tool-card__arrow {
+    transform: none;
+  }
+  .tool-card:focus-visible .tool-card__icon {
+    transform: translateY(-0.125rem) scale(1.1);
+  }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .tool-card:hover .tool-card__arrow {
+    transform: none;
+  }
+  .tool-card:hover .tool-card__icon {
+    transform: translateY(-0.125rem) scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Reset the END state rather than only shortening the duration — a
+     transform that still runs at 0.01ms is still motion. */
+  .tool-card,
+  .tool-card::before,
+  .tool-card__title {
+    transition: none;
+  }
+}

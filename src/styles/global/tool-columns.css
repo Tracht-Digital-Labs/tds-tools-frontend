@@ -1,0 +1,185 @@
+/* ---- Tool page columns ----
+   The page runs on the full-width shell, like the catalog. In one column that
+   wide the guide stops at 68ch beside a screen's width of nothing, so from
+   80rem the tool, the ad and the guide keep the main column and the related
+   tools move into a column beside them. Below that it is
+   the single column it always was, in the same order: the DOM order is the
+   reading and tab order at every width.
+
+   After `.tool-related` (`tool-guide.css`, imported first) on purpose — the
+   aside resets its margin-top at the same specificity, so source order is
+   what lets it win. */
+.tool-layout,
+.tool-main,
+.tool-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+@media (min-width: 80rem) {
+  .tool-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(18rem, 22vw, 24rem);
+    align-items: start;
+    gap: 1.5rem clamp(2rem, 3vw, 3.5rem);
+  }
+  .tool-aside {
+    gap: 2.5rem;
+  }
+  .tool-aside > * {
+    margin-top: 0;
+  }
+}
+
+/* A `layout: "wide"` tool (a workspace with editor + preview) spans the
+   content width above the two columns instead of sharing a row with the
+   related tools. Same vertical rhythm as the column gaps. */
+.tool-wide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+  margin-bottom: 1.5rem;
+}
+
+.tool-guide__h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display);
+  letter-spacing: var(--tds-tracking-display);
+  font-size: clamp(1.5rem, 1.15rem + 1.5vw, 1.875rem);
+  line-height: 1.15;
+  color: var(--color-black);
+}
+/* The same 2px accent bar the catalog's category headings use — this surface
+   draws almost no borders, so the bar is what marks a new zone. */
+.tool-guide__mark {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 0.625rem 0 1.5rem;
+  background: var(--color-accent);
+}
+.tool-guide__h3 {
+  margin: 2.25rem 0 0.875rem;
+  font-family: var(--font-display);
+  font-weight: var(--tds-weight-display-tight);
+  letter-spacing: var(--tds-tracking-display-tight);
+  font-size: 1.125rem;
+  line-height: 1.25;
+  color: var(--color-black);
+}
+/* 68ch is the measure long-form body text stays readable at; without it the
+   intro runs the full 56rem of the page and the eye loses the line. */
+.tool-guide__intro p,
+.tool-guide__privacy {
+  max-width: 68ch;
+  margin: 0 0 0.875rem;
+  line-height: 1.7;
+  color: var(--color-ink);
+  text-wrap: pretty;
+}
+.tool-guide__privacy {
+  margin-bottom: 0;
+}
+/* "Stand: Oktober 2026 · Von Julian Tracht, …" — the freshness and author
+   line that closes the guide. Muted and small: it is evidence, not content. */
+.tool-guide__meta {
+  max-width: 68ch;
+  margin: 1.75rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+  text-wrap: pretty;
+}
+.tool-guide__cases {
+  display: grid;
+  gap: 1.25rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 40rem) {
+  .tool-guide__cases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.tool-guide__case-title {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-black);
+}
+.tool-guide__case-text,
+.tool-guide__step-text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+  text-wrap: pretty;
+}
+/* The counter is drawn from the list, never typed into the copy — inserting a
+   step then cannot leave a wrong number behind. */
+.tool-guide__steps {
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 68ch;
+}
+.tool-guide__steps > li {
+  counter-increment: step;
+  padding-left: 2.75rem;
+  position: relative;
+}
+.tool-guide__steps > li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.0625rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
+.tool-guide__step-title {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-black);
+}
+.tool-guide__faq {
+  display: flex;
+  flex-direction: column;
+  max-width: 68ch;
+}
+/* A line BETWEEN two things keeps its literal 1px on the flat kit — the
+   hairline a primitive draws around ITSELF is what the surface drops. */
+.tool-guide__faq details {
+  border-bottom: 1px solid var(--color-line);
+}
+.tool-guide__faq summary {
+  cursor: pointer;
+  padding: 0.875rem 0;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-black);
+  /* 44px touch target even for a one-line question. */
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tool-guide__faq summary:hover {
+  color: var(--color-primary);
+}
+.tool-guide__faq details p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  color: var(--color-muted);
+  text-wrap: pretty;
+}

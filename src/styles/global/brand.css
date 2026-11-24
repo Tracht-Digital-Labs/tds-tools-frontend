@@ -1,0 +1,42 @@
+/* The brand mark and in-page links. */
+
+/* ---- Brand mark ---- */
+/* `.brand-logo` itself lives in tds-shared (primitives.css): a CSS mask over
+   `--color-primary`, so the mark follows the theme instead of needing an
+   inverted second asset. Only the asset URL is app-local — a package cannot
+   serve a `public/`-rooted path. The size is set here rather than inline so
+   the header markup stays free of geometry.
+   The ratio is NOT overridden: the library's default (1.476) is the real
+   aspect of this exact asset (713x483), and a mismatched box letterboxes the
+   `contain`-fitted mask and silently renders it undersized. */
+:root {
+  --tds-brand-logo-mask: url("/brand/td-logomark.webp");
+  --tds-brand-logo-size: 1.6rem;
+}
+
+/* ---- In-page links ---- */
+/* The header's bar, divider and nav links are tds-shared's `.tds-sitebar*`,
+   shared with the journal and the shop. What stays here is the muted link the
+   tool page's breadcrumb and the 404 page use. It rides the SHARED
+   `.link-underline` primitive rather than a copy: an underline that scales in
+   from the left on hover AND focus-visible, already collapsing under reduced
+   motion.
+
+   THE COLOUR HAS TO BE DECLARED HERE, NOT AS A UTILITY IN THE MARKUP, and the
+   reason generalises to every shared class in these apps: Tailwind emits its
+   utilities inside `@layer utilities`, and tds-shared's stylesheets are
+   UNLAYERED — unlayered CSS beats any cascade layer no matter what the
+   specificity or the source order says. So `.link-underline`'s own
+   `color: inherit` wins over `text-[color:var(--color-muted)]` on the same
+   element, and the nav rendered in the body ink with a dead hover. Verified in
+   a browser; nothing in the build says a word about it.
+   Corollary: `hidden sm:inline-flex` cannot hide a `.btn` either — the
+   component's own `display` wins. Wrap it, or don't hide it. */
+.tnav-link {
+  color: var(--color-muted);
+  transition: color var(--tds-dur-base) var(--tds-ease-out);
+}
+.tnav-link:hover,
+.tnav-link:focus-visible {
+  color: var(--color-ink);
+}

@@ -9,7 +9,8 @@ import qr from "@tracht-digital-labs/tds-tool-qr";
 import textkit from "@tracht-digital-labs/tds-tool-textkit";
 import legal from "@tracht-digital-labs/tds-tool-legal";
 
-import { categoryLabels, copy, t, toolCopyEn, toolCopyFor } from "./i18n";
+import { categoryLabels, copy, t } from "./i18n";
+import { toolCopyEn, toolCopyFor } from "./toolCopy";
 import { guides } from "./guides";
 import { EN_ENABLED } from "./seo";
 import { site, categoryOrder } from "./site";

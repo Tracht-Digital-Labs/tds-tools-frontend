@@ -1,0 +1,10 @@
+/* ---- Tool guide ---- */
+/* The long-form section under each tool. Local rather than `.tds-prose` — see
+   the note at the top of `global.css` and in ToolGuide.astro.
+   Everything here is spacing, measure and rhythm; every colour, face and
+   weight comes from a shared token, so the guide follows the surface the way
+   the rest of the page does. */
+.tool-guide,
+.tool-related {
+  margin-top: 3.5rem;
+}

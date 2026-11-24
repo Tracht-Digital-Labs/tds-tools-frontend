@@ -1,0 +1,58 @@
+/* ---- Category colours (2026-10-24) ----
+   Each category owns one shared colour token; the card carries it as
+   `--tool-cat` through `data-category` (ToolCard.astro, and the filter
+   chips, so the chip doubles as the legend). In the grid the card is a
+   clear fill of it (22 %, 30 % on hover) with a 4px band along its top edge;
+   everywhere the icon, the hover bar and a square swatch before the
+   category name follow it. Text never takes the colour: the muted ink is
+   mixed into the card's OWN fill, so it keeps its contrast on every tint.
+   Rounded cards cannot share seams, so the grid opens a gap and each card
+   shows its whole hard offset. */
+[data-category="marketing"] { --tool-cat: var(--color-cat-rose); }
+[data-category="security"] { --tool-cat: var(--color-primary); }
+[data-category="developer"] { --tool-cat: var(--color-cat-violet); }
+[data-category="design"] { --tool-cat: var(--color-cat-amber); }
+[data-category="media"] { --tool-cat: var(--color-cat-cyan); }
+[data-category="content"] { --tool-cat: var(--color-cat-teal); }
+[data-category="business"] { --tool-cat: var(--color-info); }
+[data-category="compliance"] { --tool-cat: var(--color-success); }
+[data-category="other"] { --tool-cat: var(--color-muted); }
+.tool-grid {
+  gap: 1rem;
+}
+.tool-grid::after {
+  content: none;
+}
+.tool-grid .tool-card {
+  --tool-card-bg: color-mix(in srgb, var(--tool-cat, transparent) 22%, var(--color-soft));
+  --tool-muted: color-mix(in srgb, var(--color-ink) 80%, var(--tool-card-bg));
+  background-color: var(--tool-card-bg);
+  background-image: linear-gradient(var(--tool-cat, transparent), var(--tool-cat, transparent));
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  box-shadow: var(--tds-shadow-hard);
+}
+.tool-grid .tool-card:is(:hover, :focus-within) {
+  --tool-card-bg: color-mix(in srgb, var(--tool-cat, transparent) 30%, var(--color-soft));
+  /* All four longhands: the older hover rule (`catalog-grid.css`) uses the `background`
+     shorthand, which resets the size, and the 4px band would fill the card. */
+  background-color: var(--tool-card-bg);
+  background-image: linear-gradient(var(--tool-cat, transparent), var(--tool-cat, transparent));
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  box-shadow: var(--tds-shadow-hard-hover);
+}
+.tool-card[data-category]::before {
+  background: var(--tool-cat);
+}
+.tool-card[data-category] .tool-card__icon svg {
+  color: var(--tool-cat);
+}
+.tool-cat-swatch {
+  display: inline-block;
+  flex: none;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin-inline-end: 0.4rem;
+  background: var(--tool-cat, currentColor);
+}

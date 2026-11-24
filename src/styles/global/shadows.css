@@ -1,0 +1,74 @@
+/* === Hard 2D shadows (2026-09-22, tds-shared >= 0.42) =====================
+   Every box and control of the public sites carries a fixed, unblurred
+   offset (`--tds-shadow-hard*`, set by the blog surface; `.tds-card`, the
+   buttons, the dropdown and the cookie notice take it in tds-shared).
+
+   The catalogue grid has no gap (see `catalog-grid.css`), so its cards each
+   carry the offset and an OPAQUE fill: every later cell paints over the
+   shadow of the one before it, and what stays visible is the offset along
+   the outer edge of the block — following the cards, including a short last
+   row, where a shadow on the grid box would outline the empty tracks. The
+   active cell already rises above its neighbours (z-index 2), so the card
+   under the pointer shows its whole offset. */
+.tool-grid .tool-card {
+  background: var(--color-soft);
+  box-shadow:
+    inset -1px -1px 0 var(--color-line),
+    var(--tds-shadow-hard);
+}
+.tool-card {
+  box-shadow: var(--tds-shadow-hard);
+}
+/* With opaque cards the grid needs no fill of its own — and without one, the
+   empty tracks of a short last row show the page ground instead of a sand
+   block next to the shadowed step. */
+.tool-grid {
+  background: transparent;
+}
+
+/* Hover LIFTS a card toward the pointer (2026-09-26): 2px up-left while its
+   offset grows by the same 2px. In the catalogue the active cell already
+   rises above its neighbours (z-index 2), so the whole offset shows; the
+   tilt keeps `transform`, the lift uses `translate`. */
+.tool-card:is(:hover, :focus-within) {
+  translate: -2px -2px;
+  box-shadow: var(--tds-shadow-hard-hover);
+}
+.tool-grid .tool-card:is(:hover, :focus-within) {
+  box-shadow:
+    inset -1px -1px 0 var(--color-line),
+    var(--tds-shadow-hard-hover);
+}
+.tool-card {
+  transition-property: background-color, translate, transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-card:is(:hover, :focus-within) {
+    translate: none;
+  }
+}
+
+/* The catalog's filter toggle (tds-shared .tds-filterbar__toggle) closes the
+   heading row on the right; position only. */
+.cat-head__filter {
+  margin-inline-start: auto;
+  align-self: center;
+}
+.cat-head:has(.cat-head__title) {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.cat-head__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.75rem;
+  min-width: 0;
+}
+.tool-filter-empty {
+  margin: 0 0 1.5rem;
+  color: var(--color-muted);
+}
+.tool-filter-empty:empty {
+  display: none;
+}

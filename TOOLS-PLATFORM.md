@@ -341,7 +341,7 @@ dort den Schritt *Tool-Katalog übertragen* ausführen. Der Build macht das nich
 stehen hier, weil je eine Testdatei ohne sie rot wird — die Schritte oben allein
 ergeben also gar keinen grünen Build:
 
-1. **Englische Fassung** in `src/lib/i18n.ts` → `toolCopyEn[slug]`
+1. **Englische Fassung** in `src/lib/toolCopy.ts` → `toolCopyEn[slug]`
    (`name`, `description`, `seoTitle`). `i18n.test.ts` scheitert an einem
    komponierten Tool ohne Eintrag *und* an einem Eintrag ohne Tool.
 2. **Ratgeber** unter `src/content/guides/<slug>.ts`, **deutsch UND englisch**,

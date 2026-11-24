@@ -1,0 +1,21 @@
+/* ---- Panel corners (2026-10-24) ----
+   The site keeps the blog surface but takes the panel's geometry: the same
+   radius tokens `surfaces/panel.css` sets, so buttons, chips, fields, alerts
+   and cards round exactly as they do there. `html[...]` outranks the
+   surface's bare `[data-surface="blog"]` block, whatever the load order. */
+html[data-surface="blog"] {
+  --tds-radius-btn: var(--tds-radius-md);
+  --tds-radius-card: var(--tds-radius-md);
+  --tds-radius-input: 0.5rem;
+  --tds-radius-chip: 0.75rem;
+  --tds-radius-badge: 0.75rem;
+  --tds-radius-alert: 0.5rem;
+  --tds-radius-bar: var(--tds-radius-xs);
+}
+.tool-card {
+  border-radius: var(--tds-radius-card);
+  overflow: hidden;
+}
+.tool-card__photo {
+  border-radius: var(--tds-radius-sm);
+}

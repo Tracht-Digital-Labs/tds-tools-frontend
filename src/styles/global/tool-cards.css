@@ -1,12 +1,8 @@
 /* ---- Tool cards ---- */
 /* The journal's flat card: a colour block, no border, no radius, no blurred shadow (the hard 2D offset is in `shadows.css`) —
    `--color-soft` against the paper page. Hover deepens the fill to
-   `--tds-flat-hover` and grows a 2px accent bar down the left edge, which is
-   the blog's `.post-card` affordance verbatim in intent (the tokens are shared;
-   only these rules are local, because the two sites' cards hold different
-   content).
-   It used to be `.tds-card` + a tint on hover, i.e. the panel's bordered,
-   softly-elevated dashboard card. */
+   `--tds-flat-hover` and lifts the card (`shadows.css`); no stripe on the
+   left edge. */
 .tool-card {
   position: relative;
   display: flex;
@@ -19,28 +15,12 @@
   color: inherit;
   transition: background-color var(--tds-dur-base) var(--tds-ease-out);
 }
-.tool-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--color-accent);
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform var(--tds-dur-slow) var(--tds-ease-out);
-}
 /* `:focus-within` beside `:hover` on purpose — the card IS the link, so a
    keyboard user reaching it must get the same cue. Never `outline: none`; the
    library's global focus ring still does the actual work. */
 .tool-card:hover,
 .tool-card:focus-within {
   background: var(--tds-flat-hover);
-}
-.tool-card:hover::before,
-.tool-card:focus-within::before {
-  transform: scaleY(1);
 }
 .tool-card__title {
   font-family: var(--font-display);
@@ -126,7 +106,6 @@
   /* Reset the END state rather than only shortening the duration — a
      transform that still runs at 0.01ms is still motion. */
   .tool-card,
-  .tool-card::before,
   .tool-card__title {
     transition: none;
   }

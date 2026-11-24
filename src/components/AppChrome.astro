@@ -184,13 +184,12 @@ const t = de
   .discover-hit {
     display: grid;
     gap: 0.25rem;
-    padding: 0.875rem 1rem 0.875rem 1.125rem;
+    padding: 0.875rem 1rem;
     background: var(--color-soft);
     color: var(--color-ink);
     text-decoration: none;
-    box-shadow: inset 4px 0 0 var(--color-accent);
   }
-  .discover-hit[aria-current="page"] { box-shadow: inset 4px 0 0 var(--color-primary); }
+  .discover-hit[aria-current="page"] { background: var(--tds-flat-hover); }
   .discover-hit strong { font-weight: 700; line-height: 1.25; }
   .discover-hit small {
     display: -webkit-box;

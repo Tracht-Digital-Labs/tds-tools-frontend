@@ -66,8 +66,8 @@
   background: var(--color-paper);
 }
 .tool-ratgeber__body blockquote {
-  padding-left: 1rem;
-  border-left: 2px solid var(--color-primary);
+  padding: 0.75rem 1rem;
+  background: var(--color-paper);
 }
 .tool-ratgeber__link {
   display: inline-block;

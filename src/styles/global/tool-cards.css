@@ -106,7 +106,6 @@
   /* Reset the END state rather than only shortening the duration — a
      transform that still runs at 0.01ms is still motion. */
   .tool-card,
-  .tool-card::before,
   .tool-card__title {
     transition: none;
   }
